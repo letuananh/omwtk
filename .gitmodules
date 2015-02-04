@@ -1,0 +1,3 @@
+[submodule "chirptext"]
+	path = chirptext
+	url = https://github.com/letuananh/chirptext.git
