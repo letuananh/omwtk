@@ -1,0 +1,3027 @@
+00166146-a	vie:lemma	hấp_dẫn
+00166146-a	vie:def	thích nhìn, say mê vẻ đẹp
+00166146-a	vie:exe	"quần áo hấp dẫn"; "mô tả quyển sách vở hình minh họa hấp dấn"
+00362467-a	vie:lemma	vui_vẻ
+00362467-a	vie:def	một tinh thần tốt, thể hiện tâm trạng rất vui
+00362467-a	vie:exe	"tính vui vẻ của cô ấy"; "một lời chào vui vẻ"; "một căn phòng vui vẻ"
+00015589-a	vie:lemma	dài
+00015589-a	vie:def	có hoặc đang được nhiều hơn mức bình thường hoặc cần thiết
+00015589-a	vie:exe	"cái quần dài"
+00015854-a	vie:lemma	phong_phú
+00015854-a	vie:def	có một số lượng lớn
+00015854-a	vie:exe	"tê giác đã từng phong phú ở đây"
+00016247-a	vie:lemma	thừa_thãi
+00016247-a	vie:def	có rất nhiều
+00016247-a	vie:exe	"nước thừa thãi"
+00016756-a	vie:lemma	khan_hiếm
+00016756-a	vie:def	thiếu số lượng so với yêu cầu
+00016756-a	vie:exe	"rau xanh khan hiếm trong thời điểm hạn hán"
+00017782-a	vie:lemma	chấp_nhận
+00017782-a	vie:def	đồng ý nhận (điều người khác yêu cầu hoặc đề ra)
+00017782-a	vie:exe	"mức bức xạ chấp nhận được"
+00021766-a	vie:lemma	chính_xác
+00021766-a	vie:def	phù hợp hoặc gần đúng với thực tế hoặc một tiêu chuần..
+00021766-a	vie:exe	"số đo chính xác"; "một quy mô chính xác"
+00167278-a	vie:lemma	dễ_thương
+00167278-a	vie:def	gây được tình cảm mến thương ở người khác
+00167278-a	vie:exe	"một con bé dễ thương"
+00035779-a	vie:lemma	nhanh
+00035779-a	vie:def	có tốc độ, nhịp độ trên mức bình thường
+00035779-a	vie:exe	"xe chạy nhanh"
+00049016-a	vie:lemma	hoàn_chỉnh
+00049016-a	vie:def	có đầy đủ tất cả các bộ phận cấu thành cần thiết
+00049016-a	vie:exe	"một bộ máy hoàn chỉnh"
+00050446-a	vie:lemma	giản_lược
+00050446-a	vie:def	rút gọn hoặc giảm bớt
+00050446-a	vie:exe	"trình bày một cách giản lược"
+00061262-a	vie:lemma	khéo_tay
+00061262-a	vie:def	nhanh, giỏi hoặc chuyên nghiệp khi làm gì đó
+00061262-a	vie:exe	"cô ấy khéo tay may vá"
+00061664-a	vie:lemma	nguyên_chất
+00061664-a	vie:def	chỉ thuần một chất, không có chất khác lẫn vào hoặc không có sự pha chế
+00061664-a	vie:exe	"vàng nguyên chất"
+00064479-a	vie:lemma	thuận_lợi
+00064479-a	vie:def	điều kiện tốt để làm gì đó
+00064479-a	vie:exe	"thời tiết thuận lợi"
+00064787-a	vie:lemma	có lợi
+00064787-a	vie:def	có phẩm chất, chất lượng cao hơn mức bình thường
+00064787-a	vie:exe	"lúa tốt"
+00065064-a	vie:lemma	tích_cực
+00065064-a	vie:def	có tác dụng khẳng định, thúc đẩy sự phát triển
+00065064-a	vie:exe	"cô ấy có suy nghĩ tích cực"
+00065488-a	vie:lemma	bất_lợi
+00065488-a	vie:def	gây thiệt hại
+00065488-a	vie:exe	"đó là vấn đề bất lợi với chúng ta"
+00067038-a	vie:lemma	khuyến_khích
+00067038-a	vie:def	xứng đáng được đề nghị hoặc đề xuất
+00067038-a	vie:exe	"nó được khuyến khích làm việc đó"
+00067379-a	vie:lemma	tốt_hơn
+00067379-a	vie:def	khôn ngoan hơn hoặc có nhiều thuận lợi hơn
+00067379-a	vie:exe	"cái xe này tốt hơn xe kia"
+00070939-a	vie:lemma	ảnh_hưởng
+00070939-a	vie:def	có tác động đến một điều gì đó
+00070939-a	vie:exe	"tôi bị ảnh hưởng bởi tiếng ồn"
+00071142-a	vie:lemma	ấn_tượng
+00071142-a	vie:def	chịu tác động hoặc ảnh hưởng rõ rệt
+00071142-a	vie:exe	"tôi ấn tượng với cách trả lời của cô ấy"
+00075515-a	vie:lemma	phủ_định
+00075515-a	vie:def	bác bỏ sự tồn tại, sự cần thiết của cái gì
+00075515-a	vie:exe	"câu phủ định"
+00075389-a	vie:lemma	đồng_ý
+00075389-a	vie:def	cùng quan điểm hoặc suy nghĩ với ai đó
+00075389-a	vie:exe	"anh ấy đồng ý với tôi"
+00077645-a	vie:lemma	sợ
+00077645-a	vie:def	lo lắng về cái gì đó
+00077645-a	vie:exe	"cô ấy rất sợ ma"
+00078851-a	vie:lemma	báo_động
+00078851-a	vie:def	cảm giác bất ngờ về một sự nguy hiểm nào đó
+00078851-a	vie:exe	"tiếng chuông báo động"
+00101609-a	vie:lemma	vị_tha
+00101609-a	vie:def	sẵn lòng bỏ qua lỗi lầm của người khác
+00101609-a	vie:exe	"cô ấy sống rất vị tha"
+00102201-a	vie:lemma	mơ_hồ
+00102201-a	vie:def	không xác định được vấn đề
+00102201-a	vie:exe	"tôi vẫn còn mơ hồ về vấn đề đó"
+00106182-a	vie:lemma	hào_phóng
+00106182-a	vie:def	rộng rãi trong chi tiêu, trong quan hệ đối xử với mọi người
+00106182-a	vie:exe	"hắn rất hào phóng với chúng tôi"
+00107017-a	vie:lemma	chật_hẹp
+00107017-a	vie:def	có phạm vi hẹp,nhỏ
+00107017-a	vie:exe	"con ngõ chật hẹp"
+01173697-a	vie:lemma	tức_giận
+01173697-a	vie:def	cảm giác khó chịu với người nào đó
+01173697-a	vie:exe	"cô ta rất tức giận với tôi"
+00560586-a	vie:lemma	thích_hợp
+00560586-a	vie:def	hợp với yêu cầu và đáp ứng tốt các đòi hỏi
+00560586-a	vie:exe	"các điều kiện thích hợp"
+00118567-a	vie:lemma	náo_nhiệt
+00118567-a	vie:def	nhộn nhịp, sôi nổi trong hoạt động
+00118567-a	vie:exe	"đường phố ồn ào, náo nhiệt"
+00664879-a	vie:lemma	ngạc_nhiên
+00664879-a	vie:def	lấy làm lạ, cảm thấy hoàn toàn bất ngờ với mình
+00664879-a	vie:exe	"ai cũng ngạc nhiên trước khả năng của anh ta"
+00133417-a	vie:lemma	ngon_lành
+00133417-a	vie:def	gây được cảm giác thích thú, làm cho ăn hoặc uống không thấy chán hoặc làm việc gì đó dễ dàng, nhanh chóng,không gặp bất cứ khó khăn nào
+00133417-a	vie:exe	"bài toán này giải ngon lành"
+00149686-a	vie:lemma	láu_cá
+00149686-a	vie:def	láu và có nhiều mẹo vặt
+00149686-a	vie:exe	"thằng bé rất láu cá"
+00148642-a	vie:lemma	quý_báu
+00148642-a	vie:def	có giá trị, đáng được coi trọng
+00148642-a	vie:exe	"lời khuyên quý báu"
+00149120-a	vie:lemma	sâu_sắc
+00149120-a	vie:def	có tính chất đi vào chiều sâu, vào những vấn đề thuộc bản chất, có ý nghĩa nhất
+00149120-a	vie:exe	"một triết lí sâu sắc"
+00149861-a	vie:lemma	tự_nhiên
+00149861-a	vie:def	bình thường như vốn có của bản thân, không có gì là gò bó, giả tạo
+00149861-a	vie:exe	"ăn uống tự nhiên"
+00150055-a	vie:lemma	bất_cẩn
+00150055-a	vie:def	vô ý, không cẩn thận
+00150055-a	vie:exe	"canh phòng bất cẩn"
+00150202-a	vie:lemma	rõ_ràng
+00150202-a	vie:def	rõ đến mức ai cũng có thể thấy, có thể nhận biết được một cách dễ dàng
+00150202-a	vie:exe	"bằng chứng rõ ràng"
+00162863-a	vie:lemma	nhút_nhát
+00162863-a	vie:def	rụt rè, e ngại
+00162863-a	vie:exe	"cô bé mới đến rất nhút nhát"
+00163315-a	vie:lemma	khờ_dại
+00163315-a	vie:def	kém trí khôn, tinh ranh
+00163315-a	vie:exe	"cô ta hãy còn khờ dại lắm"
+00164681-a	vie:lemma	lo_lắng
+00164681-a	vie:def	ở trong trạng thái rất không yên lòng
+00164681-a	vie:exe	"vẻ mặt lo lắng"
+00168039-a	vie:lemma	phô_trương
+00168039-a	vie:def	chưng ra, bày ra cho người ta thấy, để lấy tiếng, lấy oai
+00168039-a	vie:exe	"phô trương lực lượng"
+00169692-a	vie:lemma	xám_xịt
+00169692-a	vie:def	xám và đen lại, trông tối và xấu
+00169692-a	vie:exe	"da dẻ xám xịt"
+00176150-a	vie:lemma	thịnh_vượng
+00176150-a	vie:def	trạng thái phát đạt, đang giàu lên
+00176150-a	vie:exe	"làm ăn thịnh vượng"
+00182718-a	vie:lemma	thông_minh
+00182718-a	vie:def	có năng lực trí tuệ tốt, hiểu nhanh, tiếp thu nhanh
+00182718-a	vie:exe	"cậu bé thông minh"
+00193480-a	vie:lemma	xấu
+00193480-a	vie:def	có hình thức, vẻ ngoài khó coi, gây cảm giác khó chịu, làm cho không muốn nhìn ngắm
+00193480-a	vie:exe	"chữ xấu"
+00193799-a	vie:lemma	khủng_khiếp
+00193799-a	vie:def	hoảng sợ hoặc làm cho hoảng sợ ở mức rất cao
+00193799-a	vie:exe	"tai họa khủng khiếp"
+00194357-a	vie:lemma	đe_dọa
+00194357-a	vie:def	làm ai đấy sợ sệt
+00194357-a	vie:exe	"hắn đe dọa tôi"
+00196934-a	vie:lemma	yên_lòng
+00196934-a	vie:def	có trạng thái tâm lí yên ổn, không có điều gì phải lo lắng
+00196934-a	vie:exe	"yên lòng nhắm mắt"
+00197247-a	vie:lemma	quả_quyết
+00197247-a	vie:def	tỏ ra có đủ quyết tâm, không hề do dự
+00197247-a	vie:exe	"thái độ quả quyết"
+00220082-a	vie:lemma	xinh_đẹp
+00220082-a	vie:def	rất xinh, có được sự hài hòa, trông thích nhìn
+00220082-a	vie:exe	"những cô nàng xinh đẹp"
+00219705-a	vie:lemma	rực_rỡ
+00219705-a	vie:def	có màu sắc tươi sáng đẹp đẽ và nổi bật hẳn lên, làm cho ai cũng phải chú ý
+00219705-a	vie:exe	"nắng vàng rực rõ"
+01211296-a	vie:lemma	tiến_bộ
+01211296-a	vie:def	phát triển theo hướng đi lên, tốt hơn trước
+01211296-a	vie:exe	"học hành tiến bộ"
+00224166-a	vie:lemma	hiểm_ác
+00224166-a	vie:def	chỉ người độc ác, có hành động xấu
+00224166-a	vie:exe	"ông ta là con người hiểm ác"
+00226891-a	vie:lemma	tốt_bụng
+00226891-a	vie:def	có lòng tốt,thương người, sẵn sàng giúp đỡ người khác
+00226891-a	vie:exe	"đó là một cô gái tốt bụng"
+00229630-a	vie:lemma	tệ nhất
+00229630-a	vie:def	cái gì đó hình thức rất xấu hoặc chất lượng rất kém
+00229630-a	vie:exe	"đấy là món ăn tệ nhất mà tôi từng ăn"
+00264776-a	vie:lemma	hèn_nhát
+00264776-a	vie:def	kém bản lĩnh, thường do nhút nhát sợ sệt
+00264776-a	vie:exe	"một kẻ hèn nhát"
+00272172-a	vie:lemma	tái_mét
+00272172-a	vie:def	tái đến mức nhợt nhạt như không còn chút máu (thường nói về sắc mặt)
+00272172-a	vie:exe	"khuôn mặt tái mét"
+00273901-a	vie:lemma	tối_tăm
+00273901-a	vie:def	tối, thiếu ánh sáng
+00273901-a	vie:exe	"nhà cửa tối tăm"
+00281342-a	vie:lemma	hăng_hái
+00281342-a	vie:def	có lòng nhiệt tình và thái độ tích cực trong công việc
+00281342-a	vie:exe	"cô ấy rất hăng hái làm việc"
+00291181-a	vie:lemma	vững_chắc
+00291181-a	vie:def	có khả năng chịu tác động mạnh từ bên ngoài mà vẫn giữ nguyên được trạng thái, tính chất, không bị phá huỷ
+00291181-a	vie:exe	"bức tường được xây dựng vững chắc"
+00295235-a	vie:lemma	nhàn_rỗi
+00295235-a	vie:def	rỗi rãi, không phải làm việc gì
+00295235-a	vie:exe	"anh ta có nhiều thời gian nhàn rỗi"
+00302761-a	vie:lemma	bình_tĩnh
+00302761-a	vie:def	không bối rối, mà làm chủ được tình cảm, hành động của mình
+00302761-a	vie:exe	"bạn không nên mất bình tĩnh như thế"
+00303480-a	vie:lemma	ổn_định
+00303480-a	vie:def	ở trạng thái yên ổn, không còn có những biến động, thay đổi đáng kể
+00303480-a	vie:exe	"giá cả ổn định"
+00305590-a	vie:lemma	bẩn_thỉu
+00305590-a	vie:def	có nhiều bụi bặm, rác rưởi, cáu ghét hoặc bị hoen ố
+00305590-a	vie:exe	"cái giỏ bẩn thỉu"
+00251373-a	vie:lemma	bực_dọc
+00251373-a	vie:def	bực tức đến mức không chịu được, lộ rõ ở nét mặt, cử chỉ
+00251373-a	vie:exe	"cô ta tỏ vẻ bực dọc"
+00283703-a	vie:lemma	tối_dạ
+00283703-a	vie:def	chậm hiểu, kém về khả năng tiếp thu kiến thức
+00283703-a	vie:exe	"con bé có vẻ tối dạ"
+00290784-a	vie:lemma	lưỡng_lự
+00290784-a	vie:def	còn đang suy tính xem nên hay không nên, chưa biết quyết định như thế nào cho đúng
+00290784-a	vie:exe	"cô ấy hãy còn lưỡng lự"
+00309021-a	vie:lemma	cẩn_thận
+00309021-a	vie:def	thận trọng trong hành động hoặc lời nói của mình, tránh sơ suất, để khỏi xảy ra điều bất lợi hoặc không hay
+00309021-a	vie:exe	"cẩn thận không ngã"
+00343552-a	vie:lemma	cần_thiết
+00343552-a	vie:def	cần đến mức không thể nào không làm hoặc không có
+00343552-a	vie:exe	"tài liệu cần thiết cho công việc"
+00360650-a	vie:lemma	trong_sáng
+00360650-a	vie:def	trong và không lẫn tạp chất hoặc có phẩm chất đạo đức tốt đẹp, không bị một vết nhơ bẩn nào
+00360650-a	vie:exe	"cán bộ cần phải sống trong sạch"
+00386392-a	vie:lemma	trung_lập
+00386392-a	vie:def	đứng ở giữa hai bên đối lập, không theo hoặc không phụ thuộc vào bên nào
+00386392-a	vie:exe	"nước trung lập"
+00403385-a	vie:lemma	giàu
+00403385-a	vie:def	có nhiều hơn mức bình thường
+00403385-a	vie:exe	"thức ăn giàu chất đạm"
+00421513-a	vie:lemma	đục
+00421513-a	vie:def	có nhiều gợn nhỏ vẩn lên làm cho mờ, không trong
+00421513-a	vie:exe	"nước đục"
+00428404-a	vie:lemma	sáng_sủa
+00428404-a	vie:def	rõ ràng, rành mạch, dễ hiểu
+00428404-a	vie:exe	"trình bày sáng sủa"
+00438567-a	vie:lemma	hà_khắc
+00438567-a	vie:def	khe khắt, ác nghiệt
+00438567-a	vie:exe	"chính sách cai trị hà khắc"
+00439588-a	vie:lemma	ngu_dốt
+00439588-a	vie:def	ngu và dốt nát, không hiểu cái gì
+00439588-a	vie:exe	"hắn không phải là một tên ngu dốt"
+00441523-a	vie:lemma	yếu
+00441523-a	vie:def	có sức lực kém dưới mức bình thường hoặc có mức độ, năng lực hoặc tác dụng ít, kém so với bình thường
+00441523-a	vie:exe	"cơn bão yếu dần"
+00452605-a	vie:lemma	bí_mật
+00452605-a	vie:def	được giữ kín trong phạm vi một số ít người, không để lộ cho người ngoài biết
+00452605-a	vie:exe	"hầm bí mật"
+00558373-a	vie:lemma	hạn_chế
+00558373-a	vie:def	giữ lại, ngăn lại trong một giới hạn nhất định, không thể hoặc không để cho vượt qua
+00558373-a	vie:exe	"tầm nhìn còn hạn chế"
+00002098-a	vie:lemma	không_thể
+00002098-a	vie:def	không có, không đủ khả năng hoặc điều kiện làm việc gì, đối lập với có thể
+00002098-a	vie:exe	"không thể nhận được tiền"
+00005205-a	vie:lemma	tuyệt_đối
+00005205-a	vie:def	hoàn toàn, không có một sự hạn chế hay một trường hợp ngoại lệ nào cả
+00005205-a	vie:exe	"tuyệt đối trung thành", "tuyệt đối im lặng", "chân lý tuyệt đối"
+00015720-a	vie:lemma	lan_tràn
+00016647-a	vie:lemma	xanh_tươi
+00017024-a	vie:lemma	hiếm
+00017024-a	vie:def	rất ít có, rất ít xảy ra
+00017024-a	vie:exe	"hiếm các loại thảo mộc", "hiếm bản vá lỗi của màu xanh lá cây trong sa mạc"
+00017186-a	vie:lemma	chặt_chẽ
+00017186-a	vie:def	không để rời khỏi sự theo dõi, không buông lỏng
+00017186-a	vie:exe	"một thị trường chặt chẽ"
+00017352-a	vie:lemma	ngược_đãi
+00017352-a	vie:def	đối xử tàn tệ, ngược với đạo lí
+00017352-a	vie:exe	"một người vợ bị lạm dụng"
+00017782-a	vie:lemma	chấp_nhận_được
+00017782-a	vie:def	xứng đáng với sự chấp nhận hoặc thỏa đáng
+00017782-a	vie:exe	"mức chấp nhận được của bức xạ", "biểu diễn đa dạng từ chấp nhận tuyệt vời"
+00024834-a	vie:lemma	không quen_thuộc
+00024834-a	vie:def	lạ với lần đầu, không quen với
+00024834-a	vie:exe	"không quen thuộc để mặc bộ quần áo"
+00031974-a	vie:lemma	hoạt_động
+00031974-a	vie:def	đặc trưng bởi các hoạt động năng động
+00031974-a	vie:exe	"một em bé đang hoạt động", "hoạt động như một con linh dương", "một người đàn ông hoạt động là một người đàn ông của hành động"
+00033077-a	vie:lemma	nóng
+00033077-a	vie:def	đánh dấu bằng hoạt động kích thích trong một thời gian ngắn
+00033077-a	vie:exe	"một tuần nóng trên thị trường chứng khoán"
+00035868-a	vie:lemma	nhộn_nhịp
+00035868-a	vie:def	không khí đông vui, tấp nập, do có nhiều người qua lại hoặc cùng tham gia hoạt động
+00035868-a	vie:exe	"một thành phố nhộn nhịp"
+00036998-a	vie:lemma	chậm_chạp
+00036998-a	vie:def	có tốc độ, nhịp độ dưới mức bình thường
+00036998-a	vie:exe	"một thị trường chậm chạp"
+01841295-a	vie:lemma	chậm
+01841295-a	vie:def	không phải là đến nay cùng như bình thường trong phát triển
+01841295-a	vie:exe	"kinh tế phát triển chậm"
+00042837-a	vie:lemma	vô_hiệu
+00042837-a	vie:def	không có hiệu lực, không mang lại kết quả
+00042837-a	vie:exe	"luật này đã vô hiệu từ tháng 4"
+00044608-a	vie:lemma	ẩn
+00044608-a	vie:def	khó phát hiện
+00044608-a	vie:exe	"mặt trời ẩn trong đám mây"
+00061885-a	vie:lemma	khéo_léo
+00061885-a	vie:def	hiển thị sáng tạo và kỹ năng
+00061885-a	vie:exe	"một tiện ích thông minh", "các cuộc diễn tập xảo quyệt dẫn đến thành công của ông", "một giải pháp tài tình để vấn đề"
+00063087-a	vie:lemma	nhanh_nhạy
+00063087-a	vie:def	tinh thần nhanh nhẹn và tháo vát
+00063087-a	vie:exe	"đầu óc nhanh nhạy"
+00069948-a	vie:lemma	nghệ_thuật
+00069948-a	vie:def	đáp ứng các tiêu chuẩn thẩm mỹ và sự nhạy cảm
+00069948-a	vie:exe	"nghệ thuật tay nghề"
+00071142-a	vie:lemma	gây ấn_tượng sâu_sắc
+00073761-a	vie:lemma	căng_thẳng
+00073761-a	vie:def	thiếu tự phát, không tự nhiên
+00073761-a	vie:exe	"một nụ cười hạn chế", "buộc sự ân cần", "một nụ cười căng thẳng"
+00076580-a	vie:lemma	thô_bạo
+00076580-a	vie:def	có những hành vi, cử chỉ xúc phạm đến người khác một cách trắng trợn
+00076580-a	vie:exe	"họ đã hành động thô bạo sau khi vi phạm thứ ba"
+00079069-a	vie:lemma	e_ngại
+00079069-a	vie:def	trong sợ hãi hoặc sợ hãi của cái ác có thể hoặc gây tổn hại
+00079069-a	vie:exe	"e ngại cho cuộc sống của một người", "e sợ nguy hiểm"
+00081234-a	vie:lemma	mất bình_tĩnh
+00081234-a	vie:def	không giữ được tâm trạng ổn định
+00081234-a	vie:exe	"anh ấy bị mất bình tĩnh"
+00084795-a	vie:lemma	hung_dữ
+00084795-a	vie:def	sẵn sàng gây tai hoạ một cách đáng sợ
+00084795-a	vie:exe	"một bài phát biểu hung dư chống lại chính phủ mới"
+00085264-a	vie:lemma	kích_động
+00085264-a	vie:def	tác động mạnh đến tinh thần gây ra những xúc động mãnh liệt
+00085264-a	vie:exe	"kích động cha mẹ"
+00089051-a	vie:lemma	dễ_chịu
+00089051-a	vie:def	phù hợp với ý thích riêng hoặc cảm xúc của bạn hoặc thiên nhiên
+00089051-a	vie:exe	" một cách dễ chịu "
+00089355-a	vie:lemma	khó_chịu
+00089355-a	vie:def	không phải theo ý thích của bạn
+00089355-a	vie:exe	"một tình huống khó chịu"
+00090219-a	vie:lemma	khắc_nghiệt
+00090219-a	vie:def	mạnh khó chịu, nghiêm ngặt
+00090219-a	vie:exe	"các sự kiện khắc nghiệt của sự chậm trễ tòa án"
+00094941-a	vie:lemma	hữu_hiệu
+00094941-a	vie:def	có khả năng sống hoặc tăng trưởng bình thường và phát triển
+00094941-a	vie:exe	" vị thuốc hữu hiệu"
+00095280-a	vie:lemma	chết
+00095280-a	vie:def	mất khả năng sống, không còn có biểu hiện của sự sống
+00095280-a	vie:exe	"cây đã chết", "con số chết"
+00099290-a	vie:lemma	sống
+00099290-a	vie:def	ở trạng thái còn sống, chưa chết
+00099290-a	vie:exe	"cây vẫn còn sống"
+00100373-a	vie:lemma	vô_hồn
+00100373-a	vie:def	ở trạng thái đờ đẫn , mất hết sự  sống
+00100373-a	vie:exe	"một ánh mắt vô hồn"
+00094324-a	vie:lemma	không_thể đổi
+00094324-a	vie:def	không có khả năng được chuyển giao
+00094324-a	vie:exe	"vị trí này không thể đổi cho người khác được"
+00082160-a	vie:lemma	không hốt_hoảng
+00082160-a	vie:def	không bị ảnh hưởng bởi sợ hãi
+00082160-a	vie:exe	"anh ấy không hốt hưởng trước sự cố đó"
+00080098-a	vie:lemma	kị
+00080098-a	vie:def	không hợp nhau, không thể cùng tồn tại
+00080098-a	vie:exe	"Hai loại thức ăn này kị nhau"
+00284400-a	vie:lemma	dịu
+00284400-a	vie:def	không xuất sắc hoặc rõ ràng
+00284400-a	vie:exe	"mặt trăng đổ bóng mềm", "màu pastel mềm"
+00285506-a	vie:lemma	ghen
+00285506-a	vie:def	khó chịu, bực dọc với người được hưởng cái gì đó (thường là về tinh thần, tình cảm) hơn mình, có được cái mình muốn mà không có
+00285506-a	vie:exe	"nhìn với ánh mắt ghen "
+00286214-a	vie:lemma	khách_quan
+00286214-a	vie:def	có tính chất xuất phát từ thực tế, biểu hiện thực tế một cách trung thực, không thiên lệch
+00286214-a	vie:exe	"một thẩm định khách quan về những ưu và khuyết điểm", "con mắt khách quan của một nhà khoa học"
+00286214-a	vie:lemma	vô_tư
+00286214-a	vie:def	có tính chất xuất phát từ thực tế, biểu hiện thực tế một cách trung thực, không thiên lệch
+00286214-a	vie:exe	"một con người vô tư"
+00299476-a	vie:lemma	hỗn_tạp
+00299476-a	vie:def	không thuần nhất, gồm có nhiều thứ rất khác nhau lẫn lộn vào với nhau
+00299476-a	vie:exe	"đám đông hỗn tạp có đủ hạng người"
+00300359-a	vie:lemma	đinh tai nhức_óc
+00300359-a	vie:def	có cảm giác thính giác bị rối loạn, do tác động của âm thanh có cường độ quá mạnh
+00300359-a	vie:exe	"tiếng búa đinh tai nhức óc"
+00300359-a	vie:lemma	đinh_tai
+00300359-a	vie:def	có cảm giác thính giác bị rối loạn, do tác động của âm thanh có cường độ quá mạnh
+00300359-a	vie:exe	"tiếng búa đinh tai nhức óc"
+00300359-a	vie:lemma	nhức_óc
+00300359-a	vie:def	có cảm giác thính giác bị rối loạn, do tác động của âm thanh có cường độ quá mạnh
+00300359-a	vie:exe	"tiếng búa đinh tai nhức óc"
+00301187-a	vie:lemma	tính được
+00301187-a	vie:def	có khả năng được tính toán hoặc ước tính
+00301187-a	vie:exe	"một rủi ro tính được", "tính được tỷ lệ cược"
+00301777-a	vie:lemma	khôn_lường
+00301777-a	vie:def	khó có khả năng được tính toán hoặc liệt kê, biết trước được
+00301777-a	vie:exe	"biến hóa khôn lường"
+00304144-a	vie:lemma	hoang_dã
+00304144-a	vie:def	có tính chất tự nhiên của núi rừng, xa đời sống của xã hội loài người
+00304144-a	vie:exe	"động vật hoang dã"
+00305590-a	vie:lemma	dơ
+00305590-a	vie:def	bẩn
+00305590-a	vie:exe	"chiếc áo bị dơ"
+00310943-a	vie:lemma	quá cẩn_thận
+00310943-a	vie:def	quá nhiều hoặc quá mức cẩn thận
+00310943-a	vie:exe	"anh ta quá cẩn thận"
+00312757-a	vie:lemma	liều_lĩnh
+00312757-a	vie:def	bất chấp nguy hiểm hoặc hậu quả tai hại có thể xảy ra
+00312757-a	vie:exe	"hành động liều lĩnh"
+00325281-a	vie:lemma	thận_trọng
+00325281-a	vie:def	hiển thị cẩn thận suy tính trước
+00325281-a	vie:exe	"anh ta rất thận trọng trong công việc"
+00328528-a	vie:lemma	mạch_lạc
+00328528-a	vie:def	diễn đạt trôi trảy, mạch lạc , từng đoạn một
+00328528-a	vie:exe	"ăn nói mạch lạc"
+00339599-a	vie:lemma	yên_tâm
+00339599-a	vie:def	có niềm tin phục hồi, giải thoát khỏi sự lo lắng
+00339599-a	vie:exe	"anh cứ yên tâm mà nghỉ ngơi"
+00342488-a	vie:lemma	được chứng_nhận
+00342488-a	vie:def	có khả năng được bảo lãnh, xác nhận
+00342488-a	vie:exe	"một thực tế được chứng nhận"
+00344686-a	vie:lemma	điều_chỉnh
+00344686-a	vie:def	sửa đổi, sắp xếp lại ít nhiều cho đúng hơn, hợp lí hơn
+00344686-a	vie:exe	"lãi suất điều chỉnh"
+00355258-a	vie:lemma	không thay_đổi
+00355258-a	vie:def	không thực hiện hoặc trở thành khác nhau
+00355258-a	vie:exe	"những nguyên nhân mà họ đã sản xuất vẫn không thay đổi"
+00363291-a	vie:lemma	uyển_chuyển
+00363291-a	vie:def	có dáng điệu, đường nét mềm mại, gây cảm giác dịu dàng, ưa thích
+00363291-a	vie:exe	"dáng đi uyển chuyển"
+00364881-a	vie:lemma	xin_lỗi
+00364881-a	vie:def	xin được tha thứ vì có lỗi
+00364881-a	vie:exe	"anh ấy ngỏ lời xin lỗi"
+00404110-a	vie:lemma	sôi_động
+00404110-a	vie:def	ở trạng thái có nhiều biến động không ngừng
+00404110-a	vie:exe	"nhịp sống sôi động"
+00408445-a	vie:lemma	xanh_xao
+00408445-a	vie:def	thiếu sức sống hoặc lãi suất và hiệu quả
+00408445-a	vie:exe	"một màn biểu diễn nhạt của aria", "nhạt văn xuôi với các vị ngọt nhạt của hoa oải hương", "một hiệu suất xanh xao"
+00412460-a	vie:lemma	nhân_đạo
+00412460-a	vie:def	có tính chất thương yêu, quý trọng và vì con người
+00412460-a	vie:exe	"hiến máu nhân đạo"
+00417204-a	vie:lemma	nguyên
+00417204-a	vie:def	hông được xử lý hoặc bị phân tích
+00417204-a	vie:exe	"dữ liệu thô", "chi phí nguyên liệu sản xuất", "chỉ có số liệu thống kê quan trọng thô"
+00417413-a	vie:lemma	sạch
+00417413-a	vie:def	không có bụi bặm, rác rưởi, cáu ghét, hoặc không bị hoen ố
+00417413-a	vie:exe	"Các con có khuôn mặt sáng sạch", "sạch áo sơ mi trắng", " mèo là động vật sạch "
+00418679-a	vie:lemma	nguyên_sơ
+00418679-a	vie:def	thuộc về lúc ban đầu, lúc mới hình thành, chưa phát triển
+00418679-a	vie:exe	"trao khăn tay màu trắng nguyên sơ của mình"
+00419289-a	vie:lemma	dơ_bẩn
+00419289-a	vie:def	bẩn thỉu, xấu xa đến mức đáng ghê tởm
+00419289-a	vie:exe	"bộ mặt xấu xa , dơ bẩn"
+00421002-a	vie:lemma	thô_tục
+00421002-a	vie:def	thiếu lịch sự, thiếu tế nhị đến mức tục tằn
+00421002-a	vie:exe	"cách ăn uống thô tục"
+00422374-a	vie:lemma	tệ_hại
+00422374-a	vie:def	quá tệ và có tác dụng gây những tổn thất lớn
+00422374-a	vie:exe	"một hành động tệ hại"
+00422374-a	vie:lemma	tệ
+00422374-a	vie:def	quá tệ và có tác dụng gây những tổn thất lớn
+00422374-a	vie:exe	"một hành động tệ hại"
+00429016-a	vie:lemma	sắc_bén
+00429016-a	vie:def	có hiệu lực, có tác dụng tư tưởng mạnh mẽ
+00429016-a	vie:exe	"lập luận sắc bén"
+00429355-a	vie:lemma	dễ_hiểu
+00429355-a	vie:def	không đòi hỏi phải có nhiều điều kiện hoặc phải cố gắng nhiều mới có được, làm được hay mới đạt được kết quả
+00429355-a	vie:exe	"bài giảng dễ hiểu"
+00430041-a	vie:lemma	sống_động
+00430041-a	vie:def	sinh động, có những biểu hiện mạnh mẽ của sự sống
+00430041-a	vie:exe	"tranh vẽ rất sống động"
+00434597-a	vie:lemma	rắn
+00434597-a	vie:def	có khả năng chịu đựng được những tác động bất lợi về tâm lí mà tinh thần, tình cảm không bị ảnh hưởng
+00434597-a	vie:exe	"mặt rắn đanh"
+00435492-a	vie:lemma	nhầm_lẫn
+00435492-a	vie:def	tinh thần lẫn lộn, không thể suy nghĩ rõ ràng
+00435492-a	vie:exe	"câu trả lời nhầm lẫn"
+00437744-a	vie:lemma	hiền
+00437744-a	vie:def	không dữ, không có những hành động, những tác động gây hại cho người khác, gây cảm giác dễ chịu, không phải ngại, phải sợ khi tiếp xúc
+00437744-a	vie:exe	"tính chị ấy rất hiền"
+00438063-a	vie:lemma	quá_mức
+00438063-a	vie:def	không tha, tàn nhẫn
+00438063-a	vie:exe	"một nhà phê bình quá mức"
+00438567-a	vie:lemma	xấu_số
+00438567-a	vie:def	có số phận không may
+00438567-a	vie:exe	"đứa trẻ xấu số"
+00439588-a	vie:lemma	ngu_si
+00439588-a	vie:def	rất ngu, hầu như chẳng biết gì
+00439588-a	vie:exe	"đầu óc ngu si"
+00453308-a	vie:lemma	thân_mật
+00453308-a	vie:def	đánh dấu bởi người quen thân, hiệp hội, hoặc đã làm quen
+00453308-a	vie:exe	"người bạn thân thiết", "thân mật quan hệ giữa kinh tế, chính trị, và các nguyên tắc pháp lý"
+00469170-a	vie:lemma	phân_tách
+00469170-a	vie:def	phân ra, tách nhau ra thành những đơn vị riêng rẽ
+00469170-a	vie:exe	"quá trình phân tách"
+00473658-a	vie:lemma	dễ_cháy
+00473658-a	vie:def	dễ dàng bắt lửa
+00473658-a	vie:exe	"dầu dễ cháy"
+00473869-a	vie:lemma	gây cháy
+00473869-a	vie:def	có khả năng bắt cháy tự phát hoặc gây hoả hoạn, cháy dễ dàng
+00473869-a	vie:exe	"một tác nhân gây cháy", "quả bom gây cháy"
+00478685-a	vie:lemma	đau_đớn
+00478685-a	vie:def	gây khó chịu về thể chất
+00478685-a	vie:exe	" bị rắn cắn ,nó có thể rất đau đớn"
+00479330-a	vie:lemma	thoải_mái
+00479330-a	vie:def	ở trạng thái hoàn toàn dễ chịu, được hoạt động tự nhiên theo ý muốn, không bị gò bó, hạn chế
+00479330-a	vie:exe	"tinh thần thoải mái, vui vẻ"
+00481855-a	vie:lemma	không xứng
+00481855-a	vie:def	không tương ứng với kích thước hoặc độ hay mức độ
+00481855-a	vie:exe	"kết quả không xứng với nỗ lực của mình"
+00487653-a	vie:lemma	thường
+00487653-a	vie:def	không có gì khác lạ, không có gì đặc biệt so với số lớn những cái cùng loại
+00487653-a	vie:exe	"ngày tết cũng  như ngày thường"
+00491089-a	vie:lemma	đặc_biệt
+00491089-a	vie:def	rõ rệt khác với thông thường
+00491089-a	vie:exe	"một sở thích đặc biệt của nhồi và lắp dơi", "một người đàn ông ... cảm thấy đó là một sự xúc phạm đặc biệt được chế giễu với hèn nhát của một người phụ nữ"
+00491511-a	vie:lemma	độc_đáo
+00491511-a	vie:def	có tính chất riêng của mình, không phỏng theo những gì đã có xưa nay, không giống, không lẫn với những gì có ở người khác
+00491511-a	vie:exe	"một ý tưởng độc đáo"
+00503876-a	vie:lemma	bở
+00503876-a	vie:def	dễ tơi ra, vụn ra khi chịu tác động của lực cơ học
+00503876-a	vie:exe	"đất bở tung"
+00507292-a	vie:lemma	lãnh_đạm
+00507292-a	vie:def	không có biểu hiện tình cảm, tỏ ra không muốn quan tâm đến
+00507292-a	vie:exe	"thái độ lãnh đạm"
+00507464-a	vie:lemma	tương_thích
+00507464-a	vie:def	có thể tồn tại và thực hiện kết hợp hài hòa hoặc dễ chịu
+00507464-a	vie:exe	"một cặp vợ chồng tương thích kết hôn", "những hành động của cô đã tương thích với hệ tư tưởng của mình"
+00508480-a	vie:lemma	đối_kháng
+00508480-a	vie:def	đối lập sâu sắc, một mất một còn, không thể dung hoà được với nhau
+00508480-a	vie:exe	"mâu thuẩn đối kháng"
+00508592-a	vie:lemma	xung_đột
+00508592-a	vie:def	va chạm, chống đối nhau do mâu thuẫn gay gắt
+00508592-a	vie:exe	"xung đột lợi ích của khai thác gỗ và các nhà bảo tồn"
+00512130-a	vie:lemma	có thẩm_quyền
+00512130-a	vie:def	hợp pháp đủ điều kiện hoặc đủ
+00512130-a	vie:exe	"một tòa án có thẩm quyền", "có thẩm quyền chứng"
+00513799-a	vie:lemma	phàn_nàn
+00513799-a	vie:def	nói ra nỗi buồn bực, không vừa ý để mong có sự đồng cảm, đồng tình
+00513799-a	vie:exe	"một ông chủ phàn nàn"
+00514396-a	vie:lemma	nén
+00514396-a	vie:def	có khả năng bị nén, làm nhỏ gọn hơn
+00514396-a	vie:exe	"vật liệu đóng gói nén", "một hộp nén"
+00523068-a	vie:lemma	toàn_diện
+00523068-a	vie:def	có hoặc hiển thị tất cả các đặc tính cần thiết cho đầy đủ
+00523068-a	vie:exe	"một cuộc khủng hoảng  tài chính toàn diện "
+00522463-a	vie:lemma	triệt_để
+00522463-a	vie:def	thực hiện toàn diện và hoàn toàn
+00522463-a	vie:exe	"một cuộc cách mạng toàn diện"
+00531087-a	vie:lemma	thản_nhiên
+00531087-a	vie:def	có dáng vẻ tự nhiên như thường, coi như không có gì xảy ra
+00531087-a	vie:exe	"nét mặt nó thản nhiên"
+00534524-a	vie:lemma	khó_hiểu
+00534524-a	vie:def	không rõ ràng để hiểu biết
+00534524-a	vie:exe	"bài toán thật khó hiểu"
+00539389-a	vie:lemma	đơn_độc
+00539389-a	vie:def	chỉ riêng một mình, tách khỏi quan hệ với đồng loại
+00539389-a	vie:exe	"sống đơn độc một mình"
+00541823-a	vie:lemma	mật_độ thấp
+00541823-a	vie:def	có nồng độ thấp
+00541823-a	vie:exe	"mật độ thấp khu vực đô thị"
+00543603-a	vie:lemma	liên_quan
+00543603-a	vie:def	có mối quan hệ nào đó với nhau
+00543603-a	vie:exe	"cha mẹ có liên quan của người phạm tội trẻ trung"
+00545746-a	vie:lemma	thờ_ơ
+00545746-a	vie:def	tỏ ra lạnh nhạt, không hề quan tâm, để ý tới, không hề có chút tình cảm gì
+00545746-a	vie:exe	"thờ ơ với thời cuộc"
+00551695-a	vie:lemma	tạm_thời
+00551695-a	vie:def	không phải cuối cùng hay tuyệt đối
+00551695-a	vie:exe	"Nghị định này là tạm thời và không tuyệt đối"
+00554302-a	vie:lemma	chia_rẽ bè_phái
+00554302-a	vie:def	bất đồng (đặc biệt là ý kiến bất đồng với ý kiến đa số)
+00554302-a	vie:exe	"trong một lớp mà  chia rẽ bè phái"
+00558373-a	vie:lemma	giới_hạn
+00558373-a	vie:def	phạm vi, mức độ nhất định, không thể hoặc không được phép vượt qua
+00558373-a	vie:exe	"sức lực con người là có giới hạn"
+00560900-a	vie:lemma	hòa_đồng
+00560900-a	vie:def	thân thiện,thích nghi với môi trường mới
+00560900-a	vie:exe	"anh ta là người là hòa đồng"
+00561359-a	vie:lemma	phản_cảm
+00561359-a	vie:def	gây ra phản ứng tiêu cực, làm cho cảm thấy bực mình, khó chịu (thường nói về người thưởng thức nghệ thuật)
+00561359-a	vie:exe	"bức tranh gây phản cảm cho người xem"
+00562308-a	vie:lemma	hài_hòa
+00562308-a	vie:def	phù hợp với những thứ còn lại
+00562308-a	vie:exe	"những bộ quần áo phù hợp được hài hòa với quân đội của mình mang"
+00575126-a	vie:lemma	bảo_thủ cực_đoan
+00575126-a	vie:def	được đẩy tới mức quá đáng, tới cực độ
+00575126-a	vie:exe	"thái độ cực đoan"
+00579084-a	vie:lemma	dễ_thấy
+00579084-a	vie:def	rõ ràng bằng mắt hoặc tâm trí
+00579084-a	vie:exe	"dễ thấy cái tháp ở một khoảng cách xa"
+00579622-a	vie:lemma	nổi_tiếng
+00579622-a	vie:def	dễ thấy ở vị trí hay tầm quan trọng
+00579622-a	vie:exe	"một nhân vật lớn trong phong trào", "người đàn ông lớn tuổi trong trường", "anh ta rất lớn trong giới tài chính";
+00579881-a	vie:lemma	đậm
+00579881-a	vie:def	rõ ràng và riêng biệt
+00579881-a	vie:exe	"đậm chữ viết tay", "một nhân vật trong cứu trợ khắc đậm", "một thiết kế đậm"
+00581401-a	vie:lemma	vô_hình
+00581401-a	vie:def	không nổi bật hoặc không dễ dàng nhận thấy
+00581401-a	vie:exe	"ông đẩy chuỗi thông qua một lỗ hổng không dễ thấy", "người đàn ông vô hình"
+00582164-a	vie:lemma	không_thể nhận_rõ
+00582164-a	vie:def	khó hoặc không thể nhận thức, phân biệt
+00582164-a	vie:exe	"tăng nhiệt độ không thể nhận rõ̉"
+00582314-a	vie:lemma	phân_biệt
+00582314-a	vie:def	có khả năng được xem là khác nhau hoặc khác biệt
+00582314-a	vie:exe	"một dự án phân biệt thành bốn giai đoạn của tiến bộ", "phân biệt sự khác nhau giữa cặp song sinh "
+00586183-a	vie:lemma	phá_hủy
+00586183-a	vie:def	gây phá hủy hoặc thiệt hại nhiều
+00586183-a	vie:exe	"một chính sách sai có thể phá hoại nền kinh tế"
+00587697-a	vie:lemma	tàn_phá
+00587697-a	vie:def	phá hoại nặng nề trên một phạm vi rộng
+00587697-a	vie:exe	"cơn bão tàn phá nhiều nhá cửa"
+00589448-a	vie:lemma	tự_mãn
+00589448-a	vie:def	tự lấy làm thoả mãn về những gì mình đã đạt được, mà không cần phải cố gắng hơn nữa
+00589448-a	vie:exe	"nó tự mãn với những gì đạt được"
+00589624-a	vie:lemma	bất_mãn
+00589624-a	vie:def	không bằng lòng do không được thoả mãn điều gì đó mà tự nghĩ là mình đáng được hưởng
+00589624-a	vie:exe	"thái độ bất mãn"
+00597424-a	vie:lemma	liên_tục
+00597424-a	vie:def	tiếp nối nhau thành một quá trình không bị gián đoạn
+00597424-a	vie:exe	"quần áo thay đổi liên tục"
+00601032-a	vie:lemma	hung_hăng
+00601032-a	vie:def	có dáng vẻ sẵn sàng có những hành động thô bạo chống lại người khác
+00601032-a	vie:exe	"điệu bộ hung hăng"
+00604617-a	vie:lemma	thuận_tiện
+00604617-a	vie:def	phù hợp với sự thoải mái hay mục đích của bạn hay nhu cầu
+00604617-a	vie:exe	"một lý do thuận tiện cho không"
+00605128-a	vie:lemma	bất_tiện
+00605128-a	vie:def	không phù hợp với sự thoải mái của bạn, mục đích hoặc các nhu cầu
+00605128-a	vie:exe	"thật là bất tiện không có điện thoại trong nhà bếp", "hội trường lại là một nơi bất tiện cho điện thoại"
+00605406-a	vie:lemma	vụng
+00605406-a	vie:def	không khéo trong hoạt động chân tay, nên kết quả đạt được thường không tốt, không đẹp
+00605406-a	vie:exe	"nấu ăn vụng"
+00605893-a	vie:lemma	nhận_được
+00605893-a	vie:def	chấp nhận rộng rãi như là đúng hay xứng đáng
+00605893-a	vie:exe	"tôi vừa  nhận được ý một tưởng độc đáo"
+00607421-a	vie:lemma	thông_thường
+00607421-a	vie:def	hường có, thường thấy, không có gì lạ hoặc đặc biệt
+00607421-a	vie:exe	"đồ dùng thông thường"
+00615191-a	vie:lemma	đáng_tin_cậy
+00615191-a	vie:def	xuất hiện để xứng đáng niềm tin hoặc chấp nhận
+00615191-a	vie:exe	"một nhân chứng đáng tin cậy"
+00623261-a	vie:lemma	hoang_sơ
+00623261-a	vie:def	rất hoang dại, như ở thời sơ khai, nguyên thuỷ
+00623261-a	vie:exe	"rừng núi hoang sơ"
+00621857-a	vie:lemma	bẩn_thỉu dơ_bẩn
+00621857-a	vie:def	phi đạo đức hoặc không trung thực
+00621857-a	vie:exe	"một kế hoạch  bẩn thỉu dơ bẩn"
+00633084-a	vie:lemma	giả_dối
+00633084-a	vie:def	dựa trên một khái niệm không chính xác hoặc sai lệch, thông tin
+00633084-a	vie:exe	"giả dối hy vọng"
+00633235-a	vie:lemma	sai_lầm
+00633235-a	vie:def	phát sinh lỗi
+00633235-a	vie:exe	"một giả định sai lầm", "một quan điểm sai lầm về tình hình"
+00633235-a	vie:lemma	lầm
+00633235-a	vie:def	phát sinh lỗi
+00633235-a	vie:exe	"anh bị lầm rồi"
+00639842-a	vie:lemma	lịch_sự
+00639842-a	vie:def	đặc trưng bởi lịch sự và cách cư xử tốt duyên dáng
+00639842-a	vie:exe	"nếu một người đàn ông được duyên dáng và lịch sự với người lạ nó cho thấy ông là một công dân của thế giới"
+00640520-a	vie:lemma	đột_ngột
+00640520-a	vie:def	rất bất ngờ, hoàn toàn không có một dấu hiệu gì báo trước
+00640520-a	vie:exe	"cảm đột ngột"
+00641640-a	vie:lemma	bất_lịch_sự
+00641640-a	vie:def	không lịch_sự
+00641640-a	vie:exe	"anh ta có thái độ bất lịch sự"
+00649586-a	vie:lemma	quan_trọng
+00649586-a	vie:def	đặc trưng bởi đánh giá cẩn thận và hành án
+00649586-a	vie:exe	"một đọc quan trọng", "một luận án quan trọng", "một phân tích quan trọng của những bài viết của Melville"
+00651039-a	vie:lemma	nghiêm_trọng
+00651039-a	vie:def	ở trong tình trạng xấu đến mức trầm trọng, có nguy cơ dẫn đến những hậu quả hết sức tai hại
+00651039-a	vie:exe	"hậu quả nghiêm trọng"
+00652533-a	vie:lemma	không quan_trọng
+00652533-a	vie:def	không quan trọng
+00652533-a	vie:exe	"bài toán đó không quan trọng"
+00670635-a	vie:lemma	đáng_ghét
+00670635-a	vie:def	xứng đáng là một lời nguyền
+00670635-a	vie:exe	"hắn thật đáng ghét"
+00670741-a	vie:lemma	may_mắn
+00670741-a	vie:def	ở vào tình hình gặp được điều tốt lành
+00670741-a	vie:exe	"cô ta thật may mắn"
+00670741-a	vie:lemma	may
+00670741-a	vie:def	ở vào tình hình gặp được điều tốt lành
+00670741-a	vie:exe	"số may"
+00679147-a	vie:lemma	hỏng
+00679147-a	vie:def	hại hay bị thương hoặc hư hỏng
+00679147-a	vie:exe	"Tôi sẽ không mua hàng hoá bị hư hỏng", "cơn bão để lại một thức của các tòa nhà bị hư hỏng nặng"
+00685638-a	vie:lemma	quyết_định
+00685638-a	vie:def	đặc trưng bởi các quyết định và vững chắc
+00685638-a	vie:exe	"một khả năng và quyết định người phụ nữ trẻ", "chúng ta cần lãnh đạo quyết định", "cô ấy đã cho anh ta một câu trả lời quyết định"
+00688947-a	vie:lemma	đoan_trang
+00688947-a	vie:def	đặc trưng bởi đắn, nhân phẩm và hương vị tốt trong cách cư xử và hành
+00688947-a	vie:exe	"cô ấy là người đoan trang, dịu dàng"
+00689336-a	vie:lemma	nghiêm_trang
+00689336-a	vie:def	đặc trưng của phẩm giá và đắn
+00689336-a	vie:exe	"nét mặt nghiêm trang"
+00622935-a	vie:lemma	liêm_khiết
+00622935-a	vie:def	có phẩm chất trong sạch, không tham ô, không nhận tiền của hối lộ
+00622935-a	vie:exe	"sống liêm khiết"
+00620585-a	vie:lemma	bất_hợp_tác
+00620585-a	vie:def	không muốn hợp tác
+00620585-a	vie:exe	"một nhân chứng bất hợp tác"
+00684163-a	vie:lemma	khiêu_dâm
+00684163-a	vie:def	có hành động để kích động để không đoan hoặc ham muốn
+00684163-a	vie:exe	"vũ điệu thường trở thành khiêu dâm"
+00685924-a	vie:lemma	kiên_quyết
+00685924-a	vie:def	đặc trưng bởi các nhanh chóng và vững chắc
+00685924-a	vie:exe	"ông ta trả lời một cách dứt khoát"
+00686573-a	vie:lemma	do_dự
+00686573-a	vie:def	thiếu quyết đoán của nhân vật do dự, không thể hành động hoặc quyết định nhanh chóng hay vững
+00686573-a	vie:exe	"cô ta có tính do dự"
+00687952-a	vie:lemma	khẳng_định
+00687952-a	vie:def	tự tin tuyên bố là như vậy
+00687952-a	vie:exe	"việc khẳng định giá trị của bức tranh"
+00694608-a	vie:lemma	đánh_bại
+00694608-a	vie:def	đánh đập, khắc phục, không chiến thắng
+00694608-a	vie:exe	"kẻ thù bị đánh bại"
+00695024-a	vie:lemma	bất_khả_chiến_bại
+00695024-a	vie:def	chiến thắng
+00695024-a	vie:exe	"bất khả chiến bại trong trận chiến", "một đội bất khả chiến bại"
+00696207-a	vie:lemma	nghịch_ngợm
+00696207-a	vie:def	hay nghịch, thích nghịch
+00696207-a	vie:exe	"con bé hay nghịch ngợm"
+00696335-a	vie:lemma	ngoan_cố
+00696335-a	vie:def	khăng khăng không chịu từ bỏ ý nghĩ, hành động sai trái của mình, mặc dù bị phản đối, chống đối mạnh mẽ
+00696335-a	vie:exe	"Đại học bị đình chỉ những người biểu tình ngoan cố nhất"
+00696828-a	vie:lemma	tuân_theo
+00696828-a	vie:def	xử lý hoặc sẵn sàng để thực hiện
+00696828-a	vie:exe	"một người nào đó tuân theo thuyết phục"
+00700451-a	vie:lemma	xác_định
+00700451-a	vie:def	chính xác, rõ ràng và xác định rõ ràng
+00700451-a	vie:exe	"Tôi muốn có một câu trả lời rõ ràng", "một tuyên bố xác định của các điều khoản của sẽ"
+00703109-a	vie:lemma	chán_nản
+00703109-a	vie:def	bị ảnh hưởng hoặc đánh dấu bằng tinh thần thấp
+00703109-a	vie:exe	"cô ấy chán nản nhưng cố gắng để nhìn vui vẻ"
+00704609-a	vie:lemma	phấn_chấn
+00704609-a	vie:def	ở trạng thái hăng hái, hứng khởi do tác động của một sự việc hoặc ý nghĩ tích cực, hợp nguyện vọng
+00704609-a	vie:exe	"người chiến thắng phấn chấn"
+00709215-a	vie:lemma	yếu_đuối mỏng_manh
+00709215-a	vie:def	tinh tế dễ bị phá vỡ, hư hỏng hoặc bị phá hủy
+00709215-a	vie:exe	"cô ấy là người yếu đuối mỏng manh"
+00712004-a	vie:lemma	dễ_tính
+00712004-a	vie:def	có tính dễ dãi, không đòi hỏi nhiều để có thể hài lòng
+00712004-a	vie:exe	"một giáo viên dễ tính"
+00713351-a	vie:lemma	tuyệt_vọng
+00713351-a	vie:def	hiển thị cực kỳ khẩn cấp hoặc cường độ đặc biệt vì nhu cầu rất lớn hoặc mong muốn
+00713351-a	vie:exe	"cảm thấy một thôi thúc tuyệt vọng để thú nhận"
+00715140-a	vie:lemma	dân_chủ
+00715140-a	vie:def	đặc trưng bởi hoặc ủng hộ hoặc dựa trên các nguyên tắc của nền dân chủ hay công bằng xã hội
+00715140-a	vie:exe	"chính phủ dân chủ", "một nước dân chủ"
+00717417-a	vie:lemma	phi dân_chủ
+00717417-a	vie:def	không đồng ý với hoặc theo học thuyết dân chủ hoặc thực hành hay lý tưởng
+00717417-a	vie:exe	"các công đoàn đã phá vỡ các thủ tục qua phi dân chủ của mình"
+00724397-a	vie:lemma	chắc_chắn
+00724397-a	vie:def	đáng tin cậy trong hoạt động hoặc hiệu ứng
+00724397-a	vie:exe	"một biện pháp khắc phục nhanh chóng và chắc chắn", "một cách chắc chắn để phân biệt hai", "bụi gỗ là một dấu hiệu chắc chắn của mối"
+00726317-a	vie:lemma	bất_lực
+00726317-a	vie:def	không thể quản lý độc lập
+00726317-a	vie:exe	"bất lực như một em bé"
+00732960-a	vie:lemma	mong_muốn
+00732960-a	vie:def	giá trị có hoặc tìm kiếm hoặc đạt được
+00732960-a	vie:exe	"một công việc mong muốn","một kết quả mong muốn"
+00736299-a	vie:lemma	đổ_nát
+00736299-a	vie:def	đưa đến hủy hoại
+00736299-a	vie:exe	"sau cuộc cách mạng quý tộc đã đổ nát"
+00737116-a	vie:lemma	đắm
+00737116-a	vie:def	bị phá hủy trong một tai nạn
+00737116-a	vie:exe	"một con tàu đắm", "một xa lộ đầy đủ của chiếc xe đắm"
+00737432-a	vie:lemma	bảo_tồn
+00737432-a	vie:def	bảo vệ khỏi tác hại, mất mát
+00737432-a	vie:exe	"di tích lịch sử cần được bảo tồn"
+00738829-a	vie:lemma	phát_hiện
+00738829-a	vie:def	có khả năng được xác định chắc chắn hoặc phát hiện ra"
+00738829-a	vie:exe	"một đại dương nữa được phát hiện"
+00741076-a	vie:lemma	quyết_tâm
+00741076-a	vie:def	quyết và cố gắng thực hiện bằng được điều đã định, tuy biết là có nhiều khó khăn, trở ngại
+00741076-a	vie:exe	"quyết tâm tăng trưởng"
+00745858-a	vie:lemma	gian_khổ
+00745858-a	vie:def	khó khăn để thực hiện, đòi hỏi nỗ lực đáng kể về tinh thần và kỹ năng
+00745858-a	vie:exe	"công việc gian khổ của việc chuẩn bị một từ điển"
+00746994-a	vie:lemma	nhạy_cảm
+00746994-a	vie:def	khó khăn để xử lý
+00746994-a	vie:exe	đòi hỏi lớn nguyên vẹn; "một chủ đề nhạy cảm"
+00747226-a	vie:lemma	trục_trặc
+00747226-a	vie:def	thất thường khó khăn trong hoạt động, có thể bị phiền hà
+00747226-a	vie:exe	"tên lửa bị nhiều quá trục trặc sẽ được thử nghiệm gần khu vực dân cư dày đặc", "thành phần trục trặc của hệ thống truyền thông"
+00748947-a	vie:lemma	cố_gắng
+00748947-a	vie:def	bỏ công sức ra nhiều hơn mức bình thường để làm việc g
+00748947-a	vie:exe	"giảm khi lần cố gắng"
+00749040-a	vie:lemma	bực_bội
+00749040-a	vie:def	gây khó khăn trong việc tìm kiếm một câu trả lời hay giải pháp, nhiều tranh chấp
+00749040-a	vie:exe	"bực bội vấn đề ưu tiên"
+00751525-a	vie:lemma	nghiêm
+00751525-a	vie:def	có hay thể hiện nhân phẩm, đặc biệt là hình thức hoặc stateliness ở mang hoặc xuất hiện
+00751525-a	vie:exe	"thái độ trang nghiêm của mình", "giám đốc của trường đã được một mái tóc trắng trang nghiêm quý ông"
+00752847-a	vie:lemma	ngớ_ngẩn
+00752847-a	vie:def	cảm hứng khinh thương hại
+00752847-a	vie:exe	"một cách trả lời ngớ ngẩn"
+00754873-a	vie:lemma	cẩu_thả
+00754873-a	vie:def	đặc trưng bởi quá đáng, bỏ bê, thiếu quan tâm
+00754873-a	vie:exe	"cha mẹ cẩu thả", "cẩu thả của các chi tiết", "cẩu thả trong thư của mình"
+00757923-a	vie:lemma	tập_trung
+00757923-a	vie:def	dồn sức hoạt động, hướng các hoạt động vào một việc gì
+00757923-a	vie:exe	"tập trung tư tưởng"
+00509206-a	vie:lemma	không tương_thích
+00509206-a	vie:def	không có khả năng được sử dụng hoặc kết nối với các thiết bị khác hoặc các thành phần mà không sửa đổi
+00509206-a	vie:exe	"phần mềm không tương thích với linux"
+00513165-a	vie:lemma	không cạnh_tranh
+00513165-a	vie:def	tranh đua nhau để giành lấy lợi ích về phía mình, giữa những người, những tổ chức có cùng lĩnh vực hoạt động như nhau
+00513165-a	vie:exe	"không cạnh tranh vị trí", "không cạnh tranh lãi suất trong các trò chơi"
+00514717-a	vie:lemma	không nén được
+00514717-a	vie:def	không có khả năng bị nén, chịu nén
+00514717-a	vie:exe	"đống rác không nén được"
+00553899-a	vie:lemma	không cân_đối
+00553899-a	vie:def	không đồng ý hoặc sự hòa hợp
+00553899-a	vie:exe	"không cân đối quan điểm với những ý tưởng hiện nay"
+00759169-a	vie:lemma	lịch_thiệp
+00759169-a	vie:def	tỏ ra biết cách giao thiệp, làm vừa lòng người tiếp xúc với mình
+00759169-a	vie:exe	"cách cư xử lịch thiệp"
+00760783-a	vie:lemma	xa_lánh
+00760783-a	vie:def	gây ra sự thù địch hoặc mất thân thiện
+00760783-a	vie:exe	"chị ấy hay xa lánh tôi"
+00764301-a	vie:lemma	vô_tội_vạ
+00764301-a	vie:def	thẳng thắn trực tiếp và thẳng thắn nhưng, tốt bụng
+00764301-a	vie:exe	"làm một cách vô tội vạ"
+00764484-a	vie:lemma	thẳng
+00764484-a	vie:def	không kiêng nể, không che giấu, không úp mở, dám nói lên sự thật hoặc nói đúng những điều mình nghĩ
+00764484-a	vie:exe	"nói thẳng"
+00765173-a	vie:lemma	tàn_bạo
+00765173-a	vie:def	độc ác và hung bạo
+00765173-a	vie:exe	"cách đối xử tàn bạo chưa từng thấy"
+00771373-a	vie:lemma	sành_điệu
+00771373-a	vie:def	có hoặc tiết lộ cái nhìn sắc bén và sự phán đoán tốt
+00771373-a	vie:exe	"một nhà phê bình sành điệu", "một người đọc sành điệu"
+00771803-a	vie:lemma	sáng_suốt
+00771803-a	vie:def	có khả năng nhận thức đúng đắn, giúp giải quyết vấn đề một cách tỉnh táo, không sai lầm
+00771803-a	vie:exe	"đầu óc sáng suốt"
+00772910-a	vie:lemma	kín_đáo
+00772910-a	vie:def	đánh dấu bằng sự khiêm tốn và thận trọng hoặc tự kiềm chế khôn ngoan
+00772910-a	vie:exe	"trợ lý tin cậy kín đáo của mình"
+00773579-a	vie:lemma	phân_biệt đối_xử
+00773579-a	vie:def	đánh dấu bằng khả năng nhìn thấy hoặc làm cho sự phân biệt tiền phạt
+00773579-a	vie:exe	"bản án phân biệt đối xử"
+00773759-a	vie:lemma	bừa_bãi
+00773759-a	vie:def	không có trật tự, không kể gì trật tự
+00773759-a	vie:exe	"thói quen đọc bừa bãi", "một hỗn hợp bừa bãi của màu sắc và phong cách"
+00774006-a	vie:lemma	lăng_nhăng
+00774006-a	vie:def	đủ các thứ bất kì, tuỳ tiện và chẳng có giá trị gì
+00774006-a	vie:exe	"hắn viết lăng nhăng trên giấy"
+00774676-a	vie:lemma	đánh_giá cao
+00774676-a	vie:def	có hay trân trọng hay một phán quyết thuận lợi quan trọng hoặc ý kiến
+00774676-a	vie:exe	"đánh giá cao về một phong cảnh đẹp", "một tiếng cười tán thưởng từ phía khán giả"
+00775693-a	vie:lemma	chọn_lọc
+00775693-a	vie:def	chăm sóc để chọn, đặc trưng bởi sự lựa chọn cẩn thận
+00775693-a	vie:exe	"một đầu đọc đặc biệt nhanh chóng và chọn lọc"
+00785889-a	vie:lemma	không rời_rạc
+00785889-a	vie:def	không chia, chia thành nhiều phần
+00785889-a	vie:exe	"các lớp đã được hợp nhất thành một khối không rời rạc"
+00787136-a	vie:lemma	độc_đoán
+00787136-a	vie:def	dùng quyền của mình mà định đoạt công việc theo ý riêng, bất chấp ý kiến của những người khác
+00787136-a	vie:exe	"quyết định độc đoán"
+00788032-a	vie:lemma	bắt_nạt
+00788032-a	vie:def	cậy quyền thế, sức mạnh mà doạ dẫm làm cho phải sợ
+00788032-a	vie:exe	"bắt nạt trẻ con"
+00788821-a	vie:lemma	phục_tùng
+00788821-a	vie:def	tuân theo, không làm trái lại
+00788821-a	vie:exe	"công chức phục tùng"
+00791131-a	vie:lemma	không_phục
+00791131-a	vie:def	không làm theo hoặc không phục tùng
+00791131-a	vie:exe	"tôi không phục anh"
+00792476-a	vie:lemma	sở_hữu
+00792476-a	vie:def	có hoặc hiển thị một mong muốn kiểm soát hoặc chi phối
+00792476-a	vie:exe	"cha mẹ sở hữu"
+00795078-a	vie:lemma	khoa_trương
+00795078-a	vie:def	có hứng thú và hấp dẫn về cảm xúc của câu chuyện cường điệu
+00795078-a	vie:exe	"anh ta có tính khoa trương"
+00796591-a	vie:lemma	sặc_sỡ
+00796591-a	vie:def	có nhiều màu sắc sáng, chói xen lẫn nhau
+00796591-a	vie:exe	"quần áo sặc sỡ"
+00799517-a	vie:lemma	tỉnh_táo
+00799517-a	vie:def	ở trạng thái tỉnh, không buồn ngủ, không say, không mê
+00799517-a	vie:exe	"người bệnh đã hoàn toàn tỉnh táo"
+00804695-a	vie:lemma	sinh_động
+00804695-a	vie:def	đầy đủ của cuộc sống và năng lượng
+00804695-a	vie:exe	"khu vườn sinh động"
+00805566-a	vie:lemma	mát_mẻ
+00805566-a	vie:def	át, có vẻ như nhẹ nhàng nhưng thật ra là có ý mỉa mai, chê trách, hờn dỗi
+00805566-a	vie:exe	"buông lời mát mẻ"
+00805810-a	vie:lemma	lấp_lánh
+00805810-a	vie:def	có ánh sáng phản chiếu không liên tục, nhưng đều đặn, vẻ sinh động
+00805810-a	vie:exe	"mắt sáng lấp lánh"
+00810636-a	vie:lemma	lạc_hậu
+00810636-a	vie:def	có ít hơn tiến độ bình thường
+00810636-a	vie:exe	"một đất nước lạc hậu về kinh tế"
+00810916-a	vie:lemma	ham
+00810916-a	vie:def	có hoặc hiển thị quan tâm hoặc mong muốn mãnh liệt hay thọ thiếu kiên nhẫn
+00810916-a	vie:exe	"ham học"
+00821959-a	vie:lemma	danh_dự
+00821959-a	vie:def	cho là một vinh dự mà không có những nhiệm vụ bình thường
+00821959-a	vie:exe	"một bằng danh dự"
+00822115-a	vie:lemma	dễ_dàng
+00822115-a	vie:def	có vẻ dễ, không đòi hỏi nhiều điều kiện, nhiều công phu
+00822115-a	vie:exe	"làm ăn dễ dàng"
+00830717-a	vie:lemma	ít_học
+00830717-a	vie:def	không có một nền giáo dục tốt
+00830717-a	vie:exe	"người thiểu số thường ít học"
+00834048-a	vie:lemma	không_còn tồn_tại
+00834048-a	vie:def	không còn hiệu lực, sử dụng, không hoạt động
+00834048-a	vie:exe	"một luật không còn tồn tại", "một tổ chức không còn tồn tại"
+00837977-a	vie:lemma	vất_vả
+00837977-a	vie:def	ở vào tình trạng phải bỏ ra nhiều sức lực hay tâm trí vào một việc gì trong một thời gian dài
+00837977-a	vie:exe	"người nông dân quanh năm vất vả"
+00841403-a	vie:lemma	mạnh_mẽ
+00841403-a	vie:def	đặc trưng bởi hoặc toàn bộ lực hoặc sức mạnh (thường nhưng không nhất thiết thể chất)
+00841403-a	vie:exe	"một người mạnh mẽ"
+00848074-a	vie:lemma	bắt_buộc
+00848074-a	vie:def	về mặt đạo đức hay pháp lý ràng buộc hay bắt buộc
+00848074-a	vie:exe	"tại nhà là bắt buộc", "một đóng góp bắt buộc"
+00851744-a	vie:lemma	đủ_điều_kiện
+00851744-a	vie:def	đủ tiêu chuẩn hoặc cho phép hoặc xứng đáng được chọn
+00851744-a	vie:exe	"đủ điều kiện để chạy cho các văn phòng", "hội đủ điều kiện cho phúc lợi hưu trí", "một cử nhân đủ điều kiện"
+00852197-a	vie:lemma	xứng_đáng
+00852197-a	vie:def	xứng đáng là lựa chọn đặc biệt là khi một người phối ngẫu
+00852197-a	vie:exe	"các bậc cha mẹ thấy các cô gái thích hợp cho con trai của họ"
+00854255-a	vie:lemma	cảm
+00854255-a	vie:def	đặc trưng bởi cảm xúc
+00854255-a	vie:exe	"cảm thấy lạnh"
+00858558-a	vie:lemma	kiên_nhẫn
+00858558-a	vie:def	có khả năng tiếp tục làm việc đã định một cách bền bỉ, không nản lòng, mặc dù thời gian kéo dài, kết quả còn chưa thấy
+00858558-a	vie:exe	"kiên nhẫn chờ đợi"
+00864693-a	vie:lemma	thất_nghiệp
+00864693-a	vie:def	không tham gia vào một nghề nghiệp nào
+00864693-a	vie:exe	"công nhân thất nghiệp đã tuần hành về thủ đô"
+00865620-a	vie:lemma	say_mê
+00865620-a	vie:def	đầy ngạc nhiên và thích thú
+00865620-a	vie:exe	"cô ta thực sự say mê bộ phim"
+00866047-a	vie:lemma	thất_vọng
+00866047-a	vie:def	mất hết hi vọng, không còn trông mong gì được nữa
+00866047-a	vie:exe	"cô ấy lắc đầu thất vọng"
+00866392-a	vie:lemma	vỡ_mộng
+00866392-a	vie:def	giải thoát khỏi ảo tưởng
+00866392-a	vie:exe	"thất bại làm cô ấy vỡ mộng"
+00876465-a	vie:lemma	lơ_đãng
+00876465-a	vie:def	thiếu niềm say mê hoặc sự lanh lẹ
+00876465-a	vie:exe	"ông đã lơ đãng và chán"
+00883830-a	vie:lemma	tối_giản
+00883830-a	vie:def	không có khả năng được thực hiện nhỏ hơn hoặc đơn giản
+00883830-a	vie:exe	"một tối thiểu tối giản", "một công thức tối giản"
+00884007-a	vie:lemma	giác_ngộ
+00884007-a	vie:def	hiểu ra hoặc làm cho hiểu ra lẽ phải trái
+00884007-a	vie:exe	"giác ngộ cách mạng"
+00885415-a	vie:lemma	không gan_dạ
+00885415-a	vie:def	không dám mạo hiểm
+00885415-a	vie:exe	"anh ấy không gan dạ"
+00885695-a	vie:lemma	nhiệt_tình
+00885695-a	vie:def	có hay thấy hứng thú và quan tâm rất lớn
+00885695-a	vie:exe	"đám đông đầy nhiệt tình đường phố", "một phản ứng nhiệt tình"
+00888765-a	vie:lemma	ganh_tị
+00888765-a	vie:def	khó chịu, bực dọc với người được hưởng cái gì đó (thường là về tinh thần, tình cảm) hơn mình, có được cái mình muốn mà không có
+00888765-a	vie:exe	"ghen ăn với em"
+00889239-a	vie:lemma	nhớ_nhà
+00889239-a	vie:def	khao khát trở về nhà
+00889239-a	vie:exe	"tuy xa nhà chưa lâu nhưng cô rất nhớ nhà"
+00899612-a	vie:lemma	phức_tạp
+00899612-a	vie:def	đòi hỏi kiến thức bí mật hay bí ẩn
+00899612-a	vie:exe	"các nghiên cứu khoa học phức tạp của Cảm xạ"
+00904163-a	vie:lemma	tôn_kính
+00904163-a	vie:def	xứng đáng tôn trọng hoặc đối cao
+00904163-a	vie:exe	"các vị thần rất được tôn kính"
+00904548-a	vie:lemma	khinh
+00904548-a	vie:def	đáng khinh miệt hoặc khinh miệt
+00904548-a	vie:exe	"hành động thật đáng  khinh"
+00905181-a	vie:lemma	thương_tâm
+00905181-a	vie:def	cảm hứng pha trộn sự khinh thường và thương hại
+00905181-a	vie:exe	"những nỗ lực của họ đã được thảm hại", "thiếu nhân vật đáng thương"
+00905386-a	vie:lemma	đạo_đức
+00905386-a	vie:def	phù hợp với tiêu chuẩn được chấp nhận hành vi xã hội hoặc chuyên nghiệp
+00905386-a	vie:exe	"một luật sư có đạo đức", "đạo đức hành nghề y", "một vấn đề đạo đức", "đã không phản đối đạo đức để uống"; " Chúng ta là một thế giới của người khổng lồ hạt nhân và trẻ sơ sinh có đạo đức " Omar N. Bradley
+00905905-a	vie:lemma	miễn_phí
+00905905-a	vie:def	truyền đạt hay giống như một lời khen
+00905905-a	vie:exe	"uống trà miễn phí"
+00906312-a	vie:lemma	ca_ngợi
+00906312-a	vie:def	đầy đủ hoặc cho lời khen ngợi
+00906312-a	vie:exe	"ca ngợi những người anh hùng đã hi sinh cho dân tộc"
+00907032-a	vie:lemma	chê_bai
+00907032-a	vie:def	tỏ lời chê
+00907032-a	vie:exe	"lên tiếng chê bai"
+00912814-a	vie:lemma	loang_lổ
+00912814-a	vie:def	không đều hoặc không đồng đều trong kết cấu, chất lượng
+00912814-a	vie:exe	"sương mù loang lổ"
+00919984-a	vie:lemma	điên
+00919984-a	vie:def	sở hữu bởi sự phấn khích quá mức
+00919984-a	vie:exe	"đám đông điên"
+00923993-a	vie:lemma	khiển_trách
+00923993-a	vie:def	phê phán nghiêm khắc khuyết điểm của cấp dưới
+00923993-a	vie:exe	"hắn bị khiển trách vì thiếu tinh thần trách nhiệm"
+00925560-a	vie:lemma	cạn_kiệt
+00925560-a	vie:def	cạn sạch, đến mức không còn tìm đâu, lấy đâu ra nữa
+00925560-a	vie:exe	"nguyên liệu cạn kiệt"
+00925820-a	vie:lemma	tái_tạo
+00925820-a	vie:def	có khả năng được gia hạn, thay thế
+00925820-a	vie:exe	"năng lượng tái tạo như năng lượng mặt trời là vô tận về mặt lý thuyết"
+00932695-a	vie:lemma	tiêu_hao
+00932695-a	vie:def	giảm chi tiêu
+00932695-a	vie:exe	"tiêu hao năng lượng"
+00933154-a	vie:lemma	đắt
+00933154-a	vie:def	cao giá hoặc sạc giá cao
+00933154-a	vie:exe	"quần áo đắt tiền", "một cửa hàng đắt tiền"
+00938659-a	vie:lemma	hợp_lệ
+00938659-a	vie:def	vẫn hợp pháp chấp nhận được
+00938659-a	vie:exe	"giấy phép còn hợp lệ"
+00946499-a	vie:lemma	mở_rộng
+00946499-a	vie:def	có thể hoặc có xu hướng mở rộng hoặc đặc trưng bởi sự mở rộng
+00946499-a	vie:exe	"mở rộng các vật liệu", "các lực lượng mở rộng của lửa"
+00958151-a	vie:lemma	công_bằng
+00958151-a	vie:def	công bằng cho tất cả các bên như là quyết định bởi lý trí và lương tâm
+00958151-a	vie:exe	"công bằng điều trị của tất cả các công dân", "một phân phối công bằng của các quà tặng trong số các trẻ em"
+00958475-a	vie:lemma	trung_thực
+00958475-a	vie:def	đã đạt được hoặc kiếm được mà không có gian lận hoặc trộm cắp
+00958475-a	vie:exe	"một mức lương trung thực", "một đồng xu công bằng"
+00958712-a	vie:lemma	bất_công
+00958712-a	vie:def	không công bằng
+00958712-a	vie:exe	"việc phân chia không công bằng của cải", "không công bằng thuế"
+00958880-a	vie:lemma	trung_thành
+00958880-a	vie:def	kiên định trong tình cảm hay lòng trung thành
+00958880-a	vie:exe	"năm phục vụ trung thành", "trung thành nhân viên", "chúng tôi không nghi ngờ rằng nước Anh có một người yêu nước trung thành trong Chancellor Chúa"
+00959731-a	vie:lemma	chung_thủy
+00959731-a	vie:def	không đúng với nhiệm vụ hoặc nghĩa vụ hoặc hứa hẹn
+00959731-a	vie:exe	"một người yêu  không chung thủy"
+00959979-a	vie:lemma	bỏ_đạo
+00959979-a	vie:def	không trung thành với tôn giáo hoặc bên gây ra
+00959979-a	vie:exe	"anh ta mang tiếng bỏ đạo"
+00960094-a	vie:lemma	nguy_hiểm
+00960094-a	vie:def	có thể gây hại lớn
+00960094-a	vie:exe	"quả bom nguy hiểm"
+00960481-a	vie:lemma	không đúng sự_thật
+00960481-a	vie:def	không đúng với một nghĩa vụ hay sự tin tưởng
+00960481-a	vie:exe	"là không đúng sự thật để có cơ hội cao nhất và nhiệm vụ của mình" Bruno Laske
+00963502-a	vie:lemma	chịu_nổi
+00963502-a	vie:def	bao gồm hoặc đặc điểm, kích động bạo loạn
+00963502-a	vie:exe	"hành vi thể chịu nổi", "chịu nổi ý nghĩ", "một bài phát biểu thể chịu nổi"
+00964303-a	vie:lemma	lang_thang
+00964303-a	vie:def	đi lạc từ các khóa học phải hoặc từ các tiêu chuẩn được chấp nhận
+00964303-a	vie:exe	"trẻ lang thang"
+00966477-a	vie:lemma	lạ
+00966477-a	vie:def	không được biết đến hoặc biết đến
+00966477-a	vie:exe	"một cái tên xa lạ với hầu hết", "cảnh giác vào ban đêm đặc biệt là trong môi trường xung quanh không quen thuộc"
+00968730-a	vie:lemma	kỳ_lạ
+00968730-a	vie:def	nổi bật lạ hay bất thường
+00968730-a	vie:exe	"một kiểu tóc kỳ lạ", "proton, neutron, điện tử và tất cả các biến thể lạ", "cảnh quan kỳ lạ của một hành tinh chết"
+00983862-a	vie:lemma	khó_tính
+00983862-a	vie:def	cho sự chú ý cẩn thận đến từng chi tiết, khó lòng, quá quan tâm đến sự sạch sẽ
+00983862-a	vie:exe	"một trí thức khó tính và sắc bén", "khó tính về vệ sinh cá nhân"
+00990855-a	vie:lemma	mảnh_dẻ
+00990855-a	vie:def	gầy và mảnh, trông có vẻ yếu
+00990855-a	vie:exe	"dáng người mảnh dẻ"
+01000881-a	vie:lemma	khổ_sở
+01000881-a	vie:def	đau đớn và cực khổ
+01000881-a	vie:exe	"một lời nhận xét khổ sở"
+01001180-a	vie:lemma	vớ_vẩn
+01001180-a	vie:def	chẳng có nghĩa lí gì, chẳng có tác dụng gì thiết thực
+01001180-a	vie:exe	"toàn những thứ vớ vẩn"
+01001547-a	vie:lemma	bất_hạnh
+01001547-a	vie:def	không may gặp phải điều rủi ro, làm cho đau khổ
+01001547-a	vie:exe	"đứa trẻ bất hạnh"
+02395115-a	vie:lemma	ngon
+02395115-a	vie:def	đẹp lòng ý thức hương vị
+02395115-a	vie:exe	"một miếng ngon"
+02423432-a	vie:lemma	gọn_gàng
+02423432-a	vie:def	tỏ ra chu đáo trong thực hiện
+02423432-a	vie:exe	"gọn gàng bài tập ở nhà", "chữ viết tay gọn gàng"
+02423284-a	vie:lemma	trật_tự
+02423284-a	vie:def	sạch hoặc tổ chức
+02423284-a	vie:exe	"ăn mặc gọn gàng của cô", "một căn phòng gọn gàng"
+02418538-a	vie:lemma	không_thể_tưởng_tượng
+02418872-a	vie:lemma	chu_đáo
+02418872-a	vie:def	triển lãm hoặc được đặc trưng bởi suy nghĩ cẩn thận
+02418872-a	vie:exe	"một giấy chu đáo"
+02421003-a	vie:lemma	vô_tâm
+02422685-a	vie:lemma	ngăn_nắp
+02422685-a	vie:def	đánh dấu theo thứ tự và sạch sẽ trong xuất hiện hoặc thói quen
+02422685-a	vie:exe	"một người ngăn nắp", "một ngôi nhà sạch sẽ", "một tâm ngăn nắp"
+02427087-a	vie:lemma	chỉnh_tề
+02427087-a	vie:def	gọn gàng và thông minh trong hình
+02427087-a	vie:exe	chăm sóc tốt, "người quản lý là một người đàn ông trẻ đẹp ăn mặc chỉnh tề", "con ngựa của ông là luôn luôn sạch sẽ"
+02425220-a	vie:lemma	bù_xù
+02425220-a	vie:def	trong tình trạng lộn xộn
+02425220-a	vie:exe	cực kỳ hỗn loạn "quần áo của cô đã bị nhăn nhíu", "bôi bột và frowzled", "một giường bị làm nhăn nhúm "," một chiếc giường với tấm rối bù "," tóc nâu của ông đã được làm rối, dày, và xoăn "
+02425529-a	vie:lemma	lộn_xộn
+02425529-a	vie:def	trong rối loạn hoàn toàn
+02425529-a	vie:exe	"một đống quần áo bừa bãi"
+02426042-a	vie:lemma	bừa_bộn
+02426042-a	vie:def	dơ bẩn và mất trật tự
+02426042-a	vie:exe	"một phòng ngủ quấy khóc bừa bộn", "thói quen ăn uống lộn xộn của một đứa trẻ"
+02435671-a	vie:lemma	không chịu_đựng được
+02435671-a	vie:def	không có khả năng được đưa lên với
+02435671-a	vie:exe	"một mức độ không thể chấp nhận của tình cảm"
+02435901-a	vie:lemma	cay_đắng
+02435901-a	vie:def	rất khó khăn để chấp nhận hoặc chịu
+02435901-a	vie:exe	"sự thật cay đắng", "một nỗi buồn cay đắng"
+02436341-a	vie:lemma	chịu
+02450640-a	vie:lemma	không độc
+02451951-a	vie:lemma	khó
+02451951-a	vie:def	không dễ làm, khó quản lý hoặc nấm mốc
+02451951-a	vie:exe	"một khuynh hướng khó chữa", "khó chữa đau", "vấn đề khó nhất của thời đại chúng ta", "khó chữa kim loại"
+02455845-a	vie:lemma	quấy_rầy
+02455845-a	vie:def	rắc rối liên tục đặc biệt là với các phiền toái nhỏ
+02455845-a	vie:exe	"quấy nhiễu bà mẹ làm việc", "một biểu hiện quấy rầy", "nghèo cha quấy rầy cô ấy đã phải chịu đựng gián đoạn liên tục của cô "," sự bực bội cha mẹ của một thiếu niên ngang bướng "
+02458871-a	vie:lemma	khổ
+02458871-a	vie:def	rắc rối bởi đau đớn hay mất mát
+02458871-a	vie:exe	"những người tị nạn đau khổ"
+02459109-a	vie:lemma	thanh_thản
+02459109-a	vie:def	không gặp phải khó khăn, rối loạn suy hay
+02459109-a	vie:exe	"có vẻ thanh thản bởi sự nghi ngờ của loại nào", "giấc ngủ thanh thản", "một loại mặt thanh thản"
+02462089-a	vie:lemma	gian_dối
+02462089-a	vie:def	cố ý sai sự thật
+02462089-a	vie:exe	"một tuyên bố gian dối"
+02464277-a	vie:lemma	cảnh_giác
+02465978-a	vie:lemma	tin_cậy
+02465978-a	vie:def	(của người) xứng đáng với sự tin tưởng hoặc sự tự tin
+02465978-a	vie:exe	"một người bạn chắc chắn (hoặc đáng tin cậy)"
+02469928-a	vie:lemma	không điển_hình
+02469928-a	vie:def	không phải đại diện của một lớp, nhóm, hoặc các loại
+02469928-a	vie:exe	"một nhóm đó là điển hình của các đối tượng mục tiêu", "một lớp học của rêu không điển hình", "hành vi không điển hình là không phải là loại được chấp nhận của các phản ứng mà chúng ta mong đợi ở trẻ em "
+02488304-a	vie:lemma	cao_cấp
+02488304-a	vie:def	thích hợp cho người có thu nhập tốt
+02488304-a	vie:exe	"một khu phố cao cấp", "một nhà trọ cao cấp"
+02497141-a	vie:lemma	vô_dụng
+02497141-a	vie:def	không có sử dụng có lợi hoặc không có khả năng hoạt động hữu ích
+02497141-a	vie:exe	"một nhà bếp đầy đủ các tiện ích vô dụng", "cô ấy là vô ích trong trường hợp khẩn cấp"
+02497743-a	vie:lemma	vô_ích
+02497743-a	vie:def	không có giá trị sử dụng
+02497743-a	vie:exe	"làm một công việc vô ích"
+02497013-a	vie:lemma	dùng được
+02497013-a	vie:def	có khả năng được đưa vào sử dụng lợi nhuận hoặc một thực tế
+02497013-a	vie:exe	"hệ thống này có thể ứng dụng vào thực tế"
+02499750-a	vie:lemma	không hợp_lệ
+02499750-a	vie:def	không có khẩn cấp hoặc hiệu lực pháp luật
+02499750-a	vie:exe	"lý luận không hợp lệ", "bằng lái hợp lệ của"
+02502163-a	vie:lemma	vô_giá_trị
+02502163-a	vie:def	thiếu tính hữu dụng hoặc giá trị
+02502163-a	vie:exe	"một người lười biếng vô giá trị"
+02502994-a	vie:lemma	vặt
+02502994-a	vie:def	không có giá trị xem xét
+02502994-a	vie:exe	"ông coi là giải thưởng quá ít ỏi cho cuộc sống thì phải chi phí"
+02503305-a	vie:lemma	vô_nghĩa
+02503305-a	vie:def	không phục vụ mục đích hữu ích, không có lý do gì để được
+02503305-a	vie:exe	" một lời nhận xét vô nghĩa "
+02513614-a	vie:lemma	vô_tội
+02513614-a	vie:def	không phạm tội
+02513614-a	vie:exe	"người dân vô tội"
+02513740-a	vie:lemma	ác
+02513740-a	vie:def	về mặt đạo đức xấu về nguyên tắc hành nghề
+02513740-a	vie:exe	"Một người hành nghề độc ác"
+02531243-a	vie:lemma	nồng_nhiệt
+02531243-a	vie:def	hiển thị thân thiện ấm áp và chân thành
+02531243-a	vie:exe	"đã cho chúng tôi một buổi tiếp tân thân mật", "một nồng nhiệt chào đón"
+02527489-a	vie:lemma	mong_mỏi
+02527489-a	vie:def	rất mong muốn
+02527489-a	vie:exe	"bà mẹ mong mỏi đứa con trở về"
+02539968-a	vie:lemma	hoan_nghênh
+02539968-a	vie:def	cho niềm vui hay sự hài lòng hoặc nhận với niềm thích thú hoặc tự do
+02539968-a	vie:exe	"giảm bớt gánh nặng", "một vị khách được hoan nghênh", "làm các em cảm thấy được hoan nghênh", "bạn được hoan nghênh tham gia chúng ta "
+02541012-a	vie:lemma	bình_phục
+02541012-a	vie:def	giải thoát khỏi bệnh tật hoặc chấn thương
+02541012-a	vie:exe	"bệnh nhân khỏi bệnh xuất hiện", "vết mổ lành", "dường như là hoàn toàn bình phục", "khi bị thu hồi bệnh nhân sẽ cố gắng để nhớ những gì xảy ra trong mê sảng của ông " Cameron Normon
+02543324-a	vie:lemma	bị viêm cuống_phổi
+02543324-a	vie:def	bị hoặc dễ bị viêm phế quản
+02543324-a	vie:exe	"Viêm họng lâu ngày có thể dẫn tới viêm cuống phổi"
+02544048-a	vie:lemma	chóng_mặt
+02544048-a	vie:def	có hoặc gây ra một cảm giác quay cuồng, chịu rơi
+02544048-a	vie:exe	"đã có một lỗi chính tả chóng mặt", "một đỉnh cao chóng mặt", "bị đau đầu và cảm thấy ham chơi "," một bờ vực, ham chơi "," cảm giác woozy từ thổi trên đầu "," một lên cao chóng mặt lên mặt vách đá "
+02545023-a	vie:lemma	là lạ
+02545023-a	vie:def	trải qua cảm giác kỳ lạ của cơ thể
+02545023-a	vie:exe	"nói với bác sĩ về những cảm giác là lạ trong lồng ngực của mình"
+02545257-a	vie:lemma	xanh
+02545257-a	vie:def	nhìn xanh xao và không lành mạnh
+02545257-a	vie:exe	"bạn đang tìm kiếm màu xanh lá cây", "xanh xao vàng vọt"
+02545989-a	vie:lemma	tê_liệt
+02545989-a	vie:def	bị ảnh hưởng với tình trạng tê liệt
+02545989-a	vie:exe	"hệ thống giao thông bị tê liệt hoàn toàn"
+02550891-a	vie:lemma	dính
+02550891-a	vie:def	(của một nếp lỏng như sơn) không hoàn toàn khô và hơi dính khi chạm vào
+02550891-a	vie:exe	"dính sơn"
+02557357-a	vie:lemma	lành_mạnh
+02557357-a	vie:def	lợi cho hay đặc tính của vật lý hay đạo đức tốt được
+02557357-a	vie:exe	"thái độ lành mạnh", "sự xuất hiện lành mạnh", "thực phẩm lành mạnh"
+02558184-a	vie:lemma	hợp_vệ_sinh
+02558184-a	vie:def	tăng cường sức khỏe, sức khỏe, "một chế độ ăn uống lành mạnh", "làm sạch không khí lành mạnh", "rất nhiều của giấc ngủ lành mạnh", "lành mạnh và bình thường thị trường tiêu thụ năng lượng trẻ trung "," không khí núi hợp vệ sinh và nước " CBDavis
+02558184-a	vie:exe	" cà rốt rất tốt cho bạn "
+02563616-a	vie:lemma	dễ sử_dụng
+02563616-a	vie:def	dễ dàng để xử lý hoặc sử dụng hoặc quản lý
+02563616-a	vie:exe	"một cuốn sách lớn nhưng dễ sử dụng"
+02565701-a	vie:lemma	sẵn_sàng
+02565701-a	vie:def	tinh thần xử lý
+02565701-a	vie:exe	"ông đã sẵn sàng để tin rằng cô ấy"
+02566015-a	vie:lemma	không muốn
+02566015-a	vie:def	không xử lý hoặc hướng về
+02566015-a	vie:exe	"một trợ lý không muốn", "không muốn phải đối mặt với sự thật"
+02566453-a	vie:lemma	miễn_cưỡng
+02566453-a	vie:def	làm theo một sự bắt buộc, không muốn làm việc đó
+02566453-a	vie:exe	"một nụ cười miễn cưỡng", "bất đắc dĩ phải thừa nhận một sai lầm"
+02569558-a	vie:lemma	khôn
+02569558-a	vie:def	cấp tính sâu sắc và khôn ngoan
+02569558-a	vie:exe	"quan sát và suy nghĩ, ông đã được trao cho những câu hỏi khôn ngoan "," một nguồn hiểu biết sâu sắc giá trị và những lời khuyên khôn ngoan để các nhà giáo dục "
+02570282-a	vie:lemma	ngu_ngốc
+02570282-a	vie:def	không có các cảm giác tốt hoặc bản án
+02570282-a	vie:exe	"phát biểu ngu ngốc", "một quyết định điên rồ"
+02580449-a	vie:lemma	mòn
+02580449-a	vie:def	bị ảnh hưởng bởi mặc
+02580449-a	vie:exe	bị hư hỏng do sử dụng lâu, "mặc các chủ đề trên các vít", "một phù hợp với mòn", "các túi đeo trên áo các"
+02585545-a	vie:lemma	đáng_khen_ngợi
+02585545-a	vie:def	xứng đáng với lời khen ngợi cao
+02585545-a	vie:exe	"nỗ lực đáng khen ngợi để cứu lấy môi trường", "một ý thức đáng khen ngợi về mục đích", "đáng khen ngợi động cơ của việc cải thiện điều kiện nhà ở "," một sự gia tăng đáng kể và đáng mừng trong tình báo máy tính "
+02587738-a	vie:lemma	quý_giá
+02587738-a	vie:def	có giá trị hoặc công đức hoặc giá trị
+02587738-a	vie:exe	"một người bạn quý giá", "một người đàn ông tốt và quý giá"
+02587261-a	vie:lemma	thiêng liêng
+02587261-a	vie:def	xứng đáng với sự tôn trọng hay sự cống hiến
+02587261-a	vie:exe	"nhìn thấy mẹ là gọi thiêng liêng của người phụ nữ"
+02588647-a	vie:lemma	không xác_đáng
+02588647-a	vie:def	không có công đức
+02588647-a	vie:exe	"bảo vệ ... từ những lời chỉ trích không xác đáng"
+02594565-a	vie:lemma	lành
+02594565-a	vie:def	không nguy hiểm đến sức khỏe, không tái phát hoặc tiến bộ (đặc biệt là của một khối u)
+02594565-a	vie:exe	"u lành không nguy hiểm đến tính mạng"
+02594714-a	vie:lemma	ác_tính
+02594714-a	vie:def	nguy hiểm cho sức khỏe, đặc trưng bởi sự phát triển tiến bộ và không kiểm soát được (đặc biệt là của một khối u)
+02594714-a	vie:exe	"Cô ta bị mắc những khối u ác tính"
+02605416-a	vie:lemma	tiêu_độc
+02605416-a	vie:def	chống lại những ảnh hưởng của chất độc
+02605416-a	vie:exe	"thuốc giải viêm, tiêu độc"
+02605953-a	vie:lemma	kháng virus
+02605953-a	vie:def	ức chế hoặc ngăn chặn sự tăng trưởng và sinh sản của virus
+02605953-a	vie:exe	"chất kháng virus"
+02612653-a	vie:lemma	dị_ứng
+02612653-a	vie:def	đặc trưng bởi hoặc gây ra do dị ứng
+02612653-a	vie:exe	"một phản ứng dị ứng"
+02647358-a	vie:lemma	suy_nhược
+02647358-a	vie:def	đặc trưng bởi sự thiếu trương lực
+02647358-a	vie:exe	"ăn kém sẽ dẫn đến suy nhược cơ thể"
+02661446-a	vie:lemma	nhân_từ
+02661446-a	vie:def	có ý định hoặc hiển thị lòng tốt
+02661446-a	vie:exe	"một xã hội nhân từ"
+02670812-a	vie:lemma	không vành
+02670812-a	vie:def	mà không có một vành
+02670812-a	vie:exe	"một cái mũ không vành"
+02671885-a	vie:lemma	háu_ăn
+02671885-a	vie:def	bị mắc chứng cuồng ăn vô độ
+02671885-a	vie:exe	"đồ háu ăn"
+02679858-a	vie:lemma	gây ung_thư
+02679858-a	vie:def	gây ra hoặc có xu hướng gây ra ung thư
+02679858-a	vie:exe	"các hành động gây ung thư của hóa chất nhất định"
+02708232-a	vie:lemma	tuần_hoàn
+02708232-a	vie:def	phù hợp với chu kỳ Carnot
+02708232-a	vie:exe	"vòng quay tuần hoàn"
+02746103-a	vie:lemma	suy_giảm_miễn_dịch
+02746103-a	vie:def	không thể phát triển một đáp ứng miễn dịch bình thường thường là do suy dinh dưỡng hoặc suy giảm miễn dịch hay liệu pháp ức chế miễn dịch
+02746103-a	vie:exe	"HIV là hội chứng suy giảm miễn dịch mắc phải"
+02806261-a	vie:lemma	bền_vững
+02806261-a	vie:def	có khả năng được duy trì
+02806261-a	vie:exe	"các chất hữu cơ bền vững"
+02833873-a	vie:lemma	kháng_khuẩn
+02833873-a	vie:def	phá hủy vi khuẩn hoặc ức chế sự tăng trưởng của họ
+02833873-a	vie:exe	"Chất kháng khuẩn"
+02848119-a	vie:lemma	phi tài_chính
+02848119-a	vie:def	không liên quan đến vấn đề tài chính
+02848119-a	vie:exe	"Các vấn đề phi tài chính"
+02879535-a	vie:lemma	phi ngôn_ngữ
+02879535-a	vie:def	không được bao gồm trong các lĩnh vực của ngôn ngữ
+02879535-a	vie:exe	"hành vi phi ngôn ngữ"
+02858816-a	vie:lemma	cá_nhân
+02858816-a	vie:def	trong hoặc phát sinh từ tính cách
+02858816-a	vie:exe	"cá nhân từ tính"
+02911488-a	vie:lemma	phi tham_số
+02911488-a	vie:def	không liên quan đến một dự toán của các tham số của một số liệu thống kê
+02911488-a	vie:exe	"dữ liệu phi tham số"
+02929901-a	vie:lemma	hợp_lý
+02929901-a	vie:def	có khả năng được thể hiện như là một thương của số nguyên
+02929901-a	vie:exe	"số lượng hợp lý"
+02951702-a	vie:lemma	êm_tai
+02951702-a	vie:def	để nghe êm tai hoặc liên quan đến hay đặc trưng của luật hài âm
+02951702-a	vie:exe	"âm thanh êm tai"
+02998269-a	vie:lemma	tinh_túy
+02998269-a	vie:def	đại diện cho ví dụ hoàn hảo của một lớp học hay chất lượng
+02998269-a	vie:exe	"sự tinh túy của cuộc sống"
+03119608-a	vie:lemma	co_cứng
+03119608-a	vie:def	liên quan đến hay đặc trưng bởi sự co thắt
+03119608-a	vie:exe	"một tràng co cứng", "liệt co cứng là một dạng co cứng của bại não"
+01160031-a	vie:lemma	hại
+01160031-a	vie:def	gây ra hoặc có khả năng gây hại
+01160031-a	vie:exe	"mặt trời quá nhiều có hại cho da", "hiệu ứng có hại của hút thuốc lá"
+01160584-a	vie:lemma	lạm_dụng
+01160584-a	vie:def	đặc trưng bởi sự ngược đãi về thể chất hoặc tâm lý
+01160584-a	vie:exe	"lạm dụng hình phạt", "tranh luận ... mà các gia đình nuôi dưỡng được lạm dụng"
+01161233-a	vie:lemma	vu_khống
+01161233-a	vie:def	(sử dụng các câu lệnh) có hại và thường không đúng sự thật
+01161233-a	vie:exe	xu hướng mất uy tín hoặc hung tinh; "đừng có mà vu khống!"
+01161635-a	vie:lemma	tai_hại
+01161635-a	vie:def	rất có hại, mang thiệt hại về vật chất hoặc về tài chính
+01161635-a	vie:exe	"một sự đình đốn thê thảm", "thảm họa bệnh tật"
+01161877-a	vie:lemma	phản_tác_dụng
+01161877-a	vie:def	xu hướng cản trở việc đạt được các mục tiêu
+01161877-a	vie:exe	"uống quá nhiều thuốc sẽ phản tác dụng"
+01162267-a	vie:lemma	tồi
+01162267-a	vie:def	dẫn đến đau khổ hay nghịch cảnh
+01162267-a	vie:exe	"hiệu quả tồi", "đó là một cơn gió tồi mang lại những điều không tốt"
+01162406-a	vie:lemma	xảo_quyệt
+01162406-a	vie:def	làm việc hoặc phát tán một cách ẩn và thường gây tổn hại
+01162406-a	vie:exe	"bệnh tăng nhãn áp là một căn bệnh ác tính", "một chất độc ác tính"
+01162817-a	vie:lemma	có_hại
+01162817-a	vie:def	có một xu hướng gây ra thiệt hại
+01162817-a	vie:exe	"Hút thuốc lá có hại cho sức khỏe"
+01162901-a	vie:lemma	đau_thương
+01162901-a	vie:def	gây tổn thương về thể chất hoặc đặc biệt là tâm lý
+01162901-a	vie:exe	"một lời nhận xét đau nhói", "đau thương và sai tội bất trung"
+01163083-a	vie:lemma	du_dương
+01163083-a	vie:def	âm thanh êm tai, dễ chịu
+01163083-a	vie:exe	"Điệu nhạc du dương"
+01163860-a	vie:lemma	tinh_khiết
+01163860-a	vie:def	không có tạp chất
+01163860-a	vie:exe	"Nước tinh khiết"
+01164072-a	vie:lemma	không điều hòa
+01164072-a	vie:def	không hài hòa
+01164072-a	vie:exe	"Cơ thể phát triển không cân đối"
+01165474-a	vie:lemma	kháng_sinh
+01165474-a	vie:def	có khả năng tiêu diệt hoặc ức chế sự tăng trưởng của vi sinh vật gây bệnh
+01165474-a	vie:exe	"thuốc kháng sinh"
+01166413-a	vie:lemma	bổ_ích
+01166413-a	vie:def	chăm sóc để thúc đẩy vật lý tốt được, có lợi cho sức khỏe
+01166413-a	vie:exe	"lợi ích của một chế độ ăn uống cân bằng", "một đêm ngon giấc ngủ", "ảnh hưởng bổ ích của không khí tinh khiết "
+01166875-a	vie:lemma	hữu_cơ
+01166875-a	vie:def	đơn giản và lành mạnh và gần gũi với thiên nhiên
+01166875-a	vie:exe	"một lối sống hữu cơ"
+01167269-a	vie:lemma	phòng_ngừa
+01167269-a	vie:def	phòng ngừa ngăn chặn hoặc đóng góp cho công tác phòng chống dịch bệnh
+01167269-a	vie:exe	"y tế dự phòng", "vắc xin được dự phòng", "một loại thuốc dự phòng"
+01167817-a	vie:lemma	hại_sức_khỏe
+01167817-a	vie:def	không có lợi cho sức khỏe
+01167817-a	vie:exe	"không khí ô nhiễm hại sức khỏe", "điều kiện hại sức khỏe trong các căn hộ cũ với lột sơn chì"
+01168166-a	vie:lemma	vô_hiệu_hóa
+01168166-a	vie:def	vô hiệu hóa hoặc làm tê liệt
+01168166-a	vie:exe	"một chấn thương làm tê liệt"
+01168315-a	vie:lemma	gây_bệnh
+01168315-a	vie:def	liên quan đến hoặc gây thay đổi bệnh lý trong tế bào
+01168315-a	vie:exe	"Các tế bào gây bệnh"
+01168845-a	vie:lemma	không lành_mạnh
+01168845-a	vie:def	không có lợi cho sức khỏe
+01168845-a	vie:exe	"một chế độ ăn uống không lành mạnh của thức ăn nhanh", "một môi trường không lành mạnh"
+01169940-a	vie:lemma	không hoạt_động
+01169940-a	vie:def	không thích hợp với phẫu thuật
+01169940-a	vie:exe	"di căn hiện nay làm cho khối u không thể hoạt động"
+02390569-a	vie:lemma	hỗn_loạn
+02390569-a	vie:def	hoàn toàn không có thứ tự và không thể đoán trước và khó hiểu
+02390569-a	vie:exe	"Các phân tử chuyển động hỗn loạn"
+02391455-a	vie:lemma	hữu_hình
+02391455-a	vie:def	thể nhận bằng các giác quan đặc biệt là cảm giác sờ
+02391455-a	vie:exe	"da với một độ nhám hữu hình"
+02391867-a	vie:lemma	phi vật thể
+02391867-a	vie:def	không có khả năng cảm nhận của các giác quan đặc biệt là cảm giác sờ
+02391867-a	vie:exe	"các thành phần phi vật thể của năng lượng" James Jeansa
+01170069-a	vie:lemma	gây sốt
+01170069-a	vie:def	nguyên nhân dẫn đến bị sốt
+01170069-a	vie:exe	"bị cảm sẽ gây sốt
+01170823-a	vie:lemma	hồng_hào
+01170823-a	vie:def	da có màu hồng hào khỏe mạnh
+01170823-a	vie:exe	"Ông cụ da dẻ hồng hào"
+01170243-a	vie:lemma	khỏe_khoắn
+01170243-a	vie:def	có hoặc chỉ có sức khỏe tốt trong cơ thể hay tâm trí
+01170243-a	vie:exe	không chịu thương tật hoặc bệnh tật, "một em bé khỏe khoắn hồng hào", "cân đối và khỏe khoắn"
+01170984-a	vie:lemma	khỏe_mạnh
+01170984-a	vie:def	sức khỏe tốt
+01170984-a	vie:exe	"một em bé khỏe mạnh"
+01170984-a	vie:lemma	khỏe
+01170984-a	vie:def	sức khỏe tốt
+01170984-a	vie:exe	"một em bé khỏe mạnh"
+01170984-a	vie:lemma	mạnh
+01170984-a	vie:def	sức khỏe tốt
+01170984-a	vie:exe	"một em bé khỏe mạnh"
+01171076-a	vie:lemma	săn chắc
+01171076-a	vie:def	sở hữu sự rắn chắc và khả năng phục hồi tốt của các mô
+01171076-a	vie:exe	"cơ bắp săn chắc"
+01171076-a	vie:lemma	săn
+01171076-a	vie:def	sở hữu sự rắn chắc và khả năng phục hồi tốt của các mô
+01171076-a	vie:exe	"cơ bắp săn chắc"
+01171076-a	vie:lemma	chắc
+01171076-a	vie:def	sở hữu sự rắn chắc và khả năng phục hồi tốt của các mô
+01171076-a	vie:exe	"cơ bắp săn chắc"
+01171396-a	vie:lemma	sung_sức
+01171396-a	vie:def	triển lãm hoặc khôi phục lại sức khỏe tốt mạnh mẽ
+01171396-a	vie:exe	"khỏe mạnh và sung sức", "khỏe cả trong tâm trí và cơ thể", "lại một người khỏe mạnh"
+01171606-a	vie:lemma	mạnh_khỏe
+01171606-a	vie:def	tiêu thụ dồi dào và với lạc thú
+01171606-a	vie:exe	"một bữa ăn lành mạnh (hoặc mạnh khỏe)"
+01172139-a	vie:lemma	tươi_tắn
+01172139-a	vie:def	nghiêng sang màu đỏ khỏe mạnh thường gắn liền với cuộc sống ngoài trời
+01172139-a	vie:exe	"một làn da hồng hào", "má đỏ ửng như của Santa", "một làn da tươi tắn hồng hào "
+01172594-a	vie:lemma	trẻ_trung
+01172594-a	vie:def	chỉ người lớn tuổi khỏe mạnh
+01172594-a	vie:exe	"Cô ấy 30 rồi, nhìn vẫn trẻ trung"
+01173697-a	vie:lemma	nhức_nhối
+01173697-a	vie:def	bị viêm và đau đớn
+01173697-a	vie:exe	"một đau nhức nhối"
+01175007-a	vie:lemma	đỏ_ngầu
+01175007-a	vie:def	(của một mắt) đỏ như là kết quả của các mạch máu bị tắc nghẽn tại địa phương
+01175007-a	vie:exe	viêm, "đôi mắt đỏ ngầu"
+01174222-a	vie:lemma	không khỏe_mạnh
+01174222-a	vie:def	thể chất không lành mạnh hoặc bị bệnh
+01174222-a	vie:exe	"có một cái lưng không tốt", "một trái tim không lành mạnh", "hàm răng xấu", "chân tay không khỏe mạnh", "răng yếu"
+01175158-a	vie:lemma	bị loét
+01175158-a	vie:def	có vết viêm loét hoặc thối mục
+01175158-a	vie:exe	"vết thương bị lở loét nhiễm trùng"
+01175741-a	vie:lemma	đầy khí
+01175741-a	vie:def	bị tích quá nhiều khí trong ống tiêu hóa
+01175741-a	vie:exe	"ăn nhiều lạc làm bụng đầy khí"
+01176246-a	vie:lemma	bệnh_lý
+01176246-a	vie:def	gây ra bởi hoặc bị thay đổi do bệnh biểu hiện hoặc hoặc bệnh lý
+01176246-a	vie:exe	"bệnh viêm amiđan", "một sự phát triển bệnh hoạn", "mô bệnh học", "các quá trình bệnh lý của cơ thể "
+01176544-a	vie:lemma	bị chứng_phù
+01176544-a	vie:def	sưng lên với một sự tích lũy quá mức của chất lỏng
+01176544-a	vie:exe	"Vết bỏng đã bị phù lên"
+01176973-a	vie:lemma	bị thối hoại
+01176973-a	vie:def	bị chết mô
+01176973-a	vie:exe	"vết thương đang hoại tử
+01177105-a	vie:lemma	sưng_tấy
+01177105-a	vie:def	sinh từ tình trạng viêm, nóng và sưng và đỏ
+01177105-a	vie:exe	"đôi mắt bị sưng tấy vì khóc"
+01177105-a	vie:lemma	tấy
+01177105-a	vie:def	sinh từ tình trạng viêm, nóng và sưng và đỏ
+01177105-a	vie:exe	"đôi mắt bị sưng tấy vì khóc"
+01177246-a	vie:lemma	viêm
+01177246-a	vie:def	đặc trưng hoặc gây ra do viêm nhiễm
+01177246-a	vie:exe	"một quá trình viêm nhiễm", "một phản ứng viêm"
+01177556-a	vie:lemma	vàng
+01177556-a	vie:def	bị ảnh hưởng bởi bệnh vàng da gây vàng da vv
+01177556-a	vie:exe	"cô ấy bị vàng da"
+01177899-a	vie:lemma	tâm_thần
+01177899-a	vie:def	bị ảnh hưởng bởi một chứng rối loạn của tinh thần
+01177899-a	vie:exe	"một bệnh nhân tâm thần", "tâm thần"
+01178134-a	vie:lemma	ốm_yếu
+01178134-a	vie:def	dáng điệu không mạnh khỏe
+01178134-a	vie:exe	"dáng gầy ốm"
+01178231-a	vie:lemma	bị đau_mắt
+01178231-a	vie:def	có đau mắt, đau mắt đỏ hoặc viêm kết mạc
+01178231-a	vie:exe	"bệnh đau mắt có thể lây lan"
+01178458-a	vie:lemma	bị giãn tĩnh_mạch
+01178458-a	vie:def	mạch bị sưng hoặc có nhiều màu bất thường
+01178458-a	vie:exe	"giãn tĩnh mạch"
+01178669-a	vie:lemma	khô
+01178669-a	vie:def	không có chất nhầy hoặc chảy nước
+01178669-a	vie:exe	"ho khan", "rằng điều hiếm hoi trong mùa đông, một con  với một mũi khô"
+01178856-a	vie:lemma	có đờm
+01178856-a	vie:def	đặc trưng bởi đờm
+01178856-a	vie:exe	"một cơn khạc đờm"
+01179345-a	vie:lemma	trên thiên_đường
+01179345-a	vie:def	thuộc về thiên đường hay các vì tinh tú
+01179345-a	vie:exe	"sự bình yên của thiên đường", "giai điệu thanh tao", "hạnh phúc trên thiên đường của một cái chết yên tĩnh"
+01179767-a	vie:lemma	thần_thánh
+01179767-a	vie:def	được hoặc có tính chất của một vị thần
+01179767-a	vie:exe	"tục giết vua thần khi có sự thất bại nghiêm trọng của ... quyền hạn của mình" JGFrazier; "các thần linh sẽ "," năng lực thiêng liêng cho tình yêu "," 'Tis khôn ngoan để tìm hiểu;' tis Thiên Chúa giống như để tạo ra " JGSaxe
+01181446-a	vie:lemma	thuộc trái_đất
+01181446-a	vie:def	thuộc trái đất này hay thế giới, không lý tưởng hoặc siêu phàm
+01181446-a	vie:exe	"không phải là cổ tích hoàng cung, chưa một kỳ trần tục của loại hình tưởng tượng"
+01182414-a	vie:lemma	nhẹ
+01182414-a	vie:def	dễ tiêu, không giàu chất hay nhiều gia vị
+01182414-a	vie:exe	"một chế độ ăn uống nhẹ"
+01182974-a	vie:lemma	đầy_hơi
+01182974-a	vie:def	tạo ra quá nhiều khí trong ống tiêu hóa
+01182974-a	vie:exe	"ăn nhiều lạc dẫn đến đầy hơi"
+01183274-a	vie:lemma	không tiêu
+01183274-a	vie:def	không tiêu hóa được
+01183274-a	vie:exe	"ăn quá nhiều gây không tiêu"
+01183436-a	vie:lemma	nặng_bụng
+01183436-a	vie:def	nặng và có bột và khó tiêu hóa
+01183436-a	vie:exe	"thức ăn nặng bụng", "một chiếc bánh pudding nặng bụng được mang lên khi mọi người đã no"
+01188058-a	vie:lemma	hạng nhẹ
+01188058-a	vie:def	không được thiết kế cho công việc nặng nề
+01188058-a	vie:exe	"một chất tẩy rửa hạng nhẹ"
+01190168-a	vie:lemma	nặng_nề
+01190168-a	vie:def	mức độ nặng nề vào tinh thần, gây bồn chồn hoặc lo lắng
+01190168-a	vie:exe	"vấn đề nặng nề"
+01189386-a	vie:lemma	đáng_lo_ngại
+01189386-a	vie:def	gây đau khổ hay bồn chồn hoặc lo lắng
+01189386-a	vie:exe	"tin tức đau buồn (hay đáng lo ngại)", "sống trong anh hùng nếu bị một cái gì đó làm buồn rầu cô lập "," một số lượng tội phạm đáng lo ngại"," một ý nghĩ mới và gây phiền hà "," trong một tình cảnh đáng lo ngại "," một tình trạng đáng lo lắng"," một thời gian lo lắng"
+01195963-a	vie:lemma	sẵn_lòng giúp_đỡ
+01195963-a	vie:def	mang ơn, sẵn sàng làm ơn
+01195963-a	vie:exe	"đã thực hiện một nỗ lực đặc biệt để được sẵn lòng giúp đỡ"
+01199663-a	vie:lemma	không đều
+01199663-a	vie:def	không đồng nhất
+01199663-a	vie:exe	"dân số phân bố không đều"
+01190993-a	vie:lemma	nhẹ_nhàng
+01190993-a	vie:def	không lớn về mức độ hoặc số lượng hoặc số
+01190993-a	vie:exe	"một câu nhẹ nhàng", "một giọng nói nhẹ nhàng", "thương vong đã được giảm nhẹ", "tuyết rơi nhẹ nhàng"
+01196276-a	vie:lemma	giúp_đỡ
+01196276-a	vie:def	trợ giúp
+01196276-a	vie:exe	"giúp đỡ người tàn tật qua đường
+01196367-a	vie:lemma	giữ thể_diện
+01196367-a	vie:def	duy trì nhân phẩm, uy tín
+01196367-a	vie:exe	"một sự thỏa hiệp giữ thể diện"
+01208571-a	vie:lemma	công_nghệ cao
+01208571-a	vie:def	làm việc sử dụng các công nghệ và các thiết bị tiên tiến
+01208571-a	vie:exe	"trường ông ấy toàn các thiết bị công nghệ cao"
+01210581-a	vie:lemma	lãi_suất thấp
+01210581-a	vie:def	(sử dụng các khoản cho vay) tính một tỷ lệ tương đối nhỏ của số tiền vay
+01210581-a	vie:exe	"các hộ nghèo được vai tiền lãi suất thấp"
+01210717-a	vie:lemma	lãi_suất cao
+01210717-a	vie:def	(sử dụng các khoản cho vay) tính một tỷ lệ tương đối lớn của số tiền vay
+01210717-a	vie:exe	"vì cần tiền lắm, ông ta đi vay lãi suất cao"
+01211296-a	vie:lemma	nâng_cao
+01211296-a	vie:def	ở mức độ cao hơn trong đào tạo, kiến thức hoặc kỹ năng
+01211296-a	vie:exe	"có bằng cấp cao", "một văn bản cao cấp trong vật lý", "các cuộc hội thảo đặc biệt cho các nhóm nhỏ các học sinh tiên tiến tại trường Đại học"
+01212867-a	vie:lemma	xuống
+01212867-a	vie:def	thấp hơn so với trước đây
+01212867-a	vie:exe	"thị trường đang xuống", "giá giảm"
+01214430-a	vie:lemma	sắc nét
+01214430-a	vie:def	có hoặc phát ra một giọng điệu the thé và sắc nét hoặc tấn
+01214430-a	vie:exe	"một cái còi gay gắt", "một sự vui tươi sắc nét"
+01216317-a	vie:lemma	khàn_khàn
+01216317-a	vie:def	nghe như phát âm thấp trong cổ họng
+01216317-a	vie:exe	"một giọng nói khàn khàn"
+01217338-a	vie:lemma	mô_phỏng
+01217338-a	vie:def	sao lại hoặc làm cho giống
+01217338-a	vie:exe	mô phỏng trong nhân vật, "trong điều kiện chiến đấu mô phỏng"
+01221057-a	vie:lemma	dị
+01221057-a	vie:def	không tương ứng trong cấu trúc hay nguồn gốc tiến hóa
+01221057-a	vie:exe	"di truyền ngược với biến dị"
+01225898-a	vie:lemma	sai sự_thật
+01225898-a	vie:def	không thể hiện hoặc thể hiện cho sự thật
+01225898-a	vie:exe	"tuyên bố được đưa ra theo lời thề là sai sự thật", "một người không trung thực"
+01226240-a	vie:lemma	danh
+01226240-a	vie:def	đáng được tôn vinh, được tôn vinh và kính trọng
+01226240-a	vie:exe	"một người đàn ông đáng kính", "đã dẫn đầu một cuộc sống đáng kính", "vinh danh cho đất nước của mình"
+01226660-a	vie:lemma	kính
+01226660-a	vie:def	sâu sắc tôn vinh
+01226660-a	vie:exe	"thánh đàn ông tôn kính"
+01224253-a	vie:lemma	chất_lượng kém
+01224253-a	vie:def	thiết kế để lừa dối hoặc gây nhầm lẫn là sự cố ý hay vô tình
+01224253-a	vie:exe	"bình tĩnh lừa đảo trong mắt của các cơn bão", "cố ý lừa đảo bao bì", "một sự tương tự gây nhầm lẫn "," thống kê có thể được trình bày theo nhiều cách gây hiểu lầm "," thực tế kinh doanh kém chất lượng "
+01229020-a	vie:lemma	vô_vọng
+01229020-a	vie:def	mà không có hy vọng bởi vì có vẻ là không có khả năng thoải mái hay thành công
+01229020-a	vie:exe	"buồn vô vọng trong khổ đau", "với một tiếng thở dài tuyệt vọng, ông ngồi xuống"
+01223941-a	vie:lemma	gian_lận
+01223941-a	vie:def	dùng để đánh lừa, "quảng cáo gian dối", "lời khai giả dối", "mịn màng, sáng, và gian dối như băng mỏng" STColeridge
+01223941-a	vie:exe	"một kế hoạch lừa đảo để thoát khỏi nộp thuế "
+01227137-a	vie:lemma	đê_tiện
+01227137-a	vie:def	thiếu danh dự hoặc thiếu tính toàn diện
+01227137-a	vie:exe	đáng bị sỉ nhục; "đê tiện trong suy nghĩ và hành động"
+01227546-a	vie:lemma	lăng_nhục
+01227546-a	vie:def	(được sử dụng trong thực hiện hoặc ký tự) xứng đáng bị lăng nhục hay nhục nhã hay xấu hổ
+01227546-a	vie:exe	"Man ... đã viết một trong hồ sơ của ông blackest như là một tàu khu trục trên các đảo đại dương " Rachel Carson," một sự rút lui ô nhục "," thất bại ô nhục "," một di tích lăng nhục cho sự tham lam của con người "," một thước phim đáng xấu hổ của sự hèn nhát "
+01228050-a	vie:lemma	xuống_cấp
+01228050-a	vie:def	sử dụng bởi tổ chức
+01228050-a	vie:exe	đặc trưng bởi ô danh; "bộ máy nhà nước xuống cấp"
+01230521-a	vie:lemma	không có tương_lai
+01230521-a	vie:def	không có khách hàng tiềm năng hoặc hy vọng về một tương lai
+01230521-a	vie:exe	"những đứa trẻ ấy không có tương lai"
+01241248-a	vie:lemma	ứ_đọng
+01241248-a	vie:def	không được lưu hành hoặc chảy
+01241248-a	vie:exe	"không khí ứ đọng", "nước chết", "nước ứ đọng"
+01250694-a	vie:lemma	chang_chang
+01250694-a	vie:def	cực kỳ nóng
+01250694-a	vie:exe	"mặt trời trưa chang chang", "những hạt cát oi bức của sa mạc"
+01250835-a	vie:lemma	nhiệt_đới
+01250835-a	vie:def	của thời tiết hoặc khí hậu nóng ẩm như ở vùng nhiệt đới
+01250835-a	vie:exe	"khí hậu nhiệt đới"
+01251830-a	vie:lemma	lạnh_toát
+01251830-a	vie:def	người
+01251830-a	vie:exe	cảm thấy lạnh; "thương Tom lạnh toát" Shakespeare
+01252151-a	vie:lemma	cực
+01253022-a	vie:lemma	sinh_hàn
+01253022-a	vie:def	gây lạnh
+01253022-a	vie:exe	làm mát hoặc làm lạnh; "mỏ thiếc sinh hàn"
+01249137-a	vie:lemma	có_thể làm nóng
+01249137-a	vie:def	có khả năng trở thành nóng
+01249137-a	vie:exe	"đầu có thể làm nóng của một miếng sắt hàn"
+01250393-a	vie:lemma	oi_ả
+01250393-a	vie:def	quá nóng và ẩm ướt hoặc đánh dấu bằng mồ hôi và sự uể oải
+01250393-a	vie:exe	"một căn phòng ngột ngạt", "vận động viên ngột ngạt"
+01261363-a	vie:lemma	phi thường
+01261363-a	vie:def	hiển thị sức mạnh siêu nhân hay quyền lực
+01261363-a	vie:exe	"sự nỗ lực phi thường"
+01260023-a	vie:lemma	không_phải người
+01260023-a	vie:def	không phải con người
+01260023-a	vie:exe	không thuộc hoặc được sản xuất bởi hoặc phù hợp với con người, "động vật linh trưởng không phải người như tinh tinh"
+01263971-a	vie:lemma	không cảm_động
+01263971-a	vie:def	mà không có sự ăn năn hay cảm giác của con người
+01263971-a	vie:exe	"máu lạnh", "giết người máu lạnh", "hủy hoại một cách không cảm động"
+01266841-a	vie:lemma	vui_nhộn
+01266841-a	vie:def	đánh dấu bằng hoặc gây sự vui vẻ hay tiếng cười rộn rã co quắp
+01266841-a	vie:exe	"phim hài vui nhộn", "một trò hề la hét", "câu chuyện náo nhiệt"
+01267076-a	vie:lemma	đùa
+01267076-a	vie:def	đặc trưng bởi tiếng cười và sự hài hước
+01267076-a	vie:exe	"thỉnh thoảng cũng nên vui đùa"
+01307067-a	vie:lemma	thân_giao
+01307067-a	vie:def	(thường là đi trước `với ') được biết nhiều hoặc biết hoàn toàn về cái gì đó
+01307067-a	vie:exe	" thân giao với xu hướng kinh doanh "," quen thuộc với các máy móc phức tạp "," quen thuộc những con đường "
+01307850-a	vie:lemma	am_hiểu
+01307850-a	vie:def	hiểu biết thông tin đầy đủ
+01307850-a	vie:exe	"một nhà sưu tập sách hiếm hiểu biết", "ngạc nhiên về sự hiểu biết về những gì đang xảy ra"
+01302811-a	vie:lemma	truyền_nhiễm
+01302811-a	vie:def	dễ lây lan, "sợ hãi là sự truyền nhiễm
+01302811-a	vie:exe	trẻ em bắt chước nó từ người lớn tuổi" Bertrand Russell
+01301624-a	vie:lemma	công_nghiệp
+01301624-a	vie:def	có ngành_công_nghiệp rất phát_triển
+01301624-a	vie:exe	" cuộc cách_mạng công_nghiệp " , " một quốc_gia_công_nghiệp "
+01317954-a	vie:lemma	thương
+01317954-a	vie:def	bị hại
+01317954-a	vie:exe	"thương binh", "thương cảm"
+01323207-a	vie:lemma	đề_cao
+01323207-a	vie:def	chăm sóc để tôn cao
+01323207-a	vie:exe	"một bài điếu văn được đề cao", "tư tưởng cao cả"
+01475831-a	vie:lemma	nam_tính
+01475831-a	vie:def	sở hữu phẩm chất phù hợp của một người đàn ông
+01475831-a	vie:exe	"anh ta thật là nam tính"
+01474513-a	vie:lemma	quản_lý
+01474513-a	vie:def	có khả năng được quản lý hoặc kiểm soát
+01474513-a	vie:exe	"phải quản lý ra trò chứ!"
+01471954-a	vie:lemma	vị thành_niên
+01471954-a	vie:def	chưa đủ tuổi pháp luật
+01471954-a	vie:exe	"tuổi vị thành niên"
+01470913-a	vie:lemma	không nhiễm_từ
+01470913-a	vie:def	không có khả_năng bị từ_hoá
+01470913-a	vie:exe	"nhôm không nhiễm từ được"
+01174565-a	vie:lemma	sưng
+01174565-a	vie:def	phình lên bất thường đặc biệt là bởi chất lỏng hoặc khí
+01174565-a	vie:exe	"lũ trẻ đói với những cái bụng ỏng", "ông ta có một cái bụng ỏng thô thiển"; "mí mắt căng phồng (hoặc sưng húp)"," bàn tay sưng lên ","  mô sưng phù "," béo ú "
+01175298-a	vie:lemma	bị nhọt
+01175298-a	vie:def	bị đau vì mụn nhọt
+01175298-a	vie:exe	"ăn nhiều mật ong sẽ bị nhọt"
+01175427-a	vie:lemma	bị sâu
+01175427-a	vie:def	(răng) bị ảnh hưởng bởi sâu răng hoặc sâu răng
+01175427-a	vie:exe	"răng bị sâu rất đau"
+01197634-a	vie:lemma	cánh_tay_phải
+01197634-a	vie:def	hữu ích và đáng tin cậy
+01197634-a	vie:exe	"cánh tay phải của tôi"
+01204443-a	vie:lemma	không xếp_hạng
+01204443-a	vie:def	không xếp theo thứ tự thứ bậc
+01204443-a	vie:exe	"họ xếp hàng không có thứ tự nào cả"
+01221290-a	vie:lemma	tương_tự
+01221290-a	vie:def	tương ứng với chức năng nhưng không có nguồn gốc tiến hóa
+01221290-a	vie:exe	"đôi cánh của một con ong và những chim ruồi là tương tự nhau"
+01220882-a	vie:lemma	tương_đồng
+01220882-a	vie:def	tương tự ở nguồn gốc tiến hóa nhưng không phải chức năng
+01220882-a	vie:exe	"cặp song sinh tương đồng"
+01222884-a	vie:lemma	không_trung_thực
+01222884-a	vie:def	lừa đảo hoặc gian lận
+01222884-a	vie:exe	xử lý để gian lận hoặc lừa gạt hoặc lừa dối; "những trò lừa lọc đê tiện"
+01232298-a	vie:lemma	không_thể giải_khuây
+01232298-a	vie:def	buồn quá đến mức không thểan ủi
+01232298-a	vie:exe	không có khả năng an ủi, "không nguôi ngoai khi con trai bà qua đời"
+01241065-a	vie:lemma	đứng
+01241065-a	vie:def	(chất lỏng) không di chuyển hoặc chảy
+01241065-a	vie:exe	"muỗi sinh sản trong nước đứng"
+01243825-a	vie:lemma	hiếu_khách
+01243825-a	vie:def	Cư xử với khách và những người xa lạ bằng lòng thân mật và hào phóng
+01243825-a	vie:exe	"một người đàn ông tốt bụng và hiếu khách", "một hành động hiếu khách", "lời mời hiếu khách"
+01245138-a	vie:lemma	có ác_cảm
+01245138-a	vie:def	đặc trưng bởi sự đối kháng hoặc ác cảm
+01245138-a	vie:exe	"nô lệ có ác cảm với ông chủ của họ", "các bè phái đối lập trong đảng"
+01264179-a	vie:lemma	tàn_nhẫn
+01264179-a	vie:def	thiếu sự tử tế và lòng nhân đạo
+01264179-a	vie:exe	"Ông là một người tàn nhẫn"
+01263445-a	vie:lemma	hung_bạo
+01263445-a	vie:def	giống như một con thú, cho thấy sự thiếu nhạy cảm của con người
+01263445-a	vie:exe	"mong muốn bẩn thỉu", "có tính chất thú tính", "bạo lực"; "một người đàn ông ngu si đần độn và bạo tàn", "đối xử tàn bạo với tù nhân"
+01265308-a	vie:lemma	đáng cười
+01265308-a	vie:def	kích động hoặc gây cười, "một bộ phim thú vị"
+01265308-a	vie:exe	" một đồng nghiệp hài hước "," một cái mũ tức cười "," một cái nhìn hài hước bất ngờ "," câu chuyện hài hước đã làm cho tất cả mọi người cười "," một nhà văn rất khôi hài "," nó đã có chuyện vui nếu nó đã không làm tổn thương quá nhiều " ; "một kinh nghiệm vui vẻ"
+01272397-a	vie:lemma	nhận_dạng được
+01272397-a	vie:def	có khả năng được xác định
+01272397-a	vie:exe	"nhân chứng nhận dạng được tên sát nhân"
+01273143-a	vie:lemma	vô_định
+01273143-a	vie:def	không xác định
+01273143-a	vie:exe	"nhìn ra khoảng xa vô định"
+01272176-a	vie:lemma	ung_dung
+01272176-a	vie:def	không vội vàng tất bật
+01272176-a	vie:exe	"thong thả đi bộ quanh dãy nhà", "với một tốc độ ung dung (hay nhàn nhã)"
+01273033-a	vie:lemma	có_thể định rõ
+01273033-a	vie:def	có khả năng được chỉ định ra
+01273033-a	vie:exe	"khiếu nại có thể định rõ"
+01274261-a	vie:lemma	khiếm
+01274261-a	vie:def	yếu trong sức mạnh, chất lượng, hoặc hữu ích
+01274261-a	vie:exe	"người khiếm thị"
+01274945-a	vie:lemma	suy_yếu
+01274945-a	vie:def	kết quả của sự làm giảm
+01274945-a	vie:exe	"Căn bệnh đã làm cơ thể cô ấy suy yếu"
+01746605-a	vie:lemma	có_thể cảm_thấy
+01746605-a	vie:def	có khả năng là cảm nhận của giác quan tâm hay
+01746605-a	vie:exe	"một cảm quan khập khiễng", "dễ dàng cảm quan", "cảm quan thay đổi hành vi"
+01746995-a	vie:lemma	đáng chú_ý
+01746995-a	vie:def	có khả năng bị phát hiện
+01746995-a	vie:exe	"sau sự tạm dừng đáng chú ý, các giảng viên vẫn tiếp tục"
+01747195-a	vie:lemma	có_thể nhận_thấy rõ
+01747195-a	vie:def	có khả năng được nhận thức rõ ràng
+01747195-a	vie:exe	"một bài luận với một ý nghĩa đó không phải là luôn luôn có thể nhận thấy rõ"
+01747996-a	vie:lemma	nhận_biết
+01747996-a	vie:def	dễ dàng cảm nhận
+01747996-a	vie:exe	dễ dàng để trở thành nhận thức, "tình hình căng thẳng này tạo ra các triệu chứng dễ nhận biết"
+01747849-a	vie:lemma	có_thể_quan_sát
+01747849-a	vie:def	có khả năng được nhận thức đặc biệt bằng mắt hoặc nghe
+01747849-a	vie:exe	"có thể quan sát được qua sương mù"
+01746292-a	vie:lemma	mù_quáng
+01746292-a	vie:def	không thể hoặc không muốn nhận thức hoặc hiểu
+01746292-a	vie:exe	"lỗi lầm mù quáng của người yêu", "hậu quả của những hành động mù quáng của họ"
+01748716-a	vie:lemma	khó sờ_thấy
+01748716-a	vie:def	không thể cảm nhận khi chạm vào
+01748716-a	vie:exe	"xung khó sờ thấy"
+01749320-a	vie:lemma	hoàn_hảo
+01749320-a	vie:def	hoàn toàn tốt và không có khiếm khuyết hay thiếu sót
+01749320-a	vie:exe	"một vòng tròn hoàn hảo", "một sao chép hoàn hảo", "hạnh phúc hoàn hảo", "cách cư xử hoàn hảo", "một mẫu hoàn hảo" , "một ngày hoàn hảo"
+01750073-a	vie:lemma	trọn_vẹn
+01750073-a	vie:def	không có các lỗ hổng hay các khuyết tật hoặc tạp chất
+01750073-a	vie:exe	"một viên kim cương hoàn hảo sáng sủa", "làn da sáng sủa của một phụ nữ trẻ khỏe mạnh"
+01751201-a	vie:lemma	lý_tưởng
+01751201-a	vie:def	phù hợp với một tiêu chuẩn tối hậu của sự hoàn hảo hay xuất sắc, thể hiện một lý tưởng
+01751201-a	vie:exe	"anh ta mong ước tìm được người yêu lý tưởng"
+01752167-a	vie:lemma	không hoàn_hảo
+01752167-a	vie:def	không hoàn hảo
+01752167-a	vie:exe	lỗi hoặc không đầy đủ; "chỉ có một sự hiểu biết không hoàn hảo của các trách nhiệm của mình", "những con người không hoàn hảo", "hệ thống thoát nước ở đây là không hoàn hảo"
+01752953-a	vie:lemma	lỗi
+01752953-a	vie:def	có một khiếm khuyết
+01752953-a	vie:exe	"Tôi quay trở lại các thiết bị bởi vì nó đã bị lỗi"
+01753249-a	vie:lemma	bất_thường
+01753652-a	vie:lemma	phân hủy_sinh_học
+01753652-a	vie:def	có khả năng bị phân hủy bởi vi khuẩn
+01753652-a	vie:exe	"một chất tẩy rửa phân hủy sinh học"
+01754421-a	vie:lemma	thường_trực
+01754421-a	vie:def	tiếp tục hoặc lâu dài mà không thay đổi đáng kể tình trạng hay điều kiện hoặc nơi
+01754421-a	vie:exe	"thư ký thường trực Tổng thống", "địa chỉ thường trú", "văn học có giá trị vĩnh viễn"
+01761871-a	vie:lemma	được_chấp_nhận
+01761871-a	vie:def	xứng đáng được thừa nhận
+01761871-a	vie:exe	"bằng chứng  được chấp nhận"
+01775420-a	vie:lemma	cách_âm
+01775420-a	vie:def	không thể có hoặc không bị xuyên thủng bởi âm thanh
+01775420-a	vie:exe	"một căn phòng cách âm"
+01774869-a	vie:lemma	kháng
+01774869-a	vie:def	không bị ảnh hưởng
+01774869-a	vie:exe	"kháng với tác động của nhiệt", "kháng với thuyết phục"
+01782717-a	vie:lemma	bất_tín
+01782717-a	vie:def	không tín thần
+01782717-a	vie:exe	"họ theo đạo vô thần"
+01782519-a	vie:lemma	không tín_ngưỡng
+01782519-a	vie:def	thiếu đạo đức hay tôn kính đối với một thần
+01782519-a	vie:exe	"anh ta và gia đình anh ấy không tín ngưỡng"
+01784401-a	vie:lemma	ngoại_đạo
+01784401-a	vie:def	không thừa nhận Thiên Chúa của Kitô giáo và Do Thái giáo và Hồi giáo
+01784401-a	vie:exe	"Những người ngoại đạo thì làm sao mà hiểu"
+01784830-a	vie:lemma	dễ an_ủi
+01784830-a	vie:def	dễ dàng bình tĩnh hay bình tâm lại
+01784830-a	vie:exe	"Cháu nó là người dễ an ủi"
+01785783-a	vie:lemma	gay_gắt
+01785783-a	vie:def	không có khả năng được giảm thiểu
+01785783-a	vie:exe	"những lời buộc tội nghiêm khắc và gay gắt"
+01785180-a	vie:lemma	không_đội_trời chung
+01785180-a	vie:def	không có khả năng được hòa giải
+01785180-a	vie:exe	là "kẻ thù không đội trời chung"
+01800764-a	vie:lemma	đẹp
+01800764-a	vie:def	(thời tiết) rất thú vị
+01800764-a	vie:exe	"một ngày đẹp"
+01800169-a	vie:lemma	không thuyết_phục
+01800169-a	vie:def	có một xác suất quá thấp để tạo niềm tin
+01800169-a	vie:exe	"Xin lỗi, nhưng những lý luận của anh hoàn toàn không thuyết phục"
+01805889-a	vie:lemma	không hài_lòng
+01805889-a	vie:def	có biểu hiện bất bình
+01805889-a	vie:exe	"tôi không hài lòng với thái độ của nó"
+01805730-a	vie:lemma	vui_mừng
+01805730-a	vie:def	rất vui vì được như mong muốn
+01805730-a	vie:exe	"vui mừng trước chiến thắng"
+01805801-a	vie:lemma	hài_lòng
+01805801-a	vie:def	đã nhận được những gì mong muốn
+01805801-a	vie:exe	"Tôi hài lòng trước những thành quả đã đạt được"
+01805064-a	vie:lemma	mất_lòng
+01805064-a	vie:def	gây khó chịu
+01805064-a	vie:exe	"sự thật mất lòng"
+01804906-a	vie:lemma	bạc_bẽo
+01804906-a	vie:def	khó chịu
+01804906-a	vie:exe	"Tôi sẽ không thực hiện công việc bạc bẽo như so sánh các trường hợp thất bại" Abraham Lincoln
+01806992-a	vie:lemma	cau_mày
+01806992-a	vie:def	cho thấy không hài lòng hoặc giận dữ
+01806992-a	vie:exe	"cô ta cau mày khó chịu"
+01807799-a	vie:lemma	duyên_dáng
+01807799-a	vie:def	làm hài lòng
+01807799-a	vie:exe	"ưu đãi với cách cư xử duyên dáng", "một ngôi nhà nhỏ duyên dáng", "một nhân cách quyến rũ"
+01808227-a	vie:lemma	tuyệt_vời
+01808227-a	vie:def	rất hài lòng
+01808227-a	vie:exe	"một kỳ nghỉ tuyệt vời"
+01807605-a	vie:lemma	đáng ngưỡng_mộ
+01807605-a	vie:def	truyền cảm giác ngưỡng mộ hoặc phê duyệt
+01807605-a	vie:exe	"hai trong số rất nhiều phẩm chất đáng ngưỡng mộ của cô là sự rộng lượng và vẻ đẹp thanh lịch"
+01807964-a	vie:lemma	thú_vị
+01807964-a	vie:def	rất hài lòng hay cảm thấy được giải trí
+01807964-a	vie:exe	"một bất ngờ thú vị", "bộ phim hài là thú vị", "một trò đùa thú vị"
+01808671-a	vie:lemma	ngọt_ngào
+01808671-a	vie:def	khiến các giác quan cảm thấy dễ chịu
+01808671-a	vie:exe	"những bài hát ngọt ngào của chim sơn ca", "bộ mặt ngọt ngào của một đứa trẻ"
+01813081-a	vie:lemma	thô
+01813081-a	vie:def	chưa tôi luyện và chưa tinh chế
+01813081-a	vie:exe	"khoáng sản thô", "vẻ đẹp thô"
+01813920-a	vie:lemma	khôn_ngoan
+01813920-a	vie:def	khéo léo trong quản lý
+01813920-a	vie:exe	"một chính khách sắc sảo và khôn ngoan"
+01814085-a	vie:lemma	thất_sách
+01814085-a	vie:def	không chính trị
+01814085-a	vie:exe	"một cách tiếp cận thất sách đến một vấn đề nhạy cảm"
+01817908-a	vie:lemma	lạc_quan
+01817908-a	vie:def	hy vọng tốt nhất
+01817908-a	vie:exe	"một quan điểm lạc quan"
+01819692-a	vie:lemma	dương
+01819692-a	vie:def	lớn hơn số không
+01819692-a	vie:exe	"số dương"
+01821266-a	vie:lemma	có_thể
+01821266-a	vie:def	có khả năng xảy ra hoặc hiện tại
+01821266-a	vie:exe	"một bước đột phá có thể có vào năm tới", "bất cứ điều gì có thể", "cảnh báo về hậu quả có thể"
+01823574-a	vie:lemma	không_thể thực_hiện
+01823574-a	vie:def	không có khả năng được thực hiện hoặc đưa vào thực hiện
+01823574-a	vie:exe	"việc trục vớt tàu chìm đắm đã chứng minh là không thể thực hiện vì sự mong manh của nó", "một cuộc cải cách đề nghị là không khả thi trong hoàn cảnh hiện hành "
+01824081-a	vie:lemma	không_thể làm
+01824081-a	vie:def	không thể đạt được
+01824081-a	vie:exe	"một mục tiêu không thể đạt được"
+01829652-a	vie:lemma	cao_thế
+01829652-a	vie:def	bị hoặc có khả năng hoạt động với điện áp tương đối cao
+01829652-a	vie:exe	"dây điện cao thế"
+01828836-a	vie:lemma	công_suất cao
+01828836-a	vie:def	(sử dụng kính hiển vi) có khả năng phóng đại cao
+01828836-a	vie:exe	"một kính hiển vi công suất cao"
+01889819-a	vie:lemma	tự_cao
+01889819-a	vie:def	có hoặc hiển thị cảm xúc của ra tầm quan trọng không có cơ sở của niềm tự hào hách dịch
+01889819-a	vie:exe	"một quan chức ngạo mạn", "ngạo mạn tuyên bố", "vẻ tự phụ như một con công"
+01842001-a	vie:lemma	không_thể đoán_trước
+01842001-a	vie:def	không có khả năng được báo trước
+01842001-a	vie:exe	"thời tiết này đúng là không thể đoán trước"
+01842304-a	vie:lemma	quái_đản
+01842304-a	vie:def	thay đổi
+01842304-a	vie:exe	"một làn gió mùa hè thất thường", "thời tiết quái đản"
+01847672-a	vie:lemma	vắng_mặt
+01847672-a	vie:def	không có mặt
+01847672-a	vie:exe	"Không được vắng mặt trong buổi họp đầu năm"
+01848701-a	vie:lemma	gây chú_ý
+01848701-a	vie:def	đánh dấu bằng sự phô trương nhưng thường vô vị
+01848701-a	vie:exe	"một vòng đeo tay giá rẻ bằng đá giả sặc sỡ", "một nửa trang quảng cáo gây chú ý"
+01871774-a	vie:lemma	sinh_lợi
+01871774-a	vie:def	tạo ra lợi nhuận lớn
+01871774-a	vie:exe	"một doanh nghiệp sinh lợi"
+01880071-a	vie:lemma	chính_đáng
+01880071-a	vie:def	thích hợp hoặc hợp pháp
+01880071-a	vie:exe	"Những nhu cầu chính đáng"
+01875227-a	vie:lemma	nông_cạn
+01875227-a	vie:def	thiếu chiều sâu của trí tuệ hay kiến thức, có liên quan chỉ với những gì là hiển nhiên
+01875227-a	vie:exe	"người nông cạn", "lập luận của ông dường như rất nông cạn và tẻ nhạt"
+01883106-a	vie:lemma	điềm_báo
+01883106-a	vie:def	lời tiên tri đáng ngại
+01883106-a	vie:exe	"2012 là một điềm báo đáng ngại"
+01880918-a	vie:lemma	không thuận_tiện
+01880918-a	vie:def	không đúng tiêu chuẩn được chấp nhận của những gì là đúng hoặc phù hợp trong xã hội lịch sự
+01880918-a	vie:exe	"đã được chôn với sự vội vàng không đứng đắn" , "hành vi không lịch sự", "ngôn ngữ không thích hợp cho một phụ nữ", "không hợp lệ để sử dụng những hành vi thô tục", "di chuyển để hạn chế sự không thuận tiện với lời lẽ thô lỗ của họ"
+01885866-a	vie:lemma	bảo_vệ
+01885866-a	vie:def	(sử dụng đặc biệt là máy móc) được bảo vệ bởi lá chắn để ngăn ngừa chấn thương
+01885866-a	vie:exe	"hệ thống bảo vệ của tòa nhà"
+01883226-a	vie:lemma	báo_trước
+01883226-a	vie:def	cảnh báo về bất hạnh trong tương lai
+01883226-a	vie:exe	"Hãy nghe lời cảnh báo của đôi mắt"
+01884930-a	vie:lemma	được bảo_vệ
+01884930-a	vie:def	được giữ an toàn hoặc bảo vệ khỏi nguy hiểm hay thương tích hay thiệt hại
+01884930-a	vie:exe	"tại chỗ được bảo vệ tốt nhất mà tôi có thể tìm thấy"
+01892433-a	vie:lemma	quá tự_hào
+01892433-a	vie:def	kiêu ngạo
+01892433-a	vie:exe	"đừng quá tự hào vì những gì mình đã có"
+01893510-a	vie:lemma	khiêm_tốn
+01893510-a	vie:def	khiêm tốn trong tinh thần hoặc tính cách
+01893510-a	vie:exe	cho thấy sự hòa nhã hoặc dễ bảo thậm chí sợ hãi, "hiền lành và nhu mì"
+01899360-a	vie:lemma	thiếu thận_trọng
+01899360-a	vie:def	không thận trọng hay khôn ngoan
+01899360-a	vie:exe	"sự thiếu thận trọng của mẹ cô khuyến khích cô trong những ý tưởng ngớ ngẩn lãng mạn", "sẽ là thiếu thận trọng cho một người không biết gì về kinh tế khi nói về các chi tiết của chính sách kinh tế" AMSchlesinger
+01902313-a	vie:lemma	không_được giáo_dục
+01902313-a	vie:def	không chịu sửa chữa, kỷ luật
+01902313-a	vie:exe	"để cho con lớn lên mà không được giáo dục"
+01904596-a	vie:lemma	vô_giáo_dục
+01904596-a	vie:def	giống kém hoặc hỗn hợp
+01904596-a	vie:exe	"một con chó vô giáo dục"
+01905377-a	vie:lemma	không trong_sạch
+01905377-a	vie:def	(sử dụng của người hoặc hành vi) vô đạo đức hoặc khiêu dâm
+01905377-a	vie:exe	"tư tưởng không trong sạch"
+01907103-a	vie:lemma	không pha_trộn
+01907103-a	vie:def	chưa pha trộn với các yếu tố không liên quan
+01907103-a	vie:exe	"nước thô (nước lã)", "rượu nguyên chất", "không phải là một phước lành không pha trộn"
+01911415-a	vie:lemma	không đủ_tiêu_chuẩn
+01911415-a	vie:def	không đáp ứng các tiêu chuẩn thích hợp và các yêu cầu và đào tạo
+01911415-a	vie:exe	"Em ấy không đủ tiêu chuẩn để qua kì thi"
+01913089-a	vie:lemma	vô_kỷ_luật
+01913089-a	vie:def	không có kỷ luật
+01913089-a	vie:exe	"một tài năng vô kỷ luật"
+01913642-a	vie:lemma	bị biến_đổi
+01913642-a	vie:def	thay đổi hoặc làm cho thay đổi thành khác trước
+01913642-a	vie:exe	"sắc mặt của nó bị biến đổi"
+01915745-a	vie:lemma	định_lượng được
+01915745-a	vie:def	có khả năng được định lượng
+01915745-a	vie:exe	"Số dữ liệu này có thể định lượng được"
+01914521-a	vie:lemma	chất_lượng
+01914521-a	vie:def	liên quan đến phân biệt dựa trên phẩm chất
+01914521-a	vie:exe	"thay đổi về chất", "chất lượng dữ liệu", "chất lượng phân tích xác định thành phần hóa học của một chất hoặc hỗn hợp"
+01925242-a	vie:lemma	chủ_tâm
+01925242-a	vie:def	có hoặc hiển thị hoặc hành động với một mục đích, thiết kế
+01925242-a	vie:exe	"hành vi chủ tâm"
+01925708-a	vie:lemma	minh_mẫn
+01925708-a	vie:def	có khả năng suy nghĩ và thể hiện bản thân một cách rõ ràng và nhất quán
+01925708-a	vie:exe	"một nhà tư tưởng sáng suốt", "cô ấy đã minh mẫn hơn so với trước khi bị tai nạn"
+01926654-a	vie:lemma	vô_lý
+01926654-a	vie:def	không dựa trên lý do hoặc chứng cứ
+01926654-a	vie:exe	"hận thù vô lý", "đức tin mù quáng", "hoảng loạn vô lý"
+01935744-a	vie:lemma	huyền_thoại
+01935744-a	vie:def	diễn ra trong huyền thoại hay truyền thuyết
+01935744-a	vie:exe	"huyền thoại Paul Bunyan và con trâu xanh", "huyền thoại khai thác của Jesse James"
+01941999-a	vie:lemma	không thực_tế
+01941999-a	vie:def	không thực tế
+01941999-a	vie:exe	"mong đợi không thực tế", "giá cao ở mức không thực tế"
+01945010-a	vie:lemma	không có cơ_sở
+01945010-a	vie:def	(trong lý thuyết, vv) không có khả năng được bảo vệ hay biện minh
+01945010-a	vie:exe	"Những lời buộc tội không có cơ sở"
+01953467-a	vie:lemma	chưa tinh_chế
+01953467-a	vie:def	chưa tinh chế hoặc chế biến
+01953467-a	vie:exe	"quặng chưa tinh chế", "dầu thô"
+01953297-a	vie:lemma	tinh
+01953297-a	vie:def	giải thoát khỏi các tạp chất bằng cách xử lý
+01953297-a	vie:exe	"đường tinh luyện", "tinh dầu", "để mạ tinh chế vàng" Shakespeare
+01956855-a	vie:lemma	mất
+01956855-a	vie:def	không có khả năng thu hồi hoặc lấy lại
+01956855-a	vie:exe	"mất danh dự"
+01982646-a	vie:lemma	uy_tín
+01982646-a	vie:def	có một danh tiếng tốt
+01982646-a	vie:exe	"một doanh nghiệp có uy tín", "một nhà khoa học có uy tín", "một loại rượu có uy tín"
+01982957-a	vie:lemma	vinh_dự
+01982957-a	vie:def	có một danh tiếng lẫy lừng, được tôn trọng
+01982957-a	vie:exe	"nhà lãnh đạo đáng kính của chúng tôi", "một tác giả có uy tín"
+01984097-a	vie:lemma	không xứng_đáng
+01984097-a	vie:def	mất uy tín
+01984097-a	vie:exe	đáng trách; "nhãn hiệu của ông đã không không xứng đáng ở tất cả các mặt"
+01987093-a	vie:lemma	thù_địch
+01987093-a	vie:def	không thể đưa vào hiệp định thân thiện
+01987093-a	vie:exe	"các phe phái thù địch"
+01995288-a	vie:lemma	xúc_phạm
+01995288-a	vie:def	thể hiện sự khinh thường
+01995288-a	vie:exe	"Tôi khinh!"
+01997910-a	vie:lemma	vô_trách_nhiệm
+01997910-a	vie:def	thể hiện sự thiếu quan tâm về hậu quả
+01997910-a	vie:exe	"cư xử như một thằng ngốc vô trách nhiệm", "hành động vội vàng và thiếu trách nhiệm"
+01999766-a	vie:lemma	không phản_hồi
+01999766-a	vie:def	không đáp ứng với một số ảnh hưởng hoặc kích thích kinh tế
+01999766-a	vie:exe	"Chính sách của ông ấy đã không phản hồi lại kết quả như ý"
+01998535-a	vie:lemma	vô_công rồi nghề
+01998535-a	vie:def	đặc trưng bởi không có khả năng hoặc không sẵn sàng để làm việc hướng tới mục tiêu một hoặc chịu trách nhiệm
+01998535-a	vie:exe	"một chính phủ vô công rồi nghề"
+02001596-a	vie:lemma	bất_trị
+02001596-a	vie:def	không hạn chế hoặc kiểm soát
+02001596-a	vie:exe	"cơn giận dữ không kiềm chế", "một cơn giận không được kiểm soát", "cơn thịnh nộ bất trị"
+02012504-a	vie:lemma	bất_kính
+02012504-a	vie:def	hiện sự thiếu tôn trọng hay tôn kính do
+02012504-a	vie:exe	"học giả bất kính chế giễu những điều thiêng liêng", "khách du lịch ồn ào bất kính"
+02014611-a	vie:lemma	không_được đánh_thức
+02014611-a	vie:def	không thức tỉnh hoặc kích hoạt
+02014611-a	vie:exe	"cảm xúc không được đánh thức"
+02015403-a	vie:lemma	phản
+02015403-a	vie:def	đánh dấu bởi sự phản đối hoặc ác cảm với cách mạng
+02015403-a	vie:exe	"tẩy chay cho khuynh hướng phản cách mạng của mình"
+02025885-a	vie:lemma	thuộc khu ổ_chuột
+02025885-a	vie:def	(trong nhà ở, khu dân cư) mang tính đói nghèo
+02025885-a	vie:exe	"khu ổ chuột của thị xã", "điều kiện khu ổ chuột"
+02036934-a	vie:lemma	thẳng_thắn
+02036934-a	vie:def	xuất sắc về đạo đức
+02036934-a	vie:exe	"một người thực sự tốt", "một nguyên nhân đứng đắn", "một người đàn ông thẳng thắn và đáng kính"
+02038891-a	vie:lemma	thép
+02038891-a	vie:def	cực kỳ mạnh mẽ
+02038891-a	vie:exe	"một hiến pháp đanh thép"
+02038994-a	vie:lemma	mập_mạp
+02038994-a	vie:def	có sức mạnh chắc chắn về thể chất
+02038994-a	vie:exe	không sợ mệt mỏi hay khó khăn; "dũng cảm thám hiểm ở miền Bắc Canada", "cô ta rất tự hào về đứa con trai mạnh mẽ của mình"; "người thủy thủ mập mạp "," các vận động viên trẻ săn chắc "
+02040049-a	vie:lemma	yếu_đuối
+02040049-a	vie:def	thể chất yếu
+02040049-a	vie:exe	"một cơ thể yếu đuối bất thường"
+02086879-a	vie:lemma	chưa mở
+02086879-a	vie:def	không được mở hoặc niêm phong
+02086879-a	vie:exe	"chưa mở quà Giáng sinh"
+02085898-a	vie:lemma	vô_nguyên_tắc
+02085898-a	vie:def	mà không có kỷ luật hoặc nguyên tắc
+02085898-a	vie:exe	"những nhà chính trị vô nguyên tắc sẽ bán ... đất nước của họ để đạt được quyền lực"
+02086356-a	vie:lemma	vô_lương_tâm
+02086356-a	vie:def	không có lương tâm
+02086356-a	vie:exe	"Anh là đồ vô lương tâm"
+02093888-a	vie:lemma	an_toàn
+02093888-a	vie:def	không có các mối nguy hiểm hoặc rủi ro
+02093888-a	vie:exe	"tài sản của ông đã được an toàn", "làm một nơi an toàn cho mình trong lĩnh vực của mình"
+02094514-a	vie:lemma	bảo_đảm
+02094514-a	vie:def	bảo đảm không để thất bại
+02094514-a	vie:exe	"một công thức bảo đảm cho bánh phồng pho mát"
+02095037-a	vie:lemma	run
+02095037-a	vie:def	không an toàn bao vây với những khó khăn
+02095037-a	vie:exe	"một cuộc hôn nhân bấp bênh"
+02096213-a	vie:lemma	tháo
+02096213-a	vie:def	không phải đóng hoặc bảo đảm
+02096213-a	vie:exe	"cửa xe đã được tháo", "tháo dây an toàn"
+02096923-a	vie:lemma	bảo_hiểm
+02096923-a	vie:def	có khả năng được bảo hiểm hoặc đủ điều kiện để được bảo hiểm
+02096923-a	vie:exe	"Anh ta được bảo hiểm trong mọi lần tai nạn"
+02100566-a	vie:lemma	cấp_trên
+02100566-a	vie:def	có một thứ hạng cao hơn
+02100566-a	vie:exe	"viên chức cao cấp"
+02099651-a	vie:lemma	chia_sẻ
+02099651-a	vie:def	cách không ích kỷ sẵn sàng chia sẻ với người khác
+02099651-a	vie:exe	"một người bạn ấm áp và chia sẻ"
+02102796-a	vie:lemma	vô_cảm
+02102796-a	vie:def	không có khả năng cảm giác thể chất
+02102796-a	vie:exe	"vô cảm với nỗi đau", "trái đất vô cảm"
+02103052-a	vie:lemma	gây_mê
+02103052-a	vie:def	đặc trưng bởi bất tỉnh nhân sự
+02103052-a	vie:exe	"các cô gái trẻ đang ở trong một nhà nước sở hữu bị mù và điếc và bị gây mê", "một nhà nước bị gây mê"
+02104277-a	vie:lemma	kích_thích
+02104277-a	vie:def	có khả năng đáp ứng với các kích thích
+02104277-a	vie:exe	"Anh ta là người dễ bị kích thích"
+01001689-a	vie:lemma	màu_mỡ
+01001689-a	vie:def	giàu chất dinh dưỡng, thuận lợi cho cây trồng phát triển
+01001689-a	vie:exe	"đất đai màu mỡ"
+01002055-a	vie:lemma	dồi_dào
+01002055-a	vie:def	rất nhiều, đến mức cần bao nhiêu cũng có đủ
+01002055-a	vie:exe	"sức khỏe dồi dào"
+01005675-a	vie:lemma	chưa hoàn_thành
+01005675-a	vie:def	không đưa đến tình trạng cuối cùng mong muốn
+01005675-a	vie:exe	"công việc chưa hoàn thành"
+01006967-a	vie:lemma	bị cạn_kiệt
+01006967-a	vie:def	có khả năng được sử dụng hết, có khả năng bị cạn kiệt
+01006967-a	vie:exe	"Chúng tôi bị cạn kiệt nhiên liệu hóa thạch dự trữ"
+01007258-a	vie:lemma	hạn
+01007258-a	vie:def	quy định thời gian cho một công việc nào đó
+01007258-a	vie:exe	"hạn cho 3 ngày phải xong"
+01007354-a	vie:lemma	vô_hạn
+01007354-a	vie:def	không có giới hạn hay ranh giới trong thời gian hay không gian hoặc mức độ hay cường độ
+01007354-a	vie:exe	"sự ngây thơ vô hạn của con người", "sự giàu có vô hạn"
+01016874-a	vie:lemma	phân_hạch
+01016874-a	vie:def	vỡ ra, thường thành hai mảnh lớn
+01016874-a	vie:exe	"một phân hạch nucleous", "vật liệu phân hạch"
+01017161-a	vie:lemma	phù_hợp với
+01017161-a	vie:def	chất và tinh thần âm thanh hoặc khỏe mạnh
+01017161-a	vie:exe	"cảm thấy thoải mái và phù hợp sau khi kỳ nghỉ của họ", "giữ cho phù hợp với chế độ ăn uống và tập thể dục"
+01017738-a	vie:lemma	không thích_hợp
+01017738-a	vie:def	không ở trong tình trạng thể chất hoặc tinh thần tốt, trong điều kiện
+01017738-a	vie:exe	"áo xanh không thích hợp với quần đỏ"
+01019283-a	vie:lemma	tàn_tật
+01019283-a	vie:def	không có khả năng hoạt động như một hệ quả của chấn thương hay bệnh tật
+01019283-a	vie:exe	"những em bé khuyết tật rất đáng thương"
+01040544-a	vie:lemma	dai_dẳng
+01040544-a	vie:def	liên tục theo định kỳ để tâm
+01040544-a	vie:exe	"ký ức ám ảnh", "cơ quan các nhà thờ và những tiếng nói xa xôi có một vẻ đẹp ám ảnh" Claudia Cassidy
+01041481-a	vie:lemma	không_hề khoan_nhượng
+01041481-a	vie:def	không muốn hoặc không thể tha thứ hoặc hiện lòng thương xót
+01041481-a	vie:exe	"một người phụ nữ không hề khoan nhượng cho lỗi lầm của chồng"
+01048587-a	vie:lemma	ngẫu_nhiên
+01048587-a	vie:def	tình cờ sinh ra, xảy ra chứ không phải do những nguyên nhân bên trong quyết định
+01048587-a	vie:exe	"sự trùng hợp ngẫu nhiên"
+01050088-a	vie:lemma	định_mệnh
+01050088-a	vie:def	số mệnh của con người, do một lực lượng huyền bí định sẵn, không thể cưỡng lại được, theo quan niệm duy tâm
+01050088-a	vie:exe	"cưỡng lại định mệnh"
+01052248-a	vie:lemma	thơm
+01052248-a	vie:def	mùi dễ chịu
+01052248-a	vie:exe	"quả thị thật thơm"
+01053634-a	vie:lemma	mùi_hôi_thối
+01053634-a	vie:def	có mùi hôi, thối và bẩn
+01053634-a	vie:exe	"một mùi hôi thối bốc lên trong bếp";
+01053915-a	vie:lemma	mốc
+01053915-a	vie:def	có mốc làm cho bẩn hoặc kém phẩm chất
+01053915-a	vie:exe	"gạo mốc"
+01054367-a	vie:lemma	hôi
+01054367-a	vie:def	có mùi khó ngửi như mùi bọ xít, chuột chù
+01054367-a	vie:exe	"người hôi như cú"
+01054630-a	vie:lemma	mùi_thối
+01054630-a	vie:def	có mùi khó ngửi như mùi phân tươi hoặc mùi xác chết lâu ngày
+01054630-a	vie:exe	"có mùi thối sau bếp"
+01054630-a	vie:lemma	thối
+01054630-a	vie:def	có mùi khó ngửi như mùi phân tươi hoặc mùi xác chết lâu ngày
+01054630-a	vie:exe	"có mùi thối sau bếp"
+01056802-a	vie:lemma	mùi dễ_chịu
+01056802-a	vie:def	cảm giác dễ ngửi, thoái mái
+01056802-a	vie:exe	"mùi hoa hồng là mùi dễ chịu"
+01058756-a	vie:lemma	ràng_buộc
+01058756-a	vie:def	đặt trong tình thế có những điều bắt buộc phải làm, trong quan hệ với người khác, khiến cho hành động mất tự do
+01058756-a	vie:exe	"người phụ nữ ngày xưa bị lễ giáo ràng buộc"
+01060785-a	vie:lemma	không cố_định
+01060785-a	vie:def	không chắc chắn được đặt hoặc thiết lập hoặc gắn chặt
+01060785-a	vie:exe	"cái bàn không cố định"
+01063958-a	vie:lemma	không bị cản_trở
+01063958-a	vie:def	không được tổ chức trong kiểm tra hoặc chịu sự kiểm soát
+01063958-a	vie:exe	"không bị cản trở phổ biến tin tức", "điều này sẽ cung cấp cho người da đen có cơ hội để sống không bị cản trở bởi phân biệt chủng tộc"
+01064167-a	vie:lemma	không hạn_chế
+01064167-a	vie:def	miễn phí các hạn chế về việc thực hiện
+01064167-a	vie:exe	"Tôi đã không bị hạn chế truy cập"
+01064286-a	vie:lemma	không tự_do
+01064286-a	vie:def	bị cản trở và không thể hành động theo ý muốn
+01064286-a	vie:exe	"tôi không thích cuộc sống không tự do"
+01067193-a	vie:lemma	không thường_xuyên
+01067193-a	vie:def	không xảy ra đều đặn, có lịch trình trong khoảng thời gian ngắn
+01067193-a	vie:exe	"nó đi làm không thường xuyên"
+01069283-a	vie:lemma	hư_hỏng
+01069283-a	vie:def	hỏng, không dùng được nữa
+01069283-a	vie:exe	"thịt xấu", "cô con gái hư hỏng"
+01071198-a	vie:lemma	tươi
+01071198-a	vie:def	không đóng hộp hoặc bảo quản cách khác
+01071198-a	vie:exe	"rau tươi"
+01075178-a	vie:lemma	vui_tính
+01075178-a	vie:def	có tính luôn luôn vui vẻ, hay gây cười
+01075178-a	vie:exe	" một chủ nhà vui tính "
+01076435-a	vie:lemma	láng_giềng
+01076435-a	vie:def	thể hiện quan hệ thân thiết, người ở nhà bên cạnh, trong quan hệ với nhau
+01076435-a	vie:exe	"hàng xóm láng giềng"
+01076793-a	vie:lemma	không thân_thiện
+01076793-a	vie:def	không đối xử hòa nhã với bạn bè hoặc thân thiện
+01076793-a	vie:exe	"họ là những người không thân thiện"
+01077263-a	vie:lemma	lạnh
+01077263-a	vie:def	thiếu cảm giác ấm áp, thân thiện
+01077263-a	vie:exe	"một gương mặt lạnh"
+01078673-a	vie:lemma	tê_buốt
+01078673-a	vie:def	thường do lạnh hoặc đóng băng một phần
+01078673-a	vie:exe	"tê buốt ngón tay"
+01080197-a	vie:lemma	tan
+01080197-a	vie:def	không còn đông lạnh
+01080197-a	vie:exe	"tan đá"
+01080297-a	vie:lemma	hiệu_quả
+01080297-a	vie:def	sản xuất hoặc lợi cho sản xuất trong sự phong phú
+01080297-a	vie:exe	"phương pháp có hiệu quả"
+01087093-a	vie:lemma	trắng
+01087093-a	vie:def	(của một bề mặt) không được viết hoặc in trên
+01087093-a	vie:exe	"trang trắng"
+01087977-a	vie:lemma	trống
+01087977-a	vie:def	mà không có một người cư ngụ hoặc đương nhiệm
+01087977-a	vie:exe	"ngai vàng không bao giờ bỏ trống"
+01114658-a	vie:lemma	hào_hùng
+01114658-a	vie:def	có khí thế mạnh mẽ và sôi nổi
+01114658-a	vie:exe	"lời văn hào hùng"
+01115349-a	vie:lemma	chính_hãng
+01115349-a	vie:def	không giả, giả mạo
+01115349-a	vie:exe	"một sản phẩm Picasso chính hãng"
+01115635-a	vie:lemma	thực_sự
+01115635-a	vie:def	không giả, sao chép
+01115635-a	vie:exe	"một chữ ký xác thực"
+01116380-a	vie:lemma	giả
+01116380-a	vie:def	không chính hãng, bắt chước một cái gì đó cấp trên
+01116380-a	vie:exe	"giả cảm xúc", "tiền giả", "giả mạo tác phẩm nghệ thuật", "một hoàng tử giả"
+01117226-a	vie:lemma	giả_mạo
+01117226-a	vie:def	sao chép gian lận
+01117226-a	vie:exe	" một tờ hai mươi đô la giả mạo "
+01120925-a	vie:lemma	vinh_quang
+01120925-a	vie:def	có hoặc xứng đáng hoặc trao vinh quang
+01120925-a	vie:exe	"một sự nghiệp lâu dài và vẻ vang"
+01121238-a	vie:lemma	sáng
+01121238-a	vie:def	thời kỳ thịnh vượng, nổi bật
+01121238-a	vie:exe	"một điểm sáng trong lịch sử"
+01121757-a	vie:lemma	siêu
+01121757-a	vie:def	học rất giỏi
+01121757-a	vie:exe	"cô ấy học rất siêu"
+01126291-a	vie:lemma	không_kể_xiết
+01126291-a	vie:def	cao trào của cảm xúc
+01126291-a	vie:exe	"nỗi đau không kể xiết"
+01127147-a	vie:lemma	sợ_hãi
+01127147-a	vie:def	vô cùng đau buồn
+01127147-a	vie:exe	"một sai lầm khủng khiếp"
+01127302-a	vie:lemma	khó_khăn
+01127302-a	vie:def	khó, có nhiều trở ngại hoặc thiếu thốn
+01127302-a	vie:exe	"cuộc sống khó khăn"
+01127661-a	vie:lemma	cực_xấu
+01127661-a	vie:def	rất xấu
+01127661-a	vie:exe	"cái áo cực xấu"
+01127782-a	vie:lemma	bốc_mùi_hôi_thối
+01127782-a	vie:def	mùi khó chịu
+01127782-a	vie:exe	"trong bếp bốc mùi hôi thối"
+01129533-a	vie:lemma	không_biết xấu_hổ
+01129533-a	vie:def	không ngại ngùng, e dè khi làm sai việc gì đó
+01129533-a	vie:exe	"cô ta không biết xấu hổ là gì"
+01130261-a	vie:lemma	thánh_thiện
+01130261-a	vie:def	trong sáng, nhân từ
+01130261-a	vie:exe	"một gương mặt thánh thiện"
+01130733-a	vie:lemma	tiết_kiệm
+01130733-a	vie:def	dành dụm được do chi tiêu đúng mức
+01130733-a	vie:exe	"cô ấy sống rất tiết kiệm"
+01130932-a	vie:lemma	trong trắng
+01130932-a	vie:def	nhân từ, không có mục đích hiểm độc
+01130932-a	vie:exe	"đó là sự trong trắng của bạn"
+01131454-a	vie:lemma	dã_man
+01131454-a	vie:def	kinh hoàng hay độc ác tàn bạo
+01131454-a	vie:exe	"giết người là một tội ác dã man"
+01131935-a	vie:lemma	nham_hiểm
+01131935-a	vie:def	xuất phát từ đặc điểm xấu hay bản tính thâm độc, đê tiện
+01131935-a	vie:exe	"một hành động nham hiểm"
+01132366-a	vie:lemma	tham_nhũng
+01132366-a	vie:def	lợi dụng quyền hành để tham ô và nhũng nhiễu dân
+01132366-a	vie:exe	"bại trừ tệ nạn tham nhũng"
+01132515-a	vie:lemma	xấu_xa
+01132515-a	vie:def	cực kỳ xấu xa hay độc ác
+01132515-a	vie:exe	"một con người độc ác xấu xa"
+01137378-a	vie:lemma	ủ_rũ
+01137378-a	vie:def	buồn rầu đến mức như rũ xuống, không còn hơi sức nữa
+01137378-a	vie:exe	"ngồi ủ rũ một xó"
+01137994-a	vie:lemma	hờn_dỗi
+01137994-a	vie:def	có điều không bằng lòng và biểu lộ ra bằng thái độ làm như không cần đến nữa, không thiết nữa
+01137994-a	vie:exe	"tính hay hờn dỗi"
+01140188-a	vie:lemma	yểu_điệu
+01140188-a	vie:def	có dáng người mềm mại, thướt tha
+01140188-a	vie:exe	"cô gái có dáng người yểu điệu"
+01161233-a	vie:lemma	vu_khống bôi_nhọ
+01161233-a	vie:def	có hại và thường không đúng sự thật
+01161233-a	vie:exe	"cô ấy vu khống bôi nhọ danh dự của tôi"
+01161635-a	vie:lemma	gây tác_hại
+01161635-a	vie:def	gây tác hại xấu, nguy hiểm
+01161635-a	vie:exe	"đó đúng là một thảm họa"
+01162633-a	vie:lemma	tinh_nghịch
+01162633-a	vie:def	hay đùa nghịch một cách tinh ranh, láu lỉnh
+01162633-a	vie:exe	"bản tính tinh nghịch của cô ấy gây ra những tin đồn sai lầm"
+01167540-a	vie:lemma	phục_hồi
+01167540-a	vie:def	thúc đẩy phục hồi sức khoẻ
+01167540-a	vie:exe	"bà ta phục hồi sức khỏe nhanh chóng"
+01170136-a	vie:lemma	hạ_sốt
+01170136-a	vie:def	ngăn ngừa hoặc giảm sốt
+01170136-a	vie:exe	"em bé đã hạ sốt"
+01182747-a	vie:lemma	khó_tiêu
+01182747-a	vie:def	tiêu hóa khó khăn
+01182747-a	vie:exe	"ăn linh tinh dẫn đến khó tiêu"
+01182974-a	vie:lemma	kiêu_căng
+01182974-a	vie:def	tự cho mình hơn người nên xem thường người khác một cách lộ liễu, khiến người ta khó chịu
+01182974-a	vie:exe	"thái độ kiêu căng"
+01248713-a	vie:lemma	sốt_sắng
+01248713-a	vie:def	tỏ ra quan tâm và tích cực muốn được làm ngay, thực hiện ngay một công việc nào đó
+01248713-a	vie:exe	"sốt sắng với công việc chung"
+01262611-a	vie:lemma	vô_nhân_đạo
+01262611-a	vie:def	tàn ác, dã man, không có chút gì lòng thương yêu, quý trọng con người
+01262611-a	vie:exe	"hành động vô nhân đạo"
+01271700-a	vie:lemma	thong_thả
+01271700-a	vie:def	thoải mái và nhàn nhã, không có vội vàng hay vội vàng
+01271700-a	vie:exe	"người đi đường một cách thong thả", "một bước đi thong thả", "nói bằng một giọng bình tĩnh và thong thả"
+01272176-a	vie:lemma	nhàn_nhã
+01272176-a	vie:def	rỗi rãi, nhàn cả về thể xác lẫn tinh thần
+01272176-a	vie:exe	"cô ta thật nhàn nhã"
+01268002-a	vie:lemma	khôi_hài
+01268002-a	vie:def	có tác dụng làm cho cảm thấy thú vị, buồn cười
+01268002-a	vie:exe	"câu chuyện khôi hài"
+01268194-a	vie:lemma	dí_dỏm
+01268194-a	vie:def	có tác dụng gây vui, gây cười một cách nhẹ nhõm và có ý vị
+01268194-a	vie:exe	"câu pha trò dí dỏm"
+01273316-a	vie:lemma	khó nắm_bắt
+01273316-a	vie:def	khó mường tượng, khó diễn tả một cái gì đó
+01273316-a	vie:exe	"mùi lạ khó nắm bắt đó là mùi gì"
+02105898-a	vie:lemma	trơ
+02105898-a	vie:def	không phản ứng với kích thích
+02105898-a	vie:exe	"Khí trơ"
+02107634-a	vie:lemma	đần_độn
+02107634-a	vie:def	khựng lại trong phản ứng hoặc nhạy cảm
+02107634-a	vie:exe	"một cái nhìn ngu si đần độn", "quá kiệt sức, cô đã trở nên đần độn với những gì đã đi về về cô ấy" Willa Cather
+02108198-a	vie:lemma	nhạy
+02108198-a	vie:def	làm cho dễ bị nhạy cảm với một trong hai kích thích vật lý hay cảm xúc
+02108198-a	vie:exe	"Làn da nhạy với thời tiết"
+02108547-a	vie:lemma	tê_tái
+02108547-a	vie:def	gây tê hoặc vô hồn
+02108547-a	vie:exe	"đau buồn đến tê tái"
+02114190-a	vie:lemma	bị áp xe
+02114190-a	vie:def	nhiễm và chứa đầy mủ
+02114190-a	vie:exe	"một chiếc răng bị áp xe"
+02114483-a	vie:lemma	làm nhiễm
+02114483-a	vie:def	làm không tinh khiết do tiếp xúc hoặc trộn
+02114483-a	vie:exe	"Làm nhiễm xạ hóa chất"
+02115034-a	vie:lemma	thối_rữa
+02115034-a	vie:def	gây ra hoặc thúc đẩy sự thối rữa vi khuẩn
+02115034-a	vie:exe	"Xác chết thối rữa"
+02115324-a	vie:lemma	khử_trùng
+02115324-a	vie:def	kỹ sạch sẽ, không có sinh vật gây bệnh
+02115324-a	vie:exe	"bác sĩ trong áo khoác màu xanh lá cây có chất khử trùng", "các tác dụng khử trùng của rượu", "người ta nói kinh giới có chất khử trùng "
+02116473-a	vie:lemma	không bị nhiễm_bệnh
+02116473-a	vie:def	miễn phí từ nhiễm trùng huyết hoặc nhiễm trùng
+02116473-a	vie:exe	"một vết thương sạch (hoặc không bị nhiễm bệnh)"
+02116618-a	vie:lemma	vô_trùng
+02116618-a	vie:def	miễn phí từ các vi trùng hoặc sinh vật gây bệnh, vô trùng
+02116618-a	vie:exe	"một môi trường vô trùng"
+02120458-a	vie:lemma	phù_phiếm
+02120458-a	vie:def	không nghiêm trọng trong nội dung hoặc thái độ hay hành vi
+02120458-a	vie:exe	"một cuốn tiểu thuyết phù phiếm", "một nhận xét phù phiếm", "một phụ nữ trẻ phù phiếm"
+02121859-a	vie:lemma	vui_tươi
+02121859-a	vie:def	đầy đủ tinh thần vui vẻ và cao
+02121859-a	vie:exe	"trẻ em vui tươi khi được thả lỏng từ trường học"
+02123007-a	vie:lemma	nhõng_nhẽo
+02123007-a	vie:def	vui tươi sinh động giống như một con mèo con
+02123007-a	vie:exe	"Tôi yêu những cô bé hay nhõng nhẽo"
+02131072-a	vie:lemma	gợi_cảm
+02131072-a	vie:def	đánh dấu bằng hoặc xu hướng khơi dậy ham muốn tình dục hoặc quan tâm
+02131072-a	vie:exe	"cảm thấy gợi cảm", "quần áo gợi cảm", "một cuốn sách gợi cảm"
+02135138-a	vie:lemma	lãnh_cảm
+02135138-a	vie:def	không bị hấp dẫn bởi tình dục
+02135138-a	vie:exe	"Cô ta bị lãnh cảm"
+02138659-a	vie:lemma	cân_đối
+02138659-a	vie:def	có một hình dạng cân đối và hài lòng
+02138659-a	vie:exe	"một vòng eo thon và đôi chân cân đối"
+02152985-a	vie:lemma	độc_quyền
+02152985-a	vie:def	không chia, chia sẻ với người khác
+02152985-a	vie:exe	"họ đã sử dụng độc quyền máy tính", "quyền duy nhất của ấn phẩm"
+02164050-a	vie:lemma	tác_dụng
+02164050-a	vie:def	hiệu quả
+02164050-a	vie:exe	sản xuất một hiệu quả mong muốn; "tác dụng của lực từ"
+02175980-a	vie:lemma	không phức_tạp
+02175980-a	vie:def	thiếu phức tạp
+02175980-a	vie:exe	"chiếc xe nhỏ và không phức tạp cho những người thực sự quan tâm đến xe hơi", "một chiếc máy không phức tạp"
+02179279-a	vie:lemma	chân_thành
+02179279-a	vie:def	mở và chân thật, không gian dối
+02179279-a	vie:exe	"ông là một người đàn ông tốt, tử tế và chân thành", "cảm thấy hối tiếc chân thành rằng họ đã để lại", "tình bạn chân thành"
+02226162-a	vie:lemma	thành_thạo
+02226162-a	vie:def	có hay thấy kiến thức và kỹ năng và năng khiếu
+02226162-a	vie:exe	"chuyên nghiệp trong thủ công mỹ nghệ", "một trò tung hứng chuyên nghiệp" , "một công việc chuyên môn", "một thợ cơ khí tốt", "một người bắn giỏi thực hành", "một kỹ sư thành thạo", "ít người nổi tiếng nhưng không ít nhà soạn nhạc tài năng", "hiệu lực đã được thực hiện bằng cách chỉnh sửa khéo léo"
+02227344-a	vie:lemma	tinh_tế
+02227344-a	vie:def	đánh dấu bằng kỹ năng tuyệt vời nhất là trong kỹ thuật tỉ mỉ
+02227344-a	vie:exe	"sự tinh tế của một bác sĩ phẫu thuật"
+02233799-a	vie:lemma	siêu_mịn
+02233799-a	vie:def	kích thước hoặc kết cấu cực kỳ nhỏ
+02233799-a	vie:exe	"đường siêu mịn", "một tập tin siêu mịn"
+02233927-a	vie:lemma	khói
+02233927-a	vie:def	đánh dấu bằng hoặc phát ra hoặc đầy khói
+02233927-a	vie:exe	"khói xà", "khói ống khói", "một lò lửa khói", "một hành lang khói"
+02234673-a	vie:lemma	khói thuốc
+02234673-a	vie:def	liên quan đến việc hút thuốc lá
+02234673-a	vie:exe	"khói thuốc văn phòng và nhà hàng"
+02272305-a	vie:lemma	cả_tin
+02272305-a	vie:def	cho thấy một thiếu kinh nghiệm
+02272305-a	vie:exe	"vì vậy ông tin tất cả mọi thứ ông đọc được"
+02275412-a	vie:lemma	kiên_cố
+02275412-a	vie:def	chất lượng tốt và điều kiện, xây dựng kiên cố
+02275412-a	vie:exe	"một nền tảng vững chắc", "một số tòa nhà gỗ kiên cố"
+02277182-a	vie:lemma	không bão hòa
+02277182-a	vie:def	không có sự bão hòa
+02277182-a	vie:exe	"chất béo không bão hòa"
+02278939-a	vie:lemma	tinh_thần
+02278939-a	vie:def	hiển thị hình ảnh động, sức sống, hoặc sinh động
+02278939-a	vie:exe	"tinh thần yêu nước bất khuất"
+02280821-a	vie:lemma	lanh_lợi
+02280821-a	vie:def	đầy đủ tinh thần và sức sống
+02280821-a	vie:exe	"một cô gái trẻ vui vẻ", "một điệu nhảy vui vẻ"
+02282171-a	vie:lemma	nhẫn_tâm
+02282171-a	vie:def	không có các can đảm hay sự nhiệt tình
+02282171-a	vie:exe	"Anh thật nhẫn tâm"
+02292797-a	vie:lemma	rung_rinh
+02292797-a	vie:def	xu hướng lắc từ sự yếu kém hoặc khuyết tật
+02292797-a	vie:exe	"một cái bàn ọp ẹp", "chiếc ghế lung lay với đôi chân run rẩy", "cảm thấy một cái thang chút lung lay "," cây cầu vẫn đứng mặc dù một trong những vòm là rung rinh "
+01245889-a	vie:lemma	đối_đầu
+01245889-a	vie:def	đặc trưng bởi sự phản đối trực tiếp
+01245889-a	vie:exe	"một cuộc đối đầu"
+01246579-a	vie:lemma	thân_thiện
+01246579-a	vie:def	đặc trưng bởi tình hữu nghị và thiện chí
+01246579-a	vie:exe	"Người Lào khá thân thiện"
+02786473-a	vie:lemma	dại
+02786473-a	vie:def	bị nhiễm bệnh dại
+02786473-a	vie:exe	"chó dại"
+03043482-a	vie:lemma	sự_chống_đối Do Thái
+03043482-a	vie:def	liên quan đến hay đặc trưng bởi chống Do Thái
+03043482-a	vie:exe	ghét người Do Thái; "các cuộc biểu tình thường bắt nguồn từ sự chống đối Do Thái"
+03090612-a	vie:lemma	suy_nhược thần_kinh
+03090612-a	vie:def	trong hoặc liên quan đến hoặc bị suy nhược thần kinh
+03090612-a	vie:exe	" xu hướng suy nhược thần kinh"
+03105742-a	vie:lemma	sốt
+03105742-a	vie:def	có, gây sốt
+03105742-a	vie:exe	"người sốt không nên ra trời gió"
+03062754-a	vie:lemma	công_tước
+03062754-a	vie:def	của hoặc thuộc về hoặc thích hợp cho một công tước
+03062754-a	vie:exe	"công tước cung điện"
+02976525-a	vie:lemma	thần_kinh
+02976525-a	vie:def	đặc trưng của hoặc bị ảnh hưởng bởi thần kinh
+02976525-a	vie:exe	"rối loạn thần kinh", "triệu chứng thần kinh"
+02987017-a	vie:lemma	gây đột_biến
+02987017-a	vie:def	có khả năng gây đột biến (sử dụng chủ yếu của các yếu tố ngoại bào chẳng hạn như X quang, gây ô nhiễm hóa học)
+02987017-a	vie:exe	"các tế bào gây đột biến"
+02799797-a	vie:lemma	lác_mắt
+02799797-a	vie:def	bị ảnh hưởng bởi lác
+02799797-a	vie:exe	"nhìn lác mắt"
+02783646-a	vie:lemma	tiền ung_thư
+02783646-a	vie:def	của hoặc liên quan đến một sự tăng trưởng đó không phải là ác tính nhưng có thể sẽ trở thành như vậy nếu không được điều trị
+02783646-a	vie:exe	"Cô ấy mới ở giai đoạn tiền ung thư, nhưng vẫn có thể nguy hiểm nếu không điều trị"
+02776576-a	vie:lemma	thực_ bào
+02776576-a	vie:def	có khả năng hoạt động như một thực bào
+02776576-a	vie:exe	"thực bào tế bào máu"
+01826498-v	vie:lemma	thích
+01826498-v	vie:def	như tốt đẹp hơn
+01826498-v	vie:exe	giá trị cao hơn, "Một số người thích cắm trại hơn là ở trong khách sạn", "Chúng tôi thích ngủ bên ngoài"
+01824736-v	vie:lemma	ước
+01824736-v	vie:def	thích hoặc ước làm điều gì đó
+01824736-v	vie:exe	"Bạn có quan tâm tới việc thử chiếc đĩa này không?"; "Bạn có muốn đi với tôi và xem phim?"
+02751055-v	vie:lemma	giao điểm
+02751055-v	vie:def	có ít nhất ba điểm chung với
+02751055-v	vie:exe	"giao điểm của ba mặt"
+02748627-v	vie:lemma	tốt
+02748627-v	vie:def	phù hợp với
+02748627-v	vie:exe	"gỗ làm đồ nội thất tốt"
+02740204-v	vie:lemma	do dự
+02740204-v	vie:def	là không chắc chắn hay yếu
+02740204-v	vie:exe	"sự nhiệt tình của họ là do dự"
+02500619-v	vie:lemma	nạn_nhân
+02500619-v	vie:def	trừng phạt bất công
+02500619-v	vie:exe	"Tôi không muốn là nạn nhân, tôi không có tội"
+02500775-v	vie:lemma	tai_họa
+02500775-v	vie:def	trừng phạt nặng nề
+02500775-v	vie:exe	"Tai họa đã giáng xuống đầu ông ấy"
+02507736-v	vie:lemma	rắc_rối
+02507736-v	vie:def	gây ra sự bất tiện hay khó chịu đến
+02507736-v	vie:exe	"Xin lỗi làm phiền bạn, nhưng ..."
+02508078-v	vie:lemma	xấu_hổ
+02508078-v	vie:def	bắt buộc thông qua một cảm giác xấu hổ
+02508078-v	vie:exe	"Cô ấy xấu hổ và sửa lỗi của mình"
+02513460-v	vie:lemma	không ưa
+02513460-v	vie:def	đặt vào thế bất lợi, cản trở, gây hại
+02513460-v	vie:exe	"quy tắc này một cách rõ ràng bất lợi cho tôi"
+02513989-v	vie:lemma	sai
+02513989-v	vie:def	xử bất công
+02513989-v	vie:exe	làm sai trái; "Anh làm sai với chị ấy rồi!"
+02513742-v	vie:lemma	định_kiến
+02513742-v	vie:def	bất lợi bởi định kiến
+02513742-v	vie:exe	"Cô ấy cố gắng vượt qua định kiến để sống tốt
+00042614-r	vie:lemma	buồn_bã
+00042614-r	vie:def	một cách đáng tiếc
+00042614-r	vie:exe	"thật đáng buồn, ông đã chết trước khi ông có thể nhìn thấy đứa cháu của mình"
+00042769-r	vie:lemma	không may_mắn
+00042769-r	vie:def	do may mắn
+00042769-r	vie:exe	"thật không may trời mưa cả ngày", "than ôi, tôi không thể ở lại"
+02483000-v	vie:lemma	ám_sát
+02483000-v	vie:def	giết người, đặc biệt là của xã hội người nổi tiếng
+02483000-v	vie:exe	"Anwar Sadat bị ám sát vì nhiều người không thích chính trị hòa bình với Israel"
+02350175-v	vie:lemma	thoát
+02350175-v	vie:def	tự do khỏi một cái gì đó
+02350175-v	vie:exe	"thoát khỏi ngôi nhà của các loài gây hại"
+02321391-v	vie:lemma	cướp
+02321391-v	vie:def	lấy một cái gì đó đi bằng vũ lực hoặc khi không có sự đồng ý của chủ sở hữu
+02321391-v	vie:exe	"Những kẻ trộm cướp tất cả tiền của anh ta"
+02321757-v	vie:lemma	ăn_cắp
+02321757-v	vie:def	mất mà không có sự đồng ý của chủ sở hữu
+02321757-v	vie:exe	"Ai đó đã ăn cắp ví tiền của tôi trên tàu", "tác giả này lấy ăn cắp toàn bộ các đoạn văn từ luận văn của tôi"
+02263027-v	vie:lemma	tặng
+02263027-v	vie:def	cung cấp cho một tổ chức từ thiện hoặc lý do chính đáng
+02263027-v	vie:exe	"Tôi hiến máu cho Hội Chữ thập đỏ cho các nạn nhân của trận động đất", "tặng tiền cho trại trẻ mồ côi", "Cô ấy tặng cho cô yêu thích tổ chức từ thiện mỗi tháng "
+02129709-v	vie:lemma	xem
+02129709-v	vie:def	xem và hiểu, có một con mắt tốt
+02129709-v	vie:exe	"Các nghệ sĩ đầu tiên phải học cách để xem"
+02123424-v	vie:lemma	bứt_rứt
+02123424-v	vie:def	gây_ra một_cơn đau_nhói
+02123424-v	vie:exe	" cây kim đâm da của mình gây bứt rứt"
+02122983-v	vie:lemma	gai
+02122983-v	vie:def	gây ra một cảm giác châm chích hoặc ngứa ran
+02122983-v	vie:exe	"sợ đến gai người"
+02109404-v	vie:lemma	chịu đựng
+02109404-v	vie:def	có một sự khoan dung cho một chất độc hoặc thuốc mạnh hay tác nhân gây bệnh hoặc điều kiện môi trường
+02109404-v	vie:exe	"Các bệnh nhân không chịu đựng được các loại thuốc chống viêm, chúng tôi đã cho ông"
+01829747-v	vie:lemma	tỏa sáng
+01829747-v	vie:def	kinh nghiệm một cảm giác hạnh phúc hay hạnh phúc, như là từ sức khỏe tốt hay một cảm xúc mãnh liệt
+01829747-v	vie:exe	"Cô ấy cười rạng rỡ với niềm vui", "khuôn mặt tỏa sáng hạnh phúc "
+02124332-v	vie:lemma	mùi
+02124332-v	vie:def	mùi hôi
+02124332-v	vie:exe	"Anh ấy ít khi tắm rửa, và luôn có mùi"
+02164694-v	vie:lemma	ngưỡng_mộ
+02164694-v	vie:def	nhìn vào với sự ngưỡng mộ
+02164694-v	vie:exe	"Tôi rất ngưỡng mộ cô ấy"
+02198234-v	vie:lemma	dường_như
+02198234-v	vie:def	xuất hiện trong tâm trí ý kiến của riêng hay của một người
+02198234-v	vie:exe	"Tôi dường như bị hiểu lầm bởi tất cả mọi người", "Tôi dường như không thể tìm hiểu những ký tự Trung Quốc"
+02291135-v	vie:lemma	phù_hợp
+02291135-v	vie:def	dễ chịu
+02291135-v	vie:exe	"Rượu vang trắng không phù hợp với tôi"
+02350878-v	vie:lemma	giá quá thấp
+02350878-v	vie:def	bán với giá thấp
+02350878-v	vie:exe	"Chiếc áo đó đã được bán đi với giá quá thấp"
+02422026-v	vie:lemma	tự_do
+02422026-v	vie:def	không bị các nghĩa vụ hoặc trách nhiệm trói buộc
+02422026-v	vie:exe	"ông ta đã được thả tự do"
+02537407-v	vie:lemma	bán
+02537407-v	vie:def	chuyển giao cho một kẻ thù của sự phản bội
+02537407-v	vie:exe	"Judas bán Chúa Giêsu", "Các điệp viên phản bội đất nước"
+02679012-v	vie:lemma	hội_đủ điều_kiện
+02679012-v	vie:def	chứng minh có khả năng hoặc phù hợp, đáp ứng yêu cầu
+02679012-v	vie:exe	"bài báo này hội đủ điều kiện để công bố"
+02697610-v	vie:lemma	hóa lẫn
+02697610-v	vie:def	là ngu ngốc hoặc tuổi già vì tuổi già
+02697610-v	vie:exe	"Trở già hóa lẫn"
+02726385-v	vie:lemma	đứng yên
+02726385-v	vie:def	không hành động hoặc làm bất cứ điều gì
+02726385-v	vie:exe	"Ông chỉ đứng yên khi cảnh sát đánh đập những người biểu tình"
+02593001-v	vie:lemma	thủ_đoạn
+02593001-v	vie:def	thủ thuật hoặc lừa dối
+02593001-v	vie:exe	"ông ta là một con người thủ đoạn và độc ác"
+02580678-v	vie:lemma	độc
+02580678-v	vie:def	hỏng như thể bởi chất độc
+02580678-v	vie:exe	"đầu độc tâm trí của một ai đó", "độc bầu không khí trong văn phòng"
+02579447-v	vie:lemma	bại_hoại
+02579447-v	vie:def	hỏng về mặt đạo đức hay không điều độ hoặc cảm thụ
+02579447-v	vie:exe	"những người trẻ tuổi hư với rượu vang và phụ nữ", "Socrates bị buộc tội làm hư hỏng thanh niên"
+02588122-v	vie:lemma	chống_đỡ
+02588122-v	vie:def	cố gắng để quản lý mà không cần giúp đỡ
+02588122-v	vie:exe	"Các cầu thủ trẻ đã phải tự lo liệu chống đỡ cho bản thân sau khi cha mẹ của họ qua đời"
+02552829-v	vie:lemma	phục_hồi chức_năng
+02552829-v	vie:def	khôi phục lại trạng thái của tình trạng tốt hay hoạt động
+02552829-v	vie:exe	"phòng tập phục hồi chức năng"
+02496498-v	vie:lemma	giải_phóng
+02496498-v	vie:def	miễn phí từ chế độ nô lệ hay nô dịch
+02496498-v	vie:exe	"Sài Gòn giải phóng, nhân dân được giải trừ khỏi ách đô hộ"
+02343595-v	vie:lemma	hy_sinh
+02343595-v	vie:def	chịu đựng những mất mát
+02343595-v	vie:exe	"Ông đã cho trẻ em cuộc sống của mình", "Tôi đã hy sinh hai con trai cho chiến tranh"
+02301000-v	vie:lemma	trả_giá cao hơn
+02301000-v	vie:def	chào giá cao hơn giá thầu của đối thủ khi một trong những đối tác đã không chào giá hoặc tăng gấp đôi
+02301000-v	vie:exe	"Ông ta trả giá cao hơn để nhất định mua được món hàng"
+01820077-v	vie:lemma	bụi
+01808769-v	vie:lemma	đẩy_lùi
+01808769-v	vie:def	làm giảm tác động, giảm sức mạnh
+01808769-v	vie:exe	"Mong sao bệnh tật bị đẩy lùi"
+01811441-v	vie:lemma	hy_vọng
+01811441-v	vie:def	lạc quan, được tràn đầy hy vọng, có hy vọng
+01811441-v	vie:exe	"Tôi vẫn hy vọng rằng tất cả sẽ biến chuyển tốt"
+01794969-v	vie:lemma	nỗi thống_khổ
+01794969-v	vie:def	bị đau hoặc suy kiệt
+01794969-v	vie:exe	"Có ai hiểu cho nỗi thống khổ của bà mẹ ấy"
+01795888-v	vie:lemma	giận_dữ
+01795888-v	vie:def	đưa vào một cơn giận, làm tức giận dữ dội
+01795888-v	vie:exe	"Ông ta giận dữ đuổi thằng bé ra khỏi nhà"
+00043436-r	vie:lemma	do_đó
+00043436-r	vie:def	từ thời gian này
+00043436-r	vie:exe	"một năm do đó nó sẽ bị lãng quên"
+017529532-a	vie:lemma	không chỉ có lỗi
+017529532-a	vie:def	có nhiều hơn một khiếm khuyết
+017529532-a	vie:exe	"Nó không chỉ có lỗi trong chuyện này"
+001070177-a	vie:lemma	còn nhỏ
+001070177-a	vie:def	chưa đến tuổi trưởng thành
+001070177-a	vie:exe	"nó còn nhỏ chưa hiểu chuyện người lớn"
+001070171-a	vie:lemma	mơ_mộng
+001070171-a	vie:def	say mê theo những hình ảnh tốt đẹp nhưng xa vời, không thực tế
+001070171-a	vie:exe	"người hay mơ mộng"
+017529533-a	vie:lemma	không_phải chỉ có lỗi
+017529533-a	vie:def	có nhiều hơn một khiếm khuyết
+017529533-a	vie:exe	"Nó không phải chỉ có lỗi trong chuyện này"
+017529534-a	vie:lemma	không_tập_trung
+017529534-a	vie:def	lơ đãng, không chú ý vào một cái gì
+017529534-a	vie:exe	"Con bé học không tập trung"
+025033055-a	vie:lemma	sáo_rỗng
+025033055-a	vie:def	không có nội dung gì
+025033055-a	vie:exe	"lời văn sáo rỗng"
+018247365-v	vie:lemma	chỉ quan_tâm
+018247365-v	vie:def	thích hoặc ước một điều gì đó
+018247365-v	vie:exe	"nó chỉ quan tâm đến ăn uống"
+001633155-a	vie:lemma	kém đến_đâu
+001633155-a	vie:def	không đến nỗi thấp nhất
+001633155-a	vie:exe	"nó học có kém đến đâu đâu, sao cô nói thế"
+010692833-a	vie:lemma	không_được hay
+010692833-a	vie:def	mang đến điều không tốt
+010692833-a	vie:exe	"cô làm như thế không được hay"
+010692834-a	vie:lemma	không_được bóng_bẩy
+010692834-a	vie:def	không được đẹp đẽ, chau chuốt
+010692834-a	vie:exe	"lời văn không được bóng bẩy"
+010692835-a	vie:lemma	không có kiểu nhận_thức sáo_rỗng
+010692835-a	vie:def	có kiểu nhận thức sâu sắc
+010692835-a	vie:exe	"học sinh ngày xưa không có kiểu nhận thức sáo rỗng như bây giờ"
+010692836-a	vie:lemma	không tạo được cảm hứng
+010692836-a	vie:def	không yêu thích, không tạo được niềm say mê
+010692836-a	vie:exe	"không tạo được cảm hứng sáng tác"
+010692837-a	vie:lemma	không một_chút sáng_tạo
+010692837-a	vie:def	cách làm rập khuôn
+010692837-a	vie:exe	"cách làm không một chút sáng tạo"
+000788511-a	vie:lemma	đáng báo_động
+000788511-a	vie:def	cảm giác bất ngờ về một sự nguy hiểm nào đó
+000788511-a	vie:exe	"tình trạng đáng báo động"
+000788512-a	vie:lemma	không tệ
+000788512-a	vie:def	có kết quả tương đối tốt
+000788512-a	vie:exe	"bài làm không tệ"
+000788513-a	vie:lemma	hơi xưa_cũ
+000788513-a	vie:def	đã có từ lâu
+000788513-a	vie:exe	"thời trang này hơi xưa cũ "
+000788514-v	vie:lemma	không_được như_vậy
+000788514-v	vie:def	không được , thấp hơn một tiêu chuẩn nào đó
+000788514-v	vie:exe	"Công nghệ điện ảnh của Trung Quốc rất kỹ xảo còn điện ảnh Việt Nam thì không được như vậy"
+000788525-v	vie:lemma	chỉ_trích
+000788525-v	vie:def	vạch sai lầm, khuyết điểm nhằm chê trách, phê phán
+000788525-v	vie:exe	"lên tiếng chỉ trích"
+000788526-v	vie:lemma	nhiều điều_tốt_đẹp
+000788526-v	vie:def	mọi thứ đều thuận lợi,tiến triển
+000788526-v	vie:exe	"lễ bế mạc đã thành công với nhiều điều tốt đẹp"
+000788527-v	vie:lemma	cũng không_thể cải_thiện được
+000788527-v	vie:def	không có cách sửa chửa cho tốt đẹp lên
+000788527-v	vie:exe	"chính quyền địa phương cũng không thể cải thiện được"
+000788528-v	vie:lemma	chưa_chắc khả_năng
+000788528-v	vie:def	không dự đoán được khả năng xảy ra
+000788528-v	vie:exe	"cô ấy chưa chắc khả năng lập kỷ lục"
+000788529-v	vie:lemma	không mang lại cảm_hứng
+000788529-v	vie:def	không có niềm yêu thích, say mê
+000788529-v	vie:exe	"công việc không mang lại cảm hứng cho tôi"
+000788530-a	vie:lemma	chân_thực hơn
+000788530-a	vie:def	đúng đắn, có như thế nào thì bày tỏ đúng như thế
+000788530-a	vie:exe	"cô cần trình bày chân thực hơn"
+000788531-a	vie:lemma	rùng_mình
+000788531-a	vie:def	rùng mạnh toàn thân một cách bất ngờ, do sợ hãi hoặc bị lạnh đột ngột
+000788531-a	vie:exe	"rùng mình vì lạnh"
+000788532-a	vie:lemma	không dày_cộp
+000788532-a	vie:def	mỏng
+000788532-a	vie:exe	"cuốn sách không dày cộp"; "cặp kính không dày cộp"
+000788533-a	vie:lemma	thật khó lắm thay
+000788533-a	vie:def	không dễ dàng, khó thực hiện
+000788533-a	vie:exe	"để thay đổi tính nết của cô ta thật khó lắm thay"
+000788534-v	vie:lemma	xì_xào
+000788534-v	vie:def	bàn tán riêng với nhau, có ý chê bai, dè bỉu
+000788534-v	vie:exe	"chúng nó có tính hay xì xào trong lớp"
+000788535-v	vie:lemma	soi_mói
+000788535-v	vie:def	để ý, moi móc những sai sót, những chuyện riêng tư của người khác với dụng ý xấu
+000788535-v	vie:exe	"mẹ chồng thường soi mói nàng dâu"
+000788536-v	vie:lemma	không khơi dậy
+000788536-v	vie:def	không thúc đẩy được cái gì đó
+000788536-v	vie:exe	"bài học không khơi dậy được ý thức của học sinh"
+000788521-v	vie:lemma	không hào_hứng lắm
+000788521-v	vie:def	không có niềm yêu thích, say mê
+000788521-v	vie:exe	"tôi không hào hứng lắm với chuyện đó"
+000788537-v	vie:lemma	không_thể làm_gì hơn được
+000788537-v	vie:def	không có cách nào để giải quyết vấn đề
+000788537-v	vie:exe	"không thể làm gì hơn được cho cô ấy"
+000788539-v	vie:lemma	rất khó chấp_nhận
+000788539-v	vie:def	không thể đồng ý
+000788539-v	vie:exe	"thật khó chấp nhận thái độ hỗn xược của nó"
+000788540-a	vie:lemma	kém hấp_dẫn
+000788540-a	vie:def	không có sức hút, gây sự ham thích
+000788540-a	vie:exe	"cô gái kém hấp dẫn"
+000788541-a	vie:lemma	khô_khan
+000788541-a	vie:def	không có cảm xúc
+000788541-a	vie:exe	"lời văn khô khan"
+000788542-a	vie:lemma	ngây_ngô đến vậy
+000788542-a	vie:def	kém tinh khôn hoặc kém hiểu biết đến mức khờ dại
+000788542-a	vie:exe	"sao nó lại có thể hành động ngây ngô đến vậy"
+000788543-v	vie:lemma	hành_hạ
+000788543-v	vie:def	làm cho vất vả , khổ sở
+000788543-v	vie:exe	"bà ta hành hạ trẻ em nhỏ"
+000788544-v	vie:lemma	thấy sợ
+000788544-v	vie:def	cảm giác không dám đối mặt vì quá nguy hiểm
+000788544-v	vie:exe	"tôi thấy sợ những người như thế"
+000788545-v	vie:lemma	vã_mồ_hôi
+000788545-v	vie:def	cảm giác sợ sệt, lo lắng
+000788545-v	vie:exe	"tôi sợ vã mồ hôi ra"
+000788546-v	vie:lemma	bạo_hành
+000788546-v	vie:def	hành động tàn ác
+000788546-v	vie:exe	"nạn bạo hành trẻ em"
+000788547-v	vie:lemma	tổn_thương
+000788547-v	vie:def	mất mát một phần, không còn được hoàn toàn nguyên vẹn như trước
+000788547-v	vie:exe	"lòng tự trọng bị tổn thương"
+000788548-v	vie:lemma	canh_cánh
+000788548-v	vie:def	lúc nào cũng ở bên lòng, không để cho yên
+000788548-v	vie:exe	"tôi lo canh cánh"
+000788550-v	vie:lemma	cực kỳ phẫn_nộ
+000788550-v	vie:def	uất hận đến mức bộc lộ những phản ứng mạnh mẽ, không kìm giữ được
+000788550-v	vie:exe	"hắn cực kỳ phẫn nộ"
+000788551-v	vie:lemma	chia_buồn
+000788551-v	vie:def	chia sẻ nỗi buồn của người khác
+000788551-v	vie:exe	"anh ấy chia buồn với thất bại của tôi"
+000788552-v	vie:lemma	coi_thường
+000788552-v	vie:def	xem thường, cho là không quan trọng nên không chú ý gì đến
+000788552-v	vie:exe	"coi thường danh lợi"
+000788553-v	vie:lemma	vượt_qua mọi thử_thách
+000788553-v	vie:def	cải thiện tình hình qua những khó khăn
+000788553-v	vie:exe	"anh ấy là người có chí , sẵn sàng vượt qua mọi thử thách"
+000788554-v	vie:lemma	hoàn_thành
+000788554-v	vie:def	làm xong một cách đầy đủ
+000788554-v	vie:exe	"cô ấy đã hoàn thành công việc"
+000788555-v	vie:lemma	ủng hộ
+000788555-v	vie:def	tỏ thái độ đồng tình bằng lời nói hoặc bằng hành động bênh vực, giúp đỡ
+000788555-v	vie:exe	"ủng hộ cuộc chiến tranh chính nghĩa"
+000788556-v	vie:lemma	hết sức mình
+000788556-v	vie:def	cố gắng tất cả sức lực và tài năng vào một việc gì đó
+000788556-v	vie:exe	"cô ấy đã cố gắng hết sức mình"
+000788558-v	vie:lemma	giữ sức_khoẻ
+000788558-v	vie:def	đảm bảo sức khỏe tốt
+000788558-v	vie:exe	"người già cần giữ sức khỏe"
+000788559-v	vie:lemma	như mong_muốn
+000788559-v	vie:def	đúng như mong ước bản thân
+000788559-v	vie:exe	"chúc cô đạt thành tích như mong muốn"
+000788560-v	vie:lemma	tạo cơ_hội
+000788560-v	vie:def	tạo điều kiện thuận lợi
+000788560-v	vie:exe	"hãy tạo cơ hội cho tôi"
+000788561-v	vie:lemma	không_bao_giờ
+000788561-v	vie:def	khẳng định không bao giờ xảy ra chuyện nào đó
+000788561-v	vie:exe	"không bao giờ tôi làm như thế"
+000788562-v	vie:lemma	khó_khăn đến_thế
+000788562-v	vie:def	gặp tình thế không thuận lợi
+000788562-v	vie:exe	"công việc bây giờ lại khó khăn đến thế"
+000788563-v	vie:lemma	từ_thiện
+000788563-v	vie:def	có lòng thương người, sẵn sàng giúp đỡ người nghèo khó để làm phúc
+000788563-v	vie:exe	"quỹ từ thiện"
+000788564-a	vie:lemma	ghê nhỉ
+000788564-a	vie:def	đanh đá, quá đáng trong việc gì
+000788564-a	vie:exe	"cô ta cũng ghê nhỉ"
+000788565-a	vie:lemma	bình_thường mà
+000788565-a	vie:def	không có gì đặc biệt
+000788565-a	vie:exe	"chuyện ấy cũng bình thường mà"
+000788567-v	vie:lemma	tạo cơn sốt
+000788567-v	vie:def	tạo một sự kiện gây sự chú ý của nhiều người
+000788567-v	vie:exe	"hàng khuyến mại tạo cơn sốt cho sinh viên"
+000788568-v	vie:lemma	không_phải dễ
+000788568-v	vie:def	cần bỏ ra công sức nhất định mới làm được
+000788568-v	vie:exe	"công việc ấy không phải dễ"
+000788569-v	vie:lemma	tăng_lên
+000788569-v	vie:def	có xu hướng gia tăng so với bình thường
+000788569-v	vie:exe	"hiệu quả tăng lên"
+000788570-v	vie:lemma	hàng_hiệu
+000788570-v	vie:def	đồ dùng (thường là quần áo, dày dép, v.v.) chính hiệu, được sản xuất ở những hãng có tên tuổi lớn
+000788570-v	vie:exe	"các đại gia ưa dùng hàng hiệu"
+000788571-a	vie:lemma	chuyện nhỏ
+000788571-a	vie:def	chuyện bình thường , có thể giải quyết
+000788571-a	vie:exe	"đối với anh ấy đấy là chuyện nhỏ"
+000788572-n	vie:lemma	giá quá cao
+000788572-n	vie:def	cao hơn mức bình thường
+000788572-n	vie:exe	"chiếc giầy có giá quá cao so với bình thường"
+000788573-n	vie:lemma	hiệu_năng
+000788573-n	vie:def	chỉ mức độ hiệu quả của công việc
+000788573-n	vie:exe	"hiệu năng của công việc tương đối tốt"
+000788574-a	vie:lemma	mới gì đâu
+000788574-a	vie:def	cũ, đã xuất hiện
+000788574-a	vie:exe	"cái túi này có mới gì đâu"
+000788575-n	vie:lemma	giá_đắt lắm
+000788575-n	vie:def	cao hơn so với mức bình thường
+000788575-n	vie:exe	"đôi giày này giá đắt lắm"
+000788576-r	vie:lemma	không thèm
+000788576-r	vie:def	không cần, không để ý đến cái gì đó
+000788576-r	vie:exe	"tôi không thèm để ý đến hắn"
+000788577-v	vie:lemma	chấn_chỉnh và chấm_dứt
+000788577-v	vie:def	cải thiện công việc nào đó
+000788577-v	vie:exe	"tệ nạn này cần được chấn chỉnh và chấm dứt"
+000788578-a	vie:lemma	choai_choai
+000788578-a	vie:def	như choai (thường hàm ý chê)
+000788578-a	vie:exe	"thanh niên choai choai"
+000788579-v	vie:lemma	đừng buồn
+000788579-v	vie:def	khích lệ, động viên ai đó
+000788579-v	vie:exe	"bạn đừng buồn"
+000788580-v	vie:lemma	thấu_hiểu
+000788580-v	vie:def	hiểu một cách sâu sắc , tường tận,
+000788580-v	vie:exe	"tôi thấu hiểu nỗi khổ của anh ấy"
+000788581-v	vie:lemma	phấn_đấu
+000788581-v	vie:def	cố gắng, bền bỉ thực hiện nhằm đạt tới mục đích cao đẹp đã đề ra
+000788581-v	vie:exe	"phấn đấu thành học sinh giỏi"
+000788582-v	vie:lemma	đục_khoét của_công
+000788582-v	vie:def	bòn rút của cải, dựa vào quyền thế của mình
+000788582-v	vie:exe	"quan lại đục khoét của công"
+000788583-v	vie:lemma	giàu lên vì tham_nhũng
+000788583-v	vie:def	giàu có vì lợi dụng quyền hành tham ô, tham nhũng của dân
+000788583-v	vie:exe	"một bộ phận quan lại giàu lên vì tham_nhũng"
+000788584-v	vie:lemma	đừng quá quan_tâm
+000788584-v	vie:def	không để ý
+000788584-v	vie:exe	"Đừng quá quan tâm đến những chuyện dó"
+000788585-v	vie:lemma	ghét cay ghét_đắng
+000788585-v	vie:def	rất ghét
+000788585-v	vie:exe	"tôi ghét cay ghét đắng nó"
+000788586-v	vie:lemma	chẳng việc_gì phải buồn
+000788586-v	vie:def	không đáng để buồn
+000788586-v	vie:exe	"chẳng việc gì phải buồn về điều đó"
+000788587-v	vie:lemma	tính_toán
+000788587-v	vie:def	suy tính thiệt hơn cho cá nhân mình
+000788587-v	vie:exe	"cô ta hay tính toán thiệt hơn"
+000788588-a	vie:lemma	trọc_phú
+000788588-a	vie:def	người giàu có mà dốt nát, bần tiện
+000788588-a	vie:exe	"gã trọc phú"
+000788589-a	vie:lemma	thượng_lưu
+000788589-a	vie:def	tầng lớp trên, được coi là cao sang trong xã hội
+000788589-a	vie:exe	phân biệt với trung lưu, hạ lưu ; "giới thượng lưu"
+000788590-n	vie:lemma	nhà_giàu
+000788590-n	vie:def	nhà có điều kiện về kinh tế
+000788590-n	vie:exe	"nó là con nhà giàu"
+000788591-a	vie:lemma	thiển_cận
+000788591-a	vie:def	ông cạn, hời hợt, chỉ nhìn thấy cái gần, cái trước mắt, không biết nhìn xa trông rộng
+000788591-a	vie:exe	"đầu óc thiển cận"
+000788592-a	vie:lemma	cổ_hủ
+000788592-a	vie:def	cũ kĩ và quá lạc hậu
+000788592-a	vie:exe	"xóa bỏ những thủ tục cổ hủ lạc hậu"
+000788593-a	vie:lemma	khinh_người
+000788593-a	vie:def	thái độ không thân thiện , coi thường người khác
+000788593-a	vie:exe	"cô ta có thái độ khinh người"
+000788594-a	vie:lemma	kênh_kiệu
+000788594-a	vie:def	làm cao tỏ vẻ hơn người
+000788594-a	vie:exe	"cô ta có dáng kênh kiệu"
+000788595-a	vie:lemma	ủy mị
+000788595-a	vie:def	điệu đà, tỏ ra yếu ớt
+000788595-a	vie:exe	"cô ta có vẻ ủy mị , thục nữ"
+007031099-a	vie:lemma	nhàm_chán
+007031099-a	vie:def	bị ảnh hưởng hoặc đánh dấu bằng tinh thần thấp
+007031099-a	vie:exe	"bài văn nhàm chán"
+011217577-a	vie:lemma	giỏi_giang
+011217577-a	vie:def	giỏi, thành thạo
+011217577-a	vie:exe	"buôn bán giỏi giang"
+011217578-a	vie:lemma	quá thất_vọng
+011217578-a	vie:def	mất hết hi vọng, không còn trông mong gì được nữa
+011217578-a	vie:exe	" cô ấy quá thất vọng"
+011217579-a	vie:lemma	không_thể_nào chấp_nhận được
+011217579-a	vie:def	tệ hại đến mức không thể tưởng tượng được
+011217579-a	vie:exe	"hành động không thể nào chấp nhận được"
+011217580-a	vie:lemma	chân
+011217580-a	vie:def	thật, đúng với hiện thực
+011217580-a	vie:exe	"phân biệt chân với giả"
+011217581-a	vie:lemma	thiện
+011217581-a	vie:def	tốt, lành, hợp với đạo đức
+011217581-a	vie:exe	"hành thiện tích đức cho đời"
+011217582-a	vie:lemma	mỹ
+011217582-a	vie:def	cái đẹp
+011217582-a	vie:exe	"tác phẩm của ông hướng đến chân thiện mỹ"
+011217583-a	vie:lemma	lệch_lạc
+011217583-a	vie:def	không đúng, không ngay thẳng
+011217583-a	vie:exe	"nó có tư tưởng lệch lạc"
+011217584-a	vie:lemma	bàng_hoàng
+011217584-a	vie:def	ngẩn người ra, choáng váng đến mức như không còn ý thức được gì nữa
+011217584-a	vie:exe	"bàng hoàng trước tin dữ"
+011217585-a	vie:lemma	đáng buồn
+011217585-a	vie:def	gây cảm giác không vui
+011217585-a	vie:exe	"câu chuyện đáng buồn"
+011217587-a	vie:lemma	lôi_cuốn hơn
+011217587-a	vie:def	làm cho đến mức ham thích có thể lôi cuốn
+011217587-a	vie:exe	"giọng văn cần phải lôi cuốn hơn"
+011217588-a	vie:lemma	uyên_bác
+011217588-a	vie:def	có kiến thức sâu rộng
+011217588-a	vie:exe	"nhà bác học uyên bác"
+011217589-a	vie:lemma	hùng_biện
+011217589-a	vie:def	nói hay, lập luận chặt chẽ, có sức thuyết phục mạnh mẽ đối với người nghe
+011217589-a	vie:exe	"cô ấy có tài hùng biện"
+001937992-a	vie:lemma	thấy xót_xa
+001937992-a	vie:def	thương tiếc sâu sắc , khó nguôi
+001937992-a	vie:exe	"cảnh tượng thật xót xa"
+001937993-a	vie:lemma	đau_lòng đến thế_nào
+001937993-a	vie:def	tột cùng của sự đau xót
+001937993-a	vie:exe	"không biết cô ta sẽ đau lòng đến thế nào"
+001937994-a	vie:lemma	thật khủng_khiếp
+001937994-a	vie:def	hoảng sợ hoặc làm cho hoảng sợ ở mức rất cao
+001937994-a	vie:exe	"tai họa thật khủng khiếp"
+001937995-a	vie:lemma	choáng_váng
+001937995-a	vie:def	ở trạng thái mất cảm giác về sự thăng bằng, cảm thấy mọi vật xung quanh như đang chao đảo
+001937995-a	vie:exe	"đầu óc choáng váng"
+001937996-a	vie:lemma	mỏng_manh
+001937996-a	vie:def	rất mỏng, gây cảm giác không đủ sức chịu đựng
+001937996-a	vie:exe	"hi vọng mỏng manh"
+001937997-a	vie:lemma	đích_đáng
+001937997-a	vie:def	tương xứng hoàn toàn với những gì tốt hay không tốt đã làm ra, gây ra
+001937997-a	vie:exe	"hình phạt đích đáng"
+001937998-a	vie:lemma	ác hơn_cả thú
+001937998-a	vie:def	quá ác độc
+001937998-a	vie:exe	"hành động ác hơn cả thú"
+001937999-a	vie:lemma	tổn_thất nặng_nề
+001937999-a	vie:def	thiệt hại lớn
+001937999-a	vie:exe	"sau thảm họa động đất Nhật chịu tổn thất nặng nề"
+001937920-a	vie:lemma	xót_xa đau_lòng
+001937920-a	vie:def	cảm giác thương xót
+001937920-a	vie:exe	"tôi thấy xót xa đau lòng"
+001937921-a	vie:lemma	không_còn nhân_tính
+001937921-a	vie:def	quá độc ác
+001937921-a	vie:exe	"hành động không còn nhân tính"
+001937922-a	vie:lemma	thật tức chết đi đuợc
+001937922-a	vie:def	cảm giác tức giận tột cùng
+001937922-a	vie:exe	"nó làm tôi thật tức chết đi được"
+001937923-a	vie:lemma	bức_xúc
+001937923-a	vie:def	hết sức cấp bách, đòi hỏi phải sớm được giải quyết
+001937923-a	vie:exe	"đây là vấn đề bức xúc cần được giải quyết"
+001937924-a	vie:lemma	vô nhân_tính
+001937924-a	vie:def	quá độc ác
+001937924-a	vie:exe	"hành động vô nhân tính"
+001937925-a	vie:lemma	vô cùng tàn_ác
+001937925-a	vie:def	quá độc ác
+001937925-a	vie:exe	"hành động vô cùng tàn ác với động vật"
+001937926-a	vie:lemma	không có tình_thương
+001937926-a	vie:def	không có tình cảm thương yêu, chia sẻ
+001937926-a	vie:exe	"họ không có tình thương của con người"
+001937927-a	vie:lemma	ghét
+001937927-a	vie:def	không ưa thích, muốn tránh hoặc cảm thấy khó chịu khi phải tiếp xúc với một đối tượng nào đó
+001937927-a	vie:exe	"ghét kẻ giả dối"
+001937928-a	vie:lemma	yêu
+001937928-a	vie:def	có tình cảm thắm thiết dành riêng cho một người khác giới nào đó, muốn chung sống và cùng nhau gắn bó cuộc đời
+001937928-a	vie:exe	"họ yêu nhau suốt 4 năm rồi chia tay"
+001937929-a	vie:lemma	thích_thú 
+001937929-a	vie:def	có cảm giác bằng lòng, cảm thấy một đòi hỏi nào đó được thoả mãn
+001937929-a	vie:exe	"nó lắng nghe một cách thích thứ"
+001937930-v	vie:lemma	a_dua
+001937930-v	vie:def	làm theo, bắt chước theo việc làm sai trái của người khác
+001937930-v	vie:exe	"nó a dua theo bọn xấu"
+001937931-a	vie:lemma	ác_hiểm
+001937931-a	vie:def	nguy hiểm đáng sợ
+001937931-a	vie:exe	"mưu mô ác hiểm"
+001937932-a	vie:lemma	ác_khẩu
+001937932-a	vie:def	hay nói những lời độc địa
+001937932-a	vie:exe	"cô ta có tính ác khẩu nhưng không ác tâm"
+001937933-a	vie:lemma	ác_liệt
+001937933-a	vie:def	xấu tồi tệ, gây nhiều thiệt hại
+001937933-a	vie:exe	"thời tiết ác liệt"
+001937934-v	vie:lemma	ái_mộ
+001937934-v	vie:def	mến chuộng và kính trọng
+001937934-v	vie:exe	"nữ diễn viên được nhiều người ái mộ"
+001937935-v	vie:lemma	ám_sát
+001937935-v	vie:def	giết người (thường là nhân vật quan trọng) một cách bí mật, có mưu tính trước
+001937935-v	vie:exe	"tổng thống bị ám sát hụt"
+001937936-v	vie:lemma	an_phận
+001937936-v	vie:def	yên với phận của mình và cảnh sống hiện tại, không phấn đấu để có được một sự thay đổi
+001937936-v	vie:exe	"hắn cam chịu với cuộc sống nghèo khó"
+001937937-a	vie:lemma	ám_muội
+001937937-a	vie:def	không rõ ràng, có điều gì đó không chính đáng, phải giấu kín
+001937937-a	vie:exe	"hành động ám muội"
+001937938-v	vie:lemma	ái_ân
+001937938-v	vie:def	âu yếm và chung chăn gối với nhau
+001937938-v	vie:exe	"họ đã có nhiều hành động ái ân với nhau"
+001937939-n	vie:lemma	ảo_tưởng
+001937939-n	vie:def	sự tưởng tượng (hướng về tương lai), dựa trên mong muốn, ước mơ, thoát li hiện thực
+001937939-n	vie:exe	"nó hay sống trong ảo tưởng"
+001937940-v	vie:lemma	ăn_đủ
+001937940-v	vie:def	hứng chịu hoàn toàn điều không hay hoặc thiệt hại về mình
+001937940-v	vie:exe	"xe gây tai nạn, tài xế bỏ chạy, mình chủ hàng ăn đủ"
+001937941-v	vie:lemma	ăn_hiếp
+001937941-v	vie:def	ỷ thế mạnh bắt người khác phải chịu lép mà làm theo ý muốn của mình
+001937941-v	vie:exe	"nó cậy thế khỏe ăn hiếp yếu"
+001937942-v	vie:lemma	ăn_khách
+001937942-v	vie:def	bán được nhiều do được khách ưa chuộng
+001937942-v	vie:exe	"mặt hàng này đang rất ăn khách"
+001937943-v	vie:lemma	ăn_thua
+001937943-v	vie:def	đạt được kết quả hay có một tác dụng nào đó
+001937943-v	vie:exe	"làm như thế không ăn thua"
+001937944-a	vie:lemma	âm_thầm
+001937944-a	vie:def	lặng lẽ trong hoạt động, không tỏ ra cho người khác biết
+001937944-a	vie:exe	"chị đã âm thầm hi sinh tuổi trẻ của mình cho kháng chiến"
+001937945-a	vie:lemma	ấm_êm 
+001937945-a	vie:def	(quan hệ trong gia đình) thuận hoà, tốt đẹp
+001937945-a	vie:exe	"gia đình ấm êm"
+001937946-a	vie:lemma	ẩm_ướt
+001937946-a	vie:def	ẩm, do thấm nhiều nước hoặc có chứa nhiều hơi nước
+001937946-a	vie:exe	"nền nhà ẩm ướt"
+001937947-a	vie:lemma	ân_hận
+001937947-a	vie:def	băn khoăn, day dứt và tự trách mình đã để xảy ra việc không hay
+001937947-a	vie:exe	"hắn ân hận về những gì đã làm với cô ấy"
+001937948-n	vie:lemma	ân_nghĩa
+001937948-n	vie:def	tình nghĩa thắm thiết, gắn bó do có chịu ơn sâu với nhau
+001937948-n	vie:exe	"con cái có ân nghĩa với cha mẹ"
+001937949-a	vie:lemma	ẩn_nấp
+001937949-a	vie:def	giấu mình ở nơi kín đáo hoặc nơi có vật che chở
+001937949-a	vie:exe	"xuống hầm ẩn nấp tránh nạn"
+001937950-n	vie:lemma	ẩn_ý
+001937950-n	vie:def	ý kín đáo bên trong, vốn là cái chính muốn nói, nhưng không nói rõ, chỉ để ngầm hiểu
+001937950-n	vie:exe	"lời nói có ẩn ý"
+001937951-v	vie:lemma	ấp_úng
+001937951-v	vie:def	từ gợi tả cách nói không nên lời hoặc nói không gãy gọn, không rành mạch vì lúng túng
+001937951-v	vie:exe	"nó trả lòi ấp úng"
+001937952-a	vie:lemma	bạc_đãi
+001937952-a	vie:def	đối xử rẻ rúng (với cái lẽ ra phải được coi trọng)
+001937952-a	vie:exe	"hắn bạc đãi với người làm thuê"
+001937953-v	vie:lemma	bãi_nhiệm
+001937953-v	vie:def	bãi bỏ chức vụ (thường là quan trọng) trong bộ máy nhà nước (của người nào đó)
+001937953-v	vie:exe	"thủ tướng bị bãi nhiệm"
+001937954-v	vie:lemma	bãi_bỏ
+001937954-v	vie:def	bỏ đi một cách chính thức, không còn giá trị thi hành nữa
+001937954-v	vie:exe	"nhà nước bãi bỏ một đạo luật"
+001937955-v	vie:lemma	bán_tháo
+001937955-v	vie:def	bán với giá thấp hơn hẳn giá thị trường, nhằm thu hồi vốn nhanh
+001937955-v	vie:exe	"công ty phải bán tháo lo hàng tồn kho"
+001937956-v	vie:lemma	bàng_quan
+001937956-v	vie:def	tự coi mình là người ngoài cuộc, coi là không dính líu đến mình
+001937956-v	vie:exe	"thái độ bàng quan vô trách nhiệm"
+001937957-v	vie:lemma	bảo_lãnh
+001937957-v	vie:def	bảo đảm cho (một cá nhân hoặc tổ chức) làm một việc hoặc hưởng một quyền lợi có gắn với nghĩa vụ, chịu trách nhiệm nếu (cá nhân hoặc tổ chức ấy) sau này không thực hiện nghĩa vụ
+001937957-v	vie:exe	"cô ấy được bảo lãnh ra tù"
+001937958-a	vie:lemma	bần_bật
+001937958-a	vie:def	(run, rung) mạnh, giật nẩy lên liên tiếp
+001937958-a	vie:exe	"sợ quá , tay chân run bần bật"
+001937959-a	vie:lemma	báo_oán
+001937959-a	vie:def	đáp lại bằng hành động tương xứng kẻ đã gây oán với mình
+001937959-a	vie:exe	"đền ân báo oán"
+001937960-v	vie:lemma	chần_chừ
+001937960-v	vie:def	do dự, chưa có quyết tâm để làm ngay việc gì
+001937960-v	vie:exe	"hắn có thái độ chần chừ"
+001937961-a	vie:lemma	chân_tình
+001937961-a	vie:def	có lòng thành thật, đầy nhiệt tình
+001937961-a	vie:exe	"một sự giúp đỡ chân tình"
+001937962-a	vie:lemma	chằng_chịt
+001937962-a	vie:def	thành nhiều đường, nhiều vết đan vào nhau dày đặc và không theo hàng lối nhất định
+001937962-a	vie:exe	"dây thép gai chằng chịt"
+001937963-v	vie:lemma	bày_vẽ
+001937963-v	vie:def	đặt ra cái không thiết thực hoặc không thật cần thiết
+001937963-v	vie:exe	"nó cứ hay bày vẽ"
+001937964-v	vie:lemma	châm_chọc
+001937964-v	vie:def	nói xói móc nhằm trêu chọc, làm cho người ta bực tức, khó chịu
+001937964-v	vie:exe	"giọng nói mỉa mai , châm chọc"
+001937965-r	vie:lemma	bập_bõm
+001937965-r	vie:def	một cách không chắc chắn và không đầy đủ, chỗ được chỗ không
+001937965-r	vie:exe	"tôi chỉ bập bõm được vài câu tiếng anh"
+001937966-a	vie:lemma	chằm_chằm
+001937966-a	vie:def	(cách nhìn) chăm chú, thẳng và lâu, không chớp mắt, thường có ý dò xét
+001937966-a	vie:exe	"nó nhìn chằm chằm vào tôi"
+001937967-a	vie:lemma	be_bét
+001937967-a	vie:def	(tình trạng sai sót, hư hỏng) nhiều và tồi tệ hết sức
+001937967-a	vie:exe	"nó tính sai be bét"
+001937968-a	vie:lemma	cấp_bách
+001937968-a	vie:def	căng thẳng, gay go, đòi hỏi phải hành động gấp, không thể chậm trễ
+001937968-a	vie:exe	"tình thế cấp bách"
+001937969-a	vie:lemma	cất_nhắc
+001937969-a	vie:def	nâng đỡ, đưa lên một chức vụ cao hơn
+001937969-a	vie:exe	"anh ta được cất nhăc vào vị trí trưởng phòng"
+001937970-v	vie:lemma	chăm_chút
+001937970-v	vie:def	trông nom, săn sóc tỉ mỉ, chu đáo
+001937970-v	vie:exe	"nó rất biết chăm chút sắc đẹp"
+001937971-v	vie:lemma	chập_chờn
+001937971-v	vie:def	ở trạng thái khi ẩn khi hiện, khi tỏ khi mờ, khi rõ khi không
+001937971-v	vie:exe	"ánh đuốc chập chờn phía đằng xa"
+001937972-a	vie:lemma	hay
+001937972-a	vie:def	được đánh giá là có tác dụng gây được hứng thú hoặc cảm xúc tốt đẹp, dễ chịu
+001937972-a	vie:exe	"cô ấy hát hay"
+001937973-a	vie:lemma	tuyệt
+001937973-a	vie:def	đẹp, hay, tốt đến mức làm cho thích thú tột bậc, coi như không còn có thể đòi hỏi gì hơn
+001937973-a	vie:exe	"giọng ca thật tuyệt"
+001937974-a	vie:lemma	lười
+001937974-a	vie:def	ở trạng thái không thích, ngại làm việc, ít chịu cố gắng
+001937974-a	vie:exe	"nó lười suy nghĩ"
+001937975-a	vie:lemma	chăm
+001937975-a	vie:def	có sự chú ý thường xuyên làm công việc gì đó (thường là việc có ích) một cách đều đặn
+001937975-a	vie:exe	"đó là cô bé chăm học , chăm làm"
+001937976-a	vie:lemma	nghiêm_túc
+001937976-a	vie:def	có ý thức coi trọng đúng mức những yêu cầu đối với mình, biểu hiện ở thái độ, hành động
+001937976-a	vie:exe	"người Nhật có tác phong làm việc nghiêm túc"
+001937977-v	vie:lemma	thở_phào
+001937977-v	vie:def	thở ra một hơi dài vẻ khoan khoái, nhẹ nhõm vì đã trút được điều đè nặng trong lòng
+001937977-v	vie:exe	"nó thở phào nhẹ nhõm"
+001937977-a	vie:lemma	nhẹ_nhõm
+001937977-a	vie:def	có cảm giác thanh thản, khoan khoái, không còn bị vướng bận, bị đè nặng
+001937977-a	vie:exe	"làm xong việc tôi thấy trong lòng nhẹ nhõm"
+001937978-a	vie:lemma	tối_ưu
+001937978-a	vie:def	tốt nhất, đưa lại hiệu quả tốt nhất
+001937978-a	vie:exe	"đó là lời giải tối ưu nhất"
+001937979-a	vie:lemma	tiêu_cực
+001937979-a	vie:def	không lành mạnh, có tác dụng không tốt đối với quá trình phát triển của xã hội
+001937979-a	vie:exe	"ngăn ngừa những tệ nạn tiêu cực"
+001937980-v	vie:lemma	cải_tiến
+001937980-v	vie:def	sửa đổi cho tiến bộ hơn
+001937980-v	vie:exe	"cái tiến phương thức canh tác"
+001937981-a	vie:lemma	xinh
+001937981-a	vie:def	có hình dáng và những đường nét rất dễ coi, ưa nhìn (thường nói về trẻ em, phụ nữ trẻ)
+001937981-a	vie:exe	"em bé rất xinh"
+001937982-a	vie:lemma	xinh_xắn
+001937982-a	vie:def	xinh và rất ưa nhìn
+001937982-a	vie:exe	"căn phòng xinh xắn"
+001937983-a	vie:lemma	khờ
+001937983-a	vie:def	kém về trí khôn và sự tinh nhanh, không đủ khả năng suy xét để ứng phó với hoàn cảnh, để biết làm những gì nên làm
+001937983-a	vie:exe	"con bé hãy còn khờ"
+001937984-a	vie:lemma	ngu
+001937984-a	vie:def	rất kém về trí lực, không hiểu biết gì về cả những điều ai cũng hiểu, cũng biết
+001937984-a	vie:exe	"Rồng vàng tắm nước ao tù, Người khôn ở với người ngu bực mình."
+001937986-a	vie:lemma	giỏi
+001937986-a	vie:def	có trình độ cao, đáng được khâm phục, khen ngợi
+001937986-a	vie:exe	"giáo viên dạy giỏi"
+svx1937981-a	vie:lemma	xấu
+svx1937981-a	vie:def	có hình dáng và những đường nét rất khó coi (thường nói về đồ vật, đôi khi nói về ai đó)
+svx1937981-a	vie:exe	"cái máy trông rất xấu"
+svx1937982-a	vie:lemma	vung tay quá trán

@@ -37,8 +37,77 @@ __status__ = "Prototype"
 
 ########################################################################
 
+import os
+from collections import namedtuple
+from chirptext.leutile import Counter
+
+########################################################################
+# Configuration
+########################################################################
+
+VSW_DATA=os.path.expanduser('./data/VietSentiWordnet_ver1.0.txt')
+VSW_FIXED=os.path.expanduser('./data/VietSentiWordnet_ver1.0.1.txt')
+OMW_DATA=os.path.expanduser('./data/VietSentiWordnet_ver1.0-OMW_Format.txt')
+Sense=namedtuple('SenseInfo', 'POS SenseID PosScore NegScore SynsetTerms Gloss'.split())
+
+########################################################################
+
 def main():
 	print("Script to convert Viet SentiWordnet to Open Multilingual Wordnet format")
+
+	c = Counter()
+
+	# Fix VSW format
+	with open(VSW_DATA, 'r') as vsw_input:
+		with open(VSW_FIXED, 'w') as vsw_fixed:
+			for line in vsw_input.readlines():
+				if line.startswith('#'):
+					vsw_fixed.write(line)
+				else:
+					c.count('processed')
+					sense = Sense(*line.split('\t'))
+					if sense.Gloss.find(';') < 0:
+						c.count("error")
+						print(sense.Gloss.strip())
+						fixedline = line
+						if line.find(', "') > 0:
+							fixedline = line.replace(', "', '; "', 1)
+						elif line.find('"') < 0:
+							c.count("No example")
+						elif line.find(',"') > 0:
+							fixedline = line.replace(',"', '; "', 1)
+						elif line.find('như: "') > 0:
+							fixedline = line.replace('như: "', '; "', 1)
+						vsw_fixed.write(fixedline)
+					else:
+						c.count("ok")
+						vsw_fixed.write(line)
+	c.summarise()
+	#exit()
+	
+	# Read file
+	with open(VSW_FIXED, 'r') as vsw_input:
+		lines = [ x for x in vsw_input.readlines() if not x.startswith('#') ]
+	senses = [ Sense(*line.split('\t')) for line in lines ]
+	
+	# Write file
+	with open(OMW_DATA, 'w') as omw_output:
+		for sense in senses:
+			# 001937986-a    vie:lemma    giỏ
+			# 001937986-a    vie:def    có trình độ cao, đáng được khâm phục, khen ngợi
+			# 001937986-a    vie:exe    giáo viên dạy giỏi
+			synset_id = '%s-%s' % (sense.SenseID , sense.POS)
+			lemma = sense.SynsetTerms.split('#')[0]
+			definition = ''
+			example = ''
+			if sense.Gloss.find(';') > 0:
+				definition = sense.Gloss[:sense.Gloss.find(';')].strip()
+				example = sense.Gloss[sense.Gloss.find(';')+1:].strip()
+			omw_output.write('%s\tvie:lemma\t%s\n' % (synset_id,lemma))
+			if definition:
+				omw_output.write('%s\tvie:def\t%s\n' % (synset_id,definition))
+			if example:
+				omw_output.write('%s\tvie:exe\t%s\n' % (synset_id,example))
 	pass
 
 if __name__ == "__main__":
