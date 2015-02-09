@@ -1,3 +1,6 @@
+# Prepared by Le Tuan Anh <tuananh.ke@gmail.com>
+# Based on Viet SentiWordnet 1.0
+# Latest version is available at: https://github.com/letuananh/omwtk
 00166146-a	vie:lemma	hấp_dẫn
 00166146-a	vie:def	thích nhìn, say mê vẻ đẹp
 00166146-a	vie:exe	"quần áo hấp dẫn"; "mô tả quyển sách vở hình minh họa hấp dấn"
@@ -3021,7 +3024,7 @@
 001937986-a	vie:lemma	giỏi
 001937986-a	vie:def	có trình độ cao, đáng được khâm phục, khen ngợi
 001937986-a	vie:exe	"giáo viên dạy giỏi"
-svx1937981-a	vie:lemma	xấu
-svx1937981-a	vie:def	có hình dáng và những đường nét rất khó coi (thường nói về đồ vật, đôi khi nói về ai đó)
-svx1937981-a	vie:exe	"cái máy trông rất xấu"
+svx1937981-a	vie:lemma	xấu
+svx1937981-a	vie:def	có hình dáng và những đường nét rất khó coi (thường nói về đồ vật, đôi khi nói về ai đó)
+svx1937981-a	vie:exe	"cái máy trông rất xấu"
 svx1937982-a	vie:lemma	vung tay quá trán

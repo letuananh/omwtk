@@ -63,6 +63,9 @@ def main():
 			for line in vsw_input.readlines():
 				if line.startswith('#'):
 					vsw_fixed.write(line)
+					if line.startswith('# Web: https://sourceforge.net/projects/vietsentiwordne/'):
+						vsw_fixed.write('#\n# Minor bugs fixed by Le Tuan Anh <tuananh.ke@gmail.com>\n')
+						vsw_fixed.write('# Latest version is available at: https://github.com/letuananh/omwtk\n#\n')
 				else:
 					c.count('processed')
 					sense = Sense(*line.split('\t'))
@@ -92,6 +95,9 @@ def main():
 	
 	# Write file
 	with open(OMW_DATA, 'w') as omw_output:
+		omw_output.write('# Prepared by Le Tuan Anh <tuananh.ke@gmail.com>\n')
+		omw_output.write('# Based on Viet SentiWordnet 1.0\n')
+		omw_output.write('# Latest version is available at: https://github.com/letuananh/omwtk\n')
 		for sense in senses:
 			# 001937986-a    vie:lemma    giỏ
 			# 001937986-a    vie:def    có trình độ cao, đáng được khâm phục, khen ngợi

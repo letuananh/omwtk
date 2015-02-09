@@ -7,6 +7,10 @@
 #
 # For any information about VietSentiWordNet:
 # Web: https://sourceforge.net/projects/vietsentiwordne/
+#
+# Minor bugs fixed by Le Tuan Anh <tuananh.ke@gmail.com>
+# Latest version is available at: https://github.com/letuananh/omwtk
+#
 # -------
 #
 # Data format.
@@ -1035,5 +1039,5 @@ a	001937982	0.6	0	xinh_xắn#1	xinh và rất ưa nhìn; "căn phòng xinh xắn
 a	001937983	0.125	0.5	khờ#1	kém về trí khôn và sự tinh nhanh, không đủ khả năng suy xét để ứng phó với hoàn cảnh, để biết làm những gì nên làm ; "con bé hãy còn khờ"
 a	001937984	0	0.75	ngu#1	rất kém về trí lực, không hiểu biết gì về cả những điều ai cũng hiểu, cũng biết ; "Rồng vàng tắm nước ao tù, Người khôn ở với người ngu bực mình." 
 a	001937986	0.75	0	giỏi#1	có trình độ cao, đáng được khâm phục, khen ngợi ; "giáo viên dạy giỏi"
-a	svx1937981	0	0.5	xấu#1 xấu_xí#1	có hình dáng và những đường nét rất khó coi (thường nói về đồ vật, đôi khi nói về ai đó) ; "cái máy trông rất xấu"
+a	svx1937981	0	0.5	xấu#1 xấu_xí#1	có hình dáng và những đường nét rất khó coi (thường nói về đồ vật, đôi khi nói về ai đó) ; "cái máy trông rất xấu"
 a	svx1937982	0	0.3	vung tay quá trán#1	
