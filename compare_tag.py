@@ -2,8 +2,8 @@
 # -*- coding: utf-8 -*-
 
 '''
-NTU-MC annotation extraction
-@author: Le Tuan Anh <tuananh.ke@gmail.com>
+Script to compare annotations
+@author: Le Tuan Anh
 '''
 
 # Copyright (c) 2015, Le Tuan Anh <tuananh.ke@gmail.com>
@@ -26,7 +26,7 @@ NTU-MC annotation extraction
 #OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 #THE SOFTWARE.
 
-__author__ = "Le Tuan Anh <tuananh.ke@gmail.com>"
+__author__ = "Le Tuan Anh"
 __copyright__ = "Copyright 2015, OMWTK"
 __credits__ = [ "Le Tuan Anh" ]
 __license__ = "MIT"
@@ -40,46 +40,72 @@ __status__ = "Prototype"
 import os
 from puchikarui.puchikarui import Schema
 from collections import namedtuple
-from collections import defaultdict as dd
 from chirptext.leutile import Counter
+from chirptext.texttaglib import writelines
+from operator import itemgetter
 
+########################################################################
+# Configuration
 ########################################################################
 
 NTUMC_DB_PATH=os.path.expanduser('./data/eng.db')
-OUTPUT_FILE=os.path.expanduser('./data/speckled_synset.human')
+TAG_ISF=os.path.expanduser('./data/speckled_synset.isf')
+TAG_HUMAN=os.path.expanduser('./data/speckled_synset.human')
+TAG_MATCH = os.path.expanduser('./data/speckled_synset.match')
+TAG_MISSING = os.path.expanduser('./data/speckled_synset.miss')
+TAG_MISSING_BY_LEMMA = os.path.expanduser('./data/speckled_synset.miss_by_lemma')
 # Sense=namedtuple('SenseInfo', 'POS SenseID PosScore NegScore SynsetTerms Gloss'.split())
-
-########################################################################
 
 class NTUMCSchema(Schema):
 	def __init__(self, data_source=None):
 		Schema.__init__(self, data_source)
 		self.add_table('sent', 'sid docID pid sent comment usrname'.split())
-		self.add_table('word', 'sid	wid	word pos lemma cfrom cto comment usrname'.split())
-		self.add_table('concept', 'sid	wid	word pos lemma cfrom cto comment usrname'.split())
 
+########################################################################
+
+def read_data(file_path):
+	data = []
+	with open(file_path, 'r') as input_file:
+		for line in input_file:
+			data.append(tuple(line.split()))
+	return data
+
+def same_synsetid(sid1, sid2):
+	if sid1[:-1] == sid2[:-1] and set((sid1[-1], sid2[-1])) == set(('r', 'a')):
+		print(sid1 + '\t' + sid2)
+		return True
+	else:
+		return sid1 == sid2
 
 def main():
-	print("NTU-MC annotation extraction")
-	# Reading concepts
-	db = NTUMCSchema.connect(NTUMC_DB_PATH)
-	query = """
-SELECT cwl.sid, cwl.wid, cwl.cid, concept.tag, word.cfrom, word.cto, concept.clemma 
-FROM cwl 
-		LEFT JOIN concept on cwl.sid = concept.sid and cwl.cid = concept.cid 
-		LEFT JOIN word on cwl.sid = word.sid and cwl.wid = word.wid 
-WHERE
-cwl.sid >= ? and cwl.sid < ?
-and concept.tag NOT IN ('e', 'x', 'w', 'org', 'loc', 'per', 'dat', 'oth', 'num', 'dat:year')
-;
-	"""
-	results = [ x for x in db.ds().execute(query, params=(10000, 11000))]
-	print("Found %s tags" % (len(results),))
-	with open(OUTPUT_FILE, 'w') as tag_file:
-		for (sid, wid, cid, tag, cfrom, cto, clemma) in results:
-			tag_file.write('\t'.join((str(sid), str(cfrom), str(cto), tag, clemma)) + '\n')
-		
-
+	print("Script to compare annotations")
+	tag_isf = read_data(TAG_ISF)
+	tag_human = read_data(TAG_HUMAN)
+	tag_match = []
+	tag_missing = []
+	tag_missing_by_lemma = []
+	for tagh in tag_human:
+		found = None
+		for tagi in tag_isf:
+			if tagi[:-2] == tagh[:-2] and same_synsetid(tagi[-2], tagh[-2]):
+				tag_match.append(tagh)
+				found = tagi
+				break
+		if found is None:
+			tag_missing.append(tagh)
+	c = Counter()
+	for missing in tag_missing:
+		c.count(missing[-1])
+	c.summarise()
+	for k in c.count_map:
+		tag_missing_by_lemma.append((k, c[k]))
+	tag_missing_by_lemma.sort(key=itemgetter(1))
+	print("Match: %s" % (len(tag_match),))
+	writelines([ '\t'.join(x) for x in tag_match ], TAG_MATCH)
+	writelines([ '\t'.join(x) for x in tag_missing ], TAG_MISSING)
+	writelines([ '\t'.join([str(c) for c in x]) for x in reversed(tag_missing_by_lemma) ], TAG_MISSING_BY_LEMMA)
+	print("Done!")
+	pass
 
 if __name__ == "__main__":
 	main()

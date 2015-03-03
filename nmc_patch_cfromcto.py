@@ -81,9 +81,9 @@ def main():
 		for word in words:
 			found_word = sent.sent[word.cfrom:word.cto]
 			if found_word != word.word:
-				print("WARNING: expecting [%s] but found [%s]" % (word.word, found_word))
-				
-	exit()
+				# print("WARNING: expecting [%s] but found [%s]" % (word.word, found_word))
+				pass
+	#exit()
 
 	# Find word's cfrom & cto
 	for sent in sents:
@@ -119,9 +119,11 @@ def main():
 						exit()
 					insert_statements.append('UPDATE word SET cfrom = %s, cto = %s WHERE sid = %s and wid = %s;' % (cfrom, cto, sent.sid, word.wid))
 	with open(OUTPUT_FILE, 'w') as patch_file:
+		patch_file.write('BEGIN TRANSACTION;\n')
 		for sts in insert_statements:
 			patch_file.write(sts)
 			patch_file.write('\n')
+		patch_file.write('END TRANSACTION;\n')
 	pass
 
 def smart_search(word_text, sent_text, sid, cfrom):
