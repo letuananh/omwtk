@@ -40,12 +40,12 @@ __status__ = "Prototype"
 import os
 from collections import namedtuple
 from chirptext.leutile import Counter
-
+from chirptext.texttaglib import writelines
 ########################################################################
 # Configuration
 ########################################################################
 
-VSW_DATA=os.path.expanduser('./data/VietSentiWordnet_ver1.0.txt')
+VSW_DATA=os.path.expanduser('./data/VietSentiWordnet_ver1.0H.txt')
 VSW_FIXED=os.path.expanduser('./data/VietSentiWordnet_ver1.0.1.txt')
 OMW_DATA=os.path.expanduser('./data/VietSentiWordnet_ver1.0-OMW_Format.txt')
 Sense=namedtuple('SenseInfo', 'POS SenseID PosScore NegScore SynsetTerms Gloss'.split())
@@ -64,18 +64,19 @@ def main():
 				if line.startswith('#'):
 					vsw_fixed.write(line)
 					if line.startswith('# Web: https://sourceforge.net/projects/vietsentiwordne/'):
-						vsw_fixed.write('#\n# Minor bugs fixed by Le Tuan Anh <tuananh.ke@gmail.com>\n')
+						vsw_fixed.write('#\n# Some bugs fixed by Le Tuan Anh <tuananh.ke@gmail.com>\n')
 						vsw_fixed.write('# Latest version is available at: https://github.com/letuananh/omwtk\n#\n')
 				else:
 					c.count('processed')
 					sense = Sense(*line.split('\t'))
 					if sense.Gloss.find(';') < 0:
 						c.count("error")
-						print(sense.Gloss.strip())
+						#print(sense.Gloss.strip())
 						fixedline = line
 						if line.find(', "') > 0:
 							fixedline = line.replace(', "', '; "', 1)
 						elif line.find('"') < 0:
+							#print(line)
 							c.count("No example")
 						elif line.find(',"') > 0:
 							fixedline = line.replace(',"', '; "', 1)
@@ -85,6 +86,8 @@ def main():
 					else:
 						c.count("ok")
 						vsw_fixed.write(line)
+					
+					
 	c.summarise()
 	#exit()
 	
@@ -98,12 +101,18 @@ def main():
 		omw_output.write('# Prepared by Le Tuan Anh <tuananh.ke@gmail.com>\n')
 		omw_output.write('# Based on Viet SentiWordnet 1.0\n')
 		omw_output.write('# Latest version is available at: https://github.com/letuananh/omwtk\n')
+		
+		all_examples = []
+		all_definitions = []
 		for sense in senses:
 			# 001937986-a    vie:lemma    giỏ
 			# 001937986-a    vie:def    có trình độ cao, đáng được khâm phục, khen ngợi
 			# 001937986-a    vie:exe    giáo viên dạy giỏi
 			synset_id = '%s-%s' % (sense.SenseID , sense.POS)
 			lemma = sense.SynsetTerms.split('#')[0]
+			# Some lemmas are wrong
+			#if len(sense.SynsetTerms.split('#')) > 2:
+			#	print(sense.SynsetTerms)
 			definition = ''
 			example = ''
 			if sense.Gloss.find(';') > 0:
@@ -112,8 +121,18 @@ def main():
 			omw_output.write('%s\tvie:lemma\t%s\n' % (synset_id,lemma))
 			if definition:
 				omw_output.write('%s\tvie:def\t%s\n' % (synset_id,definition))
+				all_definitions.append(definition)
 			if example:
-				omw_output.write('%s\tvie:exe\t%s\n' % (synset_id,example))
+				examples = [ x.strip() for x in example.split('"') if len(x.strip()) > 1 ]
+				all_examples += examples
+				#print(examples)
+				for i, val in enumerate(examples):
+					omw_output.write('%s\tvie:exe\t%s\t%s\n' % (synset_id, i, val))
+		all_examples.sort(key=len)
+		for example in all_examples:
+			print(example)
+		writelines(all_examples, 'data/examples.txt')
+		writelines(sorted(all_definitions,key=len), 'data/defs.txt')
 	pass
 
 if __name__ == "__main__":
