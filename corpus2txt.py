@@ -48,6 +48,7 @@ from chirptext.leutile import Counter
 
 NTUMC_DB_PATH=os.path.expanduser('./data/eng.db')
 OUTPUT_FILE=os.path.expanduser('./data/eng.txt')
+OUTPUT_FILE_WITH_SID=os.path.expanduser('./data/speckled.txt')
 # Sense=namedtuple('SenseInfo', 'POS SenseID PosScore NegScore SynsetTerms Gloss'.split())
 
 class NTUMCSchema(Schema):
@@ -65,6 +66,9 @@ def main():
 		for sent in sents:
 			outfile.write(sent.sent)
 			outfile.write('\n')
+	with open(OUTPUT_FILE_WITH_SID, 'w') as outfile:
+		for sent in sents:
+			outfile.write('%s\t%s\n' % (sent.sid, sent.sent))
 	print("Done!")
 	pass
 
