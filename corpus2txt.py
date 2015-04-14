@@ -1,4 +1,4 @@
-#!/usr/bin/env python3
+#!/usr/bin/env python2
 # -*- coding: utf-8 -*-
 
 '''
@@ -40,6 +40,7 @@ __status__ = "Prototype"
 import os
 from puchikarui.puchikarui import Schema
 from collections import namedtuple
+from collections import defaultdict as dd
 from chirptext.leutile import Counter
 
 ########################################################################
@@ -47,14 +48,16 @@ from chirptext.leutile import Counter
 ########################################################################
 
 NTUMC_DB_PATH=os.path.expanduser('./data/eng.db')
-OUTPUT_FILE=os.path.expanduser('./data/eng.txt')
+OUTPUT_FILE=os.path.expanduser('./data/speckled_raw.txt')
 OUTPUT_FILE_WITH_SID=os.path.expanduser('./data/speckled.txt')
+OUTPUT_TOKEN_FILE=os.path.expanduser('./data/speckled_tokens.txt')
 # Sense=namedtuple('SenseInfo', 'POS SenseID PosScore NegScore SynsetTerms Gloss'.split())
 
 class NTUMCSchema(Schema):
 	def __init__(self, data_source=None):
 		Schema.__init__(self, data_source)
 		self.add_table('sent', 'sid docID pid sent comment usrname'.split())
+		self.add_table('word', 'sid wid word pos lemma cfrom cto comment usrname'.split())
 
 ########################################################################
 
@@ -62,6 +65,7 @@ def main():
 	print("Script to convert NTU-MC to text file")
 	db = NTUMCSchema.connect(NTUMC_DB_PATH)
 	sents = db.sent.select(where='sid >= ? and sid <= ?', values=[10000, 10999])
+	words = db.word.select(where='sid >= ? and sid <= ?', orderby='sid, wid', values=[10000, 10999])
 	with open(OUTPUT_FILE, 'w') as outfile: 
 		for sent in sents:
 			outfile.write(sent.sent)
@@ -69,6 +73,9 @@ def main():
 	with open(OUTPUT_FILE_WITH_SID, 'w') as outfile:
 		for sent in sents:
 			outfile.write('%s\t%s\n' % (sent.sid, sent.sent))
+	with open(OUTPUT_TOKEN_FILE, 'w') as outfile:
+		for word in words:
+			outfile.write("%s\t%s\n" % (word.sid, word.lemma))
 	print("Done!")
 	pass
 

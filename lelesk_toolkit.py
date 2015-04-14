@@ -39,7 +39,6 @@ __status__ = "Prototype"
 
 import os
 import random
-from puchikarui.puchikarui import Schema
 from collections import namedtuple
 from collections import defaultdict as dd
 from chirptext.leutile import Counter
@@ -49,29 +48,60 @@ from chirptext.leutile import Counter
 NTUMC_DB_PATH=os.path.expanduser('./data/eng.db')
 RAW_FILE=os.path.expanduser('./data/speckled.txt')
 TAG_FILE=os.path.expanduser('./data/speckled_synset.human')
-TEST_PROFILE_OUTPUT=os.path.expanduser('./data/speckled_lelesk.txt')
-TEST_PROFILE_OUTPUT_DEV=os.path.expanduser('./data/speckled_lelesk_dev.txt')
+TOKEN_FILE=os.path.expanduser('./data/speckled_tokens.txt')
+TEST_PROFILE_OUTPUT=os.path.expanduser('./data/speckled_llall.txt')
+TEST_PROFILE_OUTPUT_DEV=os.path.expanduser('./data/speckled_lldev.txt')
 # Sense=namedtuple('SenseInfo', 'POS SenseID PosScore NegScore SynsetTerms Gloss'.split())
 
 ########################################################################
+
+def pos2wnpos(pos, lemma=None):
+	''' Convert NTUMC's pos to WN's pos
+	'''
+	if  pos == 'VAX':  #local tag for auxiliaries
+		return 'x'
+	elif pos in ['CD', 'NN', 'NNS', 'NNP', 'NNPS', 'WP', 'PRP']: 
+		# include proper nouns and pronouns
+		## fixme flag for proper nouns
+		return 'n'
+	elif pos.startswith('V'):
+		return('v')
+	elif pos.startswith('J') or pos in ['WDT',  'WP$', 'PRP$', 'PDT', 'PRP'] or \
+	    (pos=='DT' and not lemma in ['a', 'an', 'the']):  ### most determiners
+		return('a')
+	elif pos.startswith('RB') or pos == 'WRB':
+		return('r')
+	else:
+		return 'x'
+
 
 def generate_lelesk_test_profile():
 	'''Generate test profile for lelesk (new format 31st Mar 2015)
 	'''
 	# Read all tags
-	tagmap = {} # sentence ID > tags list
-	# a sample line: 10000	4	13	00796315-n	adventure
-	TagInfo = namedtuple('TagInfo', 'sentid cfrom cto synsetid word'.split())
+	tagmap = dd(list) # sentence ID > tags list
+	# a sample line: 10000	4	13	00796315-n	adventure	NN
+	TagInfo = namedtuple('TagInfo', 'sentid cfrom cto synsetid word pos'.split())
+	c=Counter()
 	with open(TAG_FILE, 'r') as tags:
 		for tag in tags:
 			# br-k22-1	8	11	not%4:02:00::	not
 			parts = [ x.strip() for x in tag.split('\t') ]
-			if len(parts) == 5:
+			if len(parts) == 6:
 				tag = TagInfo(*parts)
-				if tag.sentid in tagmap:
-					tagmap[tag.sentid].append(tag)
-				else:
-					tagmap[tag.sentid] = [tag]
+				tagmap[tag.sentid].append(tag)
+
+	# read in words
+	wordmap = dd(list)
+	with open(TOKEN_FILE, 'r') as wordfile:
+		for line in wordfile:
+			if line.startswith('#') or len(line.strip()) == 0:
+				continue
+			# sid word
+			parts = [ x.strip() for x in line.split('\t') ]
+			if len(parts) == 2:
+				(sid, word) = parts
+				wordmap[sid].append(word)
 
 	# build test profile
 	sentences = []
@@ -85,22 +115,29 @@ def generate_lelesk_test_profile():
 				parts = [ x.strip() for x in line.split('\t') ]
 				if len(parts) == 2:
 					sid, sent = parts
+					tokens = ''
+					if sid in wordmap:
+						tokens = '|'.join(wordmap[sid])
 					if sid in tagmap:
 						print(sent)
 						# found tags
+						pos = pos2wnpos(tag.pos, tag.word)
+						c.count(pos)
 						for tag in tagmap[sid]:
-							sentences.append((tag.word,tag.synsetid, sent))
+							sentences.append((tag.word, tag.synsetid, pos, sent, tokens))
 	# write to file
 	with open(TEST_PROFILE_OUTPUT, 'w') as outputfile:
+		for k, v in c.sorted_by_count():
+			outputfile.write("# %s: %s\n" % (k,v))
 		for sentence in sentences:
-			outputfile.write("%s\t%s\t%s\n" % sentence)
+			outputfile.write("%s\t%s\t%s\t%s\t%s\n" % sentence)
 
 	# write dev profile
 	random.seed(31032015)
 	itemids = sorted(random.sample(range(line_count), 500))
 	with open(TEST_PROFILE_OUTPUT_DEV, 'w') as outputfile:
 		for itemid in itemids:  
-			outputfile.write("%s\t%s\t%s\n" % sentences[itemid])	
+			outputfile.write("%s\t%s\t%s\t%s\t%s\n" % sentences[itemid])	
 	pass
 
 

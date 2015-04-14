@@ -64,7 +64,7 @@ def main():
 	# Reading concepts
 	db = NTUMCSchema.connect(NTUMC_DB_PATH)
 	query = """
-SELECT cwl.sid, cwl.wid, cwl.cid, concept.tag, word.cfrom, word.cto, concept.clemma 
+SELECT cwl.sid, cwl.wid, cwl.cid, concept.tag, word.cfrom, word.cto, concept.clemma, word.pos 
 FROM cwl 
 		LEFT JOIN concept on cwl.sid = concept.sid and cwl.cid = concept.cid 
 		LEFT JOIN word on cwl.sid = word.sid and cwl.wid = word.wid 
@@ -76,8 +76,8 @@ and concept.tag NOT IN ('e', 'x', 'w', 'org', 'loc', 'per', 'dat', 'oth', 'num',
 	results = [ x for x in db.ds().execute(query, params=(10000, 11000))]
 	print("Found %s tags" % (len(results),))
 	with open(OUTPUT_FILE, 'w') as tag_file:
-		for (sid, wid, cid, tag, cfrom, cto, clemma) in results:
-			tag_file.write('\t'.join((str(sid), str(cfrom), str(cto), tag, clemma)) + '\n')
+		for (sid, wid, cid, tag, cfrom, cto, clemma, pos) in results:
+			tag_file.write('\t'.join((str(sid), str(cfrom), str(cto), tag, clemma, pos)) + '\n')
 		
 
 
