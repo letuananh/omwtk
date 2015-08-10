@@ -1,4 +1,4 @@
-#!/usr/bin/env python2
+#!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 
 '''
@@ -48,8 +48,9 @@ import re
 # Configuration
 ########################################################################
 
-INPUT_FILE = os.path.expanduser('./data/input.txt')
-OUTPUT_FILE=os.path.expanduser('./data/input_cleaned.txt')
+INPUT_FILE     = os.path.expanduser('./data/input.txt')
+OUTPUT_FILE    = os.path.expanduser('./data/input_cleaned.txt')
+OUTPUT_NUM_FILE= os.path.expanduser('./data/input_numbered.txt')
 
 ########################################################################
 
@@ -76,13 +77,19 @@ def remove_special_chars(line):
 def main():
 	print("Script for cleaning raw text input")
 	c = Counter()
-	with open(INPUT_FILE, 'r') as infile, open(OUTPUT_FILE, 'w') as outfile: 
-		for line in infile:
+	all_chars = set()
+	with open(INPUT_FILE, 'r') as infile, open(OUTPUT_FILE, 'w') as outfile, open(OUTPUT_NUM_FILE, 'w') as outnumfile: 
+		for linenum, line in enumerate(infile):
 			c.count("Line")
 			cleaned_line = remove_numbering(line)
 			cleaned_line = remove_special_chars(cleaned_line)
+			for a_char in cleaned_line:
+				all_chars.add(a_char)
 			outfile.write("%s\n" % cleaned_line)
+			outnumfile.write("%s\t%s\n" % (linenum+1, cleaned_line))
 		c.summarise()
+	print("-" * 80)
+	print("All characters: %s" % sorted(list(all_chars)))
 	print("Done!")
 	pass
 
