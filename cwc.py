@@ -54,6 +54,7 @@ from chirptext.leutile import TextReport, Counter
 ########################################################################
 
 SPECIAL_CHARS = [ ' ', '!', ',', '.', ':', ';', '?', '“', '”' ]
+TOP_K         = 10
 
 def gen_stats(corpus_file, report_path=None):
 	''' Generate statistics for a text corpus (word count, most frequent words, etc.)
@@ -63,7 +64,7 @@ def gen_stats(corpus_file, report_path=None):
 	line_count = -1
 	word_count = 0
 	c = Counter()
-	with open(corpus_file, 'r') as infile:
+	with open(corpus_file, 'r', encoding='utf8') as infile:
 		lines = infile.readlines()
 		line_count = len(lines)
 		for line in lines:
@@ -87,11 +88,11 @@ def gen_stats(corpus_file, report_path=None):
 	report.writeline("Line count: %s" % line_count)
 	report.writeline("Word count: %s" % word_count)
 	report.writeline("Word class: %s" % len(c.sorted_by_count()))
-	report.writeline("Top 20    :")
-	for item in c.sorted_by_count()[:20]:
+	report.writeline("Top %d    :" % TOP_K)
+	for item in c.sorted_by_count()[:TOP_K]:
 		report.writeline("%s: %s" % (item[0], item[1]), level=1)
-	report.writeline("Bottom 20 :")
-	for item in c.sorted_by_count()[-20:]:
+	report.writeline("Bottom %d :" % TOP_K)
+	for item in c.sorted_by_count()[-TOP_K:]:
 		report.writeline("%s: %s" % (item[0], item[1]), level=1)
 
 
