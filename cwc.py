@@ -54,7 +54,7 @@ from chirptext.leutile import TextReport, Counter
 ########################################################################
 
 SPECIAL_CHARS = [ ' ', '!', ',', '.', ':', ';', '?', '“', '”' ]
-TOP_K         = 10
+TOP_K         = 100
 
 def gen_stats(corpus_file, report_path=None):
 	''' Generate statistics for a text corpus (word count, most frequent words, etc.)
