@@ -50,11 +50,12 @@ import sys
 import os
 import argparse
 from chirptext.leutile import TextReport, Counter
+from chirptext.daophay import DaoPhay
 
 ########################################################################
 
 SPECIAL_CHARS = [ ' ', '!', ',', '.', ':', ';', '?', '“', '”' ]
-TOP_K         = 100
+TOP_K         = 20
 
 def gen_stats(corpus_file, report_path=None):
 	''' Generate statistics for a text corpus (word count, most frequent words, etc.)
@@ -94,6 +95,9 @@ def gen_stats(corpus_file, report_path=None):
 	report.writeline("Bottom %d :" % TOP_K)
 	for item in c.sorted_by_count()[-TOP_K:]:
 		report.writeline("%s: %s" % (item[0], item[1]), level=1)
+	report.writeline("-" * 80)
+	for item in c.group_by_count():
+		report.writeline("%s: %s" % (item[0], ', '.join(DaoPhay.vn_sorted(item[1]))))
 
 
 ########################################################################
