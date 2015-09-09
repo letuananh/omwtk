@@ -38,19 +38,21 @@ __status__ = "Prototype"
 ########################################################################
 
 import os
+import sys
 from puchikarui.puchikarui import Schema
 from collections import namedtuple
 from collections import defaultdict as dd
-from chirptext.leutile import Counter
+from chirptext.leutile import Counter, FileTool, TextReport
 import re
+import argparse
 
 ########################################################################
 # Configuration
 ########################################################################
 
-INPUT_FILE     = os.path.expanduser('./data/input.txt')
-OUTPUT_FILE    = os.path.expanduser('./data/input_cleaned.txt')
-OUTPUT_NUM_FILE= os.path.expanduser('./data/input_numbered.txt')
+OUT_DIR    = os.path.expanduser('./data/')
+INPUT_FILE = os.path.join(OUT_DIR, 'input.txt')
+
 
 ########################################################################
 
@@ -74,11 +76,18 @@ def remove_special_chars(line):
 	# print ("   => %s" % line) 
 	return line
 
-def main():
+def clean_corpus(inputfile):
 	print("Script for cleaning raw text input")
 	c = Counter()
 	all_chars = set()
-	with open(INPUT_FILE, 'r') as infile, open(OUTPUT_FILE, 'w') as outfile, open(OUTPUT_NUM_FILE, 'w') as outnumfile: 
+	
+	output_file    = os.path.join(OUT_DIR, FileTool.getfilename(inputfile) + '.cleaned.txt')
+	output_numfile = os.path.join(OUT_DIR, FileTool.getfilename(inputfile) + '.num.txt')
+	print("Input file            : %s" % (inputfile))
+	print("Output file           : %s" % (output_file))
+	print("Output (numbered) file: %s" % (output_numfile))
+	
+	with open(inputfile, 'r', encoding='utf8') as infile, open(output_file, 'w', encoding='utf8') as outfile, open(output_numfile, 'w', encoding='utf8') as outnumfile: 
 		for linenum, line in enumerate(infile):
 			c.count("Line")
 			cleaned_line = remove_numbering(line)
@@ -89,8 +98,44 @@ def main():
 			outnumfile.write("%s\t%s\n" % (linenum+1, cleaned_line))
 		c.summarise()
 	print("-" * 80)
-	print("All characters: %s" % sorted(list(all_chars)))
+	try:
+		print("All characters: %s" % str(sorted(list(all_chars))))
+	except:
+		pass
 	print("Done!")
+
+########################################################################
+	
+def main():
+	''' This program starts here
+	'''
+
+	# It's easier to create a user-friendly console application by using argparse
+	# See reference at the top of this script
+	parser = argparse.ArgumentParser(description="Clean a text corpus.")
+	
+	# Positional argument(s)
+	parser.add_argument('input', help='Path to corpus file.')
+
+	# Optional argument(s)
+	group = parser.add_mutually_exclusive_group()
+	group.add_argument("-v", "--verbose", action="store_true")
+	group.add_argument("-q", "--quiet", action="store_true")
+
+	# Main script
+	if len(sys.argv) == 1:
+		# User didn't pass any value in, show help
+		parser.print_help()
+	else:
+		# Parse input arguments
+		args = parser.parse_args()
+		# Now do something ...
+		if args.input:
+			inputfile = INPUT_FILE
+			if not os.path.isfile(inputfile):
+				print("File [%s] cannot be found, attempting to use [%s] instead ..." % (inputfile, INPUT_FILE))
+				inputfile = INPUT_FILE
+			clean_corpus(args.input)
 	pass
 
 if __name__ == "__main__":
