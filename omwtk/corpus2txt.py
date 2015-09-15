@@ -1,4 +1,4 @@
-#!/usr/bin/env python2
+#!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 
 '''
@@ -47,10 +47,11 @@ from chirptext.leutile import Counter
 # Configuration
 ########################################################################
 
-NTUMC_DB_PATH=os.path.expanduser('./data/eng.db')
-OUTPUT_FILE=os.path.expanduser('./data/speckled_raw.txt')
-OUTPUT_FILE_WITH_SID=os.path.expanduser('./data/speckled.txt')
-OUTPUT_TOKEN_FILE=os.path.expanduser('./data/speckled_tokens.txt')
+DATA_DIR=os.path.expanduser('./data')
+NTUMC_DB_PATH=os.path.join(DATA_DIR, 'eng.db')
+OUTPUT_FILE=os.path.join(DATA_DIR, 'speckled_raw.txt')
+OUTPUT_FILE_WITH_SID=os.path.join(DATA_DIR, 'speckled.txt')
+OUTPUT_TOKEN_FILE=os.path.join(DATA_DIR, 'speckled_tokens.txt')
 # Sense=namedtuple('SenseInfo', 'POS SenseID PosScore NegScore SynsetTerms Gloss'.split())
 
 class NTUMCSchema(Schema):
