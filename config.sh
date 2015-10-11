@@ -23,4 +23,4 @@ function link_file {
 git submodule init && git submodule update
 link_folder `readlink -f ./modules/chirptext/chirptext` omwtk/chirptext
 link_folder `readlink -f ./modules/lelesk/lelesk` omwtk/lelesk
-
+link_folder `readlink -f ./modules/puchikarui/puchikarui` omwtk/puchikarui
