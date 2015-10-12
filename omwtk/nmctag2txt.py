@@ -52,34 +52,41 @@ OUTPUT_FILE=os.path.expanduser('./data/speckled_synset.human')
 ########################################################################
 
 class NTUMCSchema(Schema):
-	def __init__(self, data_source=None):
-		Schema.__init__(self, data_source)
-		self.add_table('sent', 'sid docID pid sent comment usrname'.split())
-		self.add_table('word', 'sid	wid	word pos lemma cfrom cto comment usrname'.split())
-		self.add_table('concept', 'sid	wid	word pos lemma cfrom cto comment usrname'.split())
+    def __init__(self, data_source=None):
+        Schema.__init__(self, data_source)
+        self.add_table('sent', 'sid docID pid sent comment usrname'.split())
+        self.add_table('word', 'sid wid word pos lemma cfrom cto comment usrname'.split())
+        self.add_table('concept', 'sid  wid word pos lemma cfrom cto comment usrname'.split())
 
 
 def main():
-	print("NTU-MC annotation extraction")
-	# Reading concepts
-	db = NTUMCSchema.connect(NTUMC_DB_PATH)
-	query = """
+    print("NTU-MC annotation extraction")
+    # Reading concepts
+    try:
+        print("Reading NTU-MC data from: %s" % (NTUMC_DB_PATH,))
+        db = NTUMCSchema.connect(NTUMC_DB_PATH)
+    except Exception as err:
+        print("Error: I need access to NTU-MC DB at: %s" % NTUMC_DB_PATH)
+        return
+    
+    query = """
 SELECT cwl.sid, cwl.wid, cwl.cid, concept.tag, word.cfrom, word.cto, concept.clemma, word.pos 
 FROM cwl 
-		LEFT JOIN concept on cwl.sid = concept.sid and cwl.cid = concept.cid 
-		LEFT JOIN word on cwl.sid = word.sid and cwl.wid = word.wid 
+        LEFT JOIN concept on cwl.sid = concept.sid and cwl.cid = concept.cid 
+        LEFT JOIN word on cwl.sid = word.sid and cwl.wid = word.wid 
 WHERE
 cwl.sid >= ? and cwl.sid < ?
 and concept.tag NOT IN ('e', 'x', 'w', 'org', 'loc', 'per', 'dat', 'oth', 'num', 'dat:year')
 ;
-	"""
-	results = [ x for x in db.ds().execute(query, params=(10000, 11000))]
-	print("Found %s tags" % (len(results),))
-	with open(OUTPUT_FILE, 'w') as tag_file:
-		for (sid, wid, cid, tag, cfrom, cto, clemma, pos) in results:
-			tag_file.write('\t'.join((str(sid), str(cfrom), str(cto), tag, clemma, pos)) + '\n')
-		
+    """
+    results = [ x for x in db.ds().execute(query, params=(10000, 11000))]
+    print("Found %s tags" % (len(results),))
+    with open(OUTPUT_FILE, 'w') as tag_file:
+        for (sid, wid, cid, tag, cfrom, cto, clemma, pos) in results:
+            tag_file.write('\t'.join((str(sid), str(cfrom), str(cto), tag, clemma, pos)) + '\n')
+    print("Annotation data has been saved to %s" % (OUTPUT_FILE,))
+    print("All done!")
 
 
 if __name__ == "__main__":
-	main()
+    main()
