@@ -55,38 +55,38 @@ OUTPUT_TOKEN_FILE=os.path.join(DATA_DIR, 'speckled_tokens.txt')
 # Sense=namedtuple('SenseInfo', 'POS SenseID PosScore NegScore SynsetTerms Gloss'.split())
 
 class NTUMCSchema(Schema):
-	def __init__(self, data_source=None):
-		Schema.__init__(self, data_source)
-		self.add_table('sent', 'sid docID pid sent comment usrname'.split())
-		self.add_table('word', 'sid wid word pos lemma cfrom cto comment usrname'.split())
+    def __init__(self, data_source=None):
+        Schema.__init__(self, data_source)
+        self.add_table('sent', 'sid docID pid sent comment usrname'.split())
+        self.add_table('word', 'sid wid word pos lemma cfrom cto comment usrname'.split())
 
 ########################################################################
 
 def main():
-	print("Script to convert NTU-MC to text file")
-	try:
-		db = NTUMCSchema.connect(NTUMC_DB_PATH)
-	except Exception as err:
-		print("Error: I need access to NTU-MC DB at: %s" % NTUMC_DB_PATH)
-		return
-	sents = db.sent.select(where='sid >= ? and sid <= ?', values=[10000, 10999])
-	words = db.word.select(where='sid >= ? and sid <= ?', orderby='sid, wid', values=[10000, 10999])
-	with open(OUTPUT_FILE, 'w') as outfile: 
-		for sent in sents:
-			outfile.write(sent.sent)
-			outfile.write('\n')
-	with open(OUTPUT_FILE_WITH_SID, 'w') as outfile:
-		for sent in sents:
-			outfile.write('%s\t%s\n' % (sent.sid, sent.sent))
-	with open(OUTPUT_TOKEN_FILE, 'w') as outfile:
-		for word in words:
-			outfile.write("%s\t%s\n" % (word.sid, word.lemma))
-	print("Extracted data has been written to:")
-	print("\tRaw sentence         : %s" % (OUTPUT_FILE,))
-	print("\tRaw sentence with SID: %s" % (OUTPUT_FILE_WITH_SID,))
-	print("\tTokenization info    : %s" % (OUTPUT_TOKEN_FILE,))
-	print("Done!")
-	pass
+    print("Script to convert NTU-MC to text file")
+    try:
+        db = NTUMCSchema.connect(NTUMC_DB_PATH)
+    except Exception as err:
+        print("Error: I need access to NTU-MC DB at: %s" % NTUMC_DB_PATH)
+        return
+    sents = db.sent.select(where='sid >= ? and sid <= ?', values=[10000, 10999])
+    words = db.word.select(where='sid >= ? and sid <= ?', orderby='sid, wid', values=[10000, 10999])
+    with open(OUTPUT_FILE, 'w') as outfile: 
+        for sent in sents:
+            outfile.write(sent.sent)
+            outfile.write('\n')
+    with open(OUTPUT_FILE_WITH_SID, 'w') as outfile:
+        for sent in sents:
+            outfile.write('%s\t%s\n' % (sent.sid, sent.sent))
+    with open(OUTPUT_TOKEN_FILE, 'w') as outfile:
+        for word in words:
+            outfile.write("%s\t%s\n" % (word.sid, word.lemma))
+    print("Extracted data has been written to:")
+    print("\tRaw sentence         : %s" % (OUTPUT_FILE,))
+    print("\tRaw sentence with SID: %s" % (OUTPUT_FILE_WITH_SID,))
+    print("\tTokenization info    : %s" % (OUTPUT_TOKEN_FILE,))
+    print("Done!")
+    pass
 
 if __name__ == "__main__":
-	main()
+    main()
