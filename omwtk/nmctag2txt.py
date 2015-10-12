@@ -46,7 +46,7 @@ from chirptext.leutile import Counter
 ########################################################################
 
 NTUMC_DB_PATH=os.path.expanduser('./data/eng.db')
-OUTPUT_FILE=os.path.expanduser('./data/speckled_synset.human')
+OUTPUT_FILE=os.path.expanduser('./data/speckled_tags_gold.txt')
 # Sense=namedtuple('SenseInfo', 'POS SenseID PosScore NegScore SynsetTerms Gloss'.split())
 
 ########################################################################
