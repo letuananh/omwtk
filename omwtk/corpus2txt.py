@@ -64,7 +64,11 @@ class NTUMCSchema(Schema):
 
 def main():
 	print("Script to convert NTU-MC to text file")
-	db = NTUMCSchema.connect(NTUMC_DB_PATH)
+	try:
+		db = NTUMCSchema.connect(NTUMC_DB_PATH)
+	except Exception as err:
+		print("Error: I need access to NTU-MC DB at: %s" % NTUMC_DB_PATH)
+		return
 	sents = db.sent.select(where='sid >= ? and sid <= ?', values=[10000, 10999])
 	words = db.word.select(where='sid >= ? and sid <= ?', orderby='sid, wid', values=[10000, 10999])
 	with open(OUTPUT_FILE, 'w') as outfile: 
@@ -77,6 +81,10 @@ def main():
 	with open(OUTPUT_TOKEN_FILE, 'w') as outfile:
 		for word in words:
 			outfile.write("%s\t%s\n" % (word.sid, word.lemma))
+	print("Extracted data has been written to:")
+	print("\tRaw sentence         : %s" % (OUTPUT_FILE,))
+	print("\tRaw sentence with SID: %s" % (OUTPUT_FILE_WITH_SID,))
+	print("\tTokenization info    : %s" % (OUTPUT_TOKEN_FILE,))
 	print("Done!")
 	pass
 
