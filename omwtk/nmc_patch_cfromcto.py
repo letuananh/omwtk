@@ -124,6 +124,8 @@ def main():
 			patch_file.write(sts)
 			patch_file.write('\n')
 		patch_file.write('END TRANSACTION;\n')
+	print("run the following command to patch the database:")
+	print("    sqlite3 eng.db < eng-update.sql")
 	pass
 
 def smart_search(word_text, sent_text, sid, cfrom):
