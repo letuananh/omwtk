@@ -8,3 +8,6 @@
 [submodule "modules/lelesk"]
 	path = modules/lelesk
 	url = git@github.com:letuananh/lelesk
+[submodule "modules/yawlib"]
+	path = modules/yawlib
+	url = https://github.com/letuananh/yawlib
