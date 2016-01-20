@@ -24,3 +24,4 @@ git submodule init && git submodule update
 link_folder `readlink -f ./modules/chirptext/chirptext` chirptext
 link_folder `readlink -f ./modules/lelesk/lelesk` lelesk
 link_folder `readlink -f ./modules/puchikarui/puchikarui` puchikarui
+link_folder `readlink -f ./modules/yawlib/yawlib` yawlib
