@@ -42,14 +42,16 @@ from puchikarui.puchikarui import Schema
 from collections import namedtuple
 from collections import defaultdict as dd
 from chirptext.leutile import Counter
+from yawlib import SynsetID
 
 ########################################################################
 
-NTUMC_DB_PATH=os.path.expanduser('./data/eng.db')
-OUTPUT_FILE=os.path.expanduser('./data/speckled_tags_gold.txt')
-# Sense=namedtuple('SenseInfo', 'POS SenseID PosScore NegScore SynsetTerms Gloss'.split())
+
+NTUMC_DB_PATH = os.path.expanduser('./data/eng.db')
+OUTPUT_FILE = os.path.expanduser('./data/speckled_tags_gold.txt')
 
 ########################################################################
+
 
 class NTUMCSchema(Schema):
     def __init__(self, data_source=None):
@@ -68,7 +70,7 @@ def main():
     except Exception as err:
         print("Error: I need access to NTU-MC DB at: %s" % NTUMC_DB_PATH)
         return
-    
+
     query = """
 SELECT cwl.sid, cwl.wid, cwl.cid, concept.tag, word.cfrom, word.cto, concept.clemma, word.pos 
 FROM cwl 
@@ -79,10 +81,13 @@ cwl.sid >= ? and cwl.sid < ?
 and concept.tag NOT IN ('e', 'x', 'w', 'org', 'loc', 'per', 'dat', 'oth', 'num', 'dat:year')
 ;
     """
-    results = [ x for x in db.ds().execute(query, params=(10000, 11000))]
+    results = [x for x in db.ds().execute(query, params=(10000, 11000))]
     print("Found %s tags" % (len(results),))
     with open(OUTPUT_FILE, 'w') as tag_file:
         for (sid, wid, cid, tag, cfrom, cto, clemma, pos) in results:
+            if tag[0] in '=!':
+                tag = tag[1:]
+            tag = str(SynsetID.from_string(tag))
             tag_file.write('\t'.join((str(sid), str(cfrom), str(cto), tag, clemma, pos)) + '\n')
     print("Annotation data has been saved to %s" % (OUTPUT_FILE,))
     print("All done!")

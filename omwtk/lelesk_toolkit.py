@@ -42,6 +42,7 @@ import random
 from collections import namedtuple
 from collections import defaultdict as dd
 from chirptext.leutile import Counter
+from yawlib import SynsetID
 
 ########################################################################
 
@@ -54,6 +55,7 @@ TEST_PROFILE_OUTPUT_DEV = os.path.expanduser('./data/speckled_lldev.txt')
 # Sense=namedtuple('SenseInfo', 'POS SenseID PosScore NegScore SynsetTerms Gloss'.split())
 
 ########################################################################
+
 
 def pos2wnpos(pos, lemma=None):
     ''' Convert NTUMC's pos to WN's pos
@@ -88,8 +90,13 @@ def generate_lelesk_test_profile():
             # br-k22-1  8   11  not%4:02:00::   not
             parts = [x.strip() for x in tag.split('\t')]
             if len(parts) == 6:
+                if parts[3][0] in '=!':
+                    parts[3] = parts[3][1:]
+                parts[3] = SynsetID.from_string(parts[3])
                 tag = TagInfo(*parts)
                 tagmap[tag.sentid].append(tag)
+            else:
+                print("WARNING: Invalid line | ``{}''".format(parts))
 
     # read in words
     wordmap = dd(list)
