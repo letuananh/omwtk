@@ -119,6 +119,7 @@ class MeCabToken:
 
 
 def txt2mecab(text):
+    ''' Use mecab to parse one sentence '''
     mecab = MeCab.Tagger()
     mecab_out = mecab.parse(text).splitlines()
     tokens = [MeCabToken.parse(x) for x in mecab_out]
@@ -126,6 +127,7 @@ def txt2mecab(text):
 
 
 def lines2mecab(lines):
+    ''' Use mecab to parse many lines '''
     sents = []
     for line in lines:
         sent = txt2mecab(line)
@@ -148,6 +150,7 @@ def tokenize_sent(mtokens):
 
 
 def rubyize(token):
+    ''' Convert one MeCabToken into HTML '''
     if token.need_ruby():
         surface = token.surface
         reading = token.reading_hira()
@@ -159,13 +162,14 @@ def rubyize(token):
 
 
 def rubyize_sent(sent):
-        s = []
-        for x in sent:
-            s.append(rubyize(x))
-        stext = ' '.join(s)
-        # clean sentence a bit ...
-        stext = stext.replace(' 。', '。').replace('「 ', '「').replace(' 」', '」').replace(' 、 ', '、').replace('（ ', '（').replace(' ）','）')
-        return stext
+    ''' Convert one MeCab sentence into HTML '''
+    s = []
+    for x in sent:
+        s.append(rubyize(x))
+    stext = ' '.join(s)
+    # clean sentence a bit ...
+    stext = stext.replace(' 。', '。').replace('「 ', '「').replace(' 」', '」').replace(' 、 ', '、').replace('（ ', '（').replace(' ）', '）')
+    return stext
 
 
 def analyse(content, title='', splitlines=True, format='html'):
@@ -189,7 +193,7 @@ def analyse(content, title='', splitlines=True, format='html'):
             if format == 'html':
                 doc.append(rubyize_sent(sent))
         # generate HTML content
-        final = template.render(title=title, body='<br/>\n'.join(doc))
+        final = template.render(title=title.replace('\n', ' '), doc=doc)
     else:
         for sent in sents:
             doc.append('\n'.join([x.to_csv() for x in sent]) + '\n')
