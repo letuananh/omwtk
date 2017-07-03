@@ -38,7 +38,7 @@ References:
 
 __author__ = "Le Tuan Anh <tuananh.ke@gmail.com>"
 __copyright__ = "Copyright 2016, omwtk"
-__credits__ = [ "Le Tuan Anh" ]
+__credits__ = []
 __license__ = "MIT"
 __version__ = "0.1"
 __maintainer__ = "Le Tuan Anh"
@@ -51,7 +51,7 @@ import sys
 import os
 import argparse
 import re
-from collections import namedtuple
+# from collections import namedtuple
 
 import MeCab
 import jaconv
@@ -76,12 +76,13 @@ hiragana = 'ぁあぃいぅうぇえぉおかがきぎくぐけげこごさざ�
 # U+30Fx 	ヰ 	ヱ 	ヲ 	ン 	ヴ 	ヵ 	ヶ 	ヷ 	ヸ 	ヹ 	ヺ 	・ 	ー 	ヽ 	ヾ 	ヿ
 all_katakana = '゠ァアィイゥウェエォオカガキギクグケゲコゴサザシジスズセゼソゾタダチヂッツヅテデトドナニヌネノハバパヒビピフブプヘベペホボポマミムメモャヤュユョヨラリルレロヮワヰヱヲンヴヵヶヷヸヹヺ・ーヽヾヿ'
 
+
 ########################################################################
 
 # Reference: http://taku910.github.io/mecab/#parse
 # MeCabToken = namedtuple('MeCabToken', 'surface pos sc1 sc2 sc3 inf conj root reading pron'.split())
 class MeCabToken:
-    def __init__(self, surface, pos = None, sc1 = None, sc2 = None, sc3 = None, inf = None, conj = None, root = None, reading = None, pron = None):
+    def __init__(self, surface, pos=None, sc1=None, sc2=None, sc3=None, inf=None, conj=None, root=None, reading=None, pron=None):
         self.surface = surface
         self.pos = pos
         self.sc1 = sc1
@@ -94,17 +95,17 @@ class MeCabToken:
         self.pron = pron
 
     def __str__(self):
-        return '[{sur}({pos}-{s1}/{s2}/{s3}|{ro}|{re}|{pr})]'.format(sur=self.surface, pos=self.pos, s1=self.sc1, s2=self.sc2, s3=self.sc3, ro=self.root, re=self.reading, pr = self.pron)
+        return '[{sur}({pos}-{s1}/{s2}/{s3}|{ro}|{re}|{pr})]'.format(sur=self.surface, pos=self.pos, s1=self.sc1, s2=self.sc2, s3=self.sc3, ro=self.root, re=self.reading, pr=self.pron)
 
     def __repr__(self):
         return str(self)
-    
+
     def reading_hira(self):
         return jaconv.kata2hira(self.reading)
 
     def need_ruby(self):
         return self.reading and self.reading != self.surface and self.reading_hira() != self.surface
-    
+
     @staticmethod
     def parse(raw):
         parts = re.split('\t|,', raw)
@@ -112,6 +113,10 @@ class MeCabToken:
             parts += [''] * (10 - len(parts))
         (surface, pos, sc1, sc2, sc3, inf, conj, root, reading, pron) = parts
         return MeCabToken(surface, pos, sc1, sc2, sc3, inf, conj, root, reading, pron)
+
+    def to_csv(self):
+        return '{sur}\t{pos}\t{s1}\t{s2}\t{s3}\t{inf}\t{conj}\t{ro}\t{re}\t{pr}'.format(sur=self.surface, pos=self.pos, s1=self.sc1, s2=self.sc2, s3=self.sc3, inf=self.inf, conj=self.conj, ro=self.root, re=self.reading, pr=self.pron)
+
 
 def txt2mecab(text):
     mecab = MeCab.Tagger()
@@ -127,9 +132,9 @@ def lines2mecab(lines):
         sents.append(sent)
     return sents
 
-    
+
 def tokenize_sent(mtokens):
-    sents = [] 
+    sents = []
     bucket = []
     for t in mtokens:
         if t.surface != 'EOS':
@@ -141,6 +146,7 @@ def tokenize_sent(mtokens):
         sents.append(bucket)
     return sents
 
+
 def rubyize(token):
     if token.need_ruby():
         surface = token.surface
@@ -150,6 +156,7 @@ def rubyize(token):
         return ''
     else:
         return token.surface
+
 
 def rubyize_sent(sent):
         s = []
@@ -161,16 +168,11 @@ def rubyize_sent(sent):
         return stext
 
 
-def process(infilepath, outfilepath, splitlines=True, debug=False):
-    if not os.path.isfile(infilepath):
-        print("File does not exist (%s)" % (infilepath,))
-        return False
-    
+def analyse(content, title='', splitlines=True, format='html'):
+    # Read ruby template
     with open('data/ruby.htm', 'r') as tfile:
         template = Template(tfile.read())
-        
-    with open(infilepath, 'r') as infile:
-        content = infile.read()
+    # Process content using mecab
     if not splitlines:
         tokens = txt2mecab(content)
         sents = tokenize_sent(tokens)
@@ -180,22 +182,46 @@ def process(infilepath, outfilepath, splitlines=True, debug=False):
         tokens = []
         for sent in sents:
             tokens += sent
-    debug_text = ''
     doc = []
-    for sent in sents:
-        doc.append(rubyize_sent(sent))
-    # generate HTML content
-    if debug:
-        debug_text = '<br/>'.join([str(x) for x in tokens])
-    final = template.render(title=infilepath, body='<br/>\n'.join(doc), debug=debug_text)
-    if not outfilepath:
+    # Generate output
+    if format == 'html':
+        for sent in sents:
+            if format == 'html':
+                doc.append(rubyize_sent(sent))
+        # generate HTML content
+        final = template.render(title=title, body='<br/>\n'.join(doc))
+    else:
+        for sent in sents:
+            doc.append('\n'.join([x.to_csv() for x in sent]) + '\n')
+        final = '\n'.join(doc)
+    return final
+
+
+def process(args):
+    # Load content
+    if args.input:
+        infilepath = args.input
+        if not os.path.isfile(infilepath):
+            print("File does not exist (%s)" % (infilepath,))
+            return False
+        # Read input file
+        with open(infilepath, 'r') as infile:
+            content = infile.read()
+            title = infilepath
+    else:
+        content = args.parse
+        title = args.parse
+    # process content using mecab
+    final = analyse(content, title=title, splitlines=not args.notsplit, format=args.format)
+    # write to file if needed
+    if not args.output:
         print(final)
     else:
-        with open(outfilepath, 'w') as outfile:
+        with open(args.output, 'w') as outfile:
             outfile.write(final)
-            print("Converted data was written to {}".format(outfilepath))
+            print("Converted data was written to {}".format(args.output))
     # done!
-    
+
 
 ########################################################################
 
@@ -206,11 +232,14 @@ def main():
     # It's easier to create a user-friendly console application by using argparse
     # See reference at the top of this script
     parser = argparse.ArgumentParser(description="Japanese text preprocessor.")
-    
+
     # Positional argument(s)
-    parser.add_argument('input', help='Input file')
+    parser.add_argument('input', help='Input file', nargs='?', default='')
     parser.add_argument('-o', '--output', help='Output file (defaulted to input_name.out.txt)')
     parser.add_argument('-d', '--debug', help='Enable debug mode', action='store_true')
+    parser.add_argument('-p', '--parse', help='Parse a single sentence')
+    parser.add_argument('-x', '--notsplit', help="Don't Split lines before content is analysed", action='store_true')
+    parser.add_argument('-F', '--format', help='Output format (txt/html)', default='html')
 
     # Optional argument(s)
     group = parser.add_mutually_exclusive_group()
@@ -224,11 +253,12 @@ def main():
     else:
         # Parse input arguments
         args = parser.parse_args()
-        if args.input:
-            process(args.input, args.output, debug=args.debug)
+        if args.input or args.parse:
+            process(args)
         else:
             print("Invalid input filename")
     pass
+
 
 if __name__ == "__main__":
     main()
