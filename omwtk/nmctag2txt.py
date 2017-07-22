@@ -28,7 +28,7 @@ NTU-MC annotation extraction
 
 __author__ = "Le Tuan Anh <tuananh.ke@gmail.com>"
 __copyright__ = "Copyright 2015, OMWTK"
-__credits__ = [ "Le Tuan Anh" ]
+__credits__ = []
 __license__ = "MIT"
 __version__ = "0.1"
 __maintainer__ = "Le Tuan Anh"
@@ -83,12 +83,42 @@ and concept.tag NOT IN ('e', 'x', 'w', 'org', 'loc', 'per', 'dat', 'oth', 'num',
     """
     results = [x for x in db.ds().execute(query, params=(10000, 11000))]
     print("Found %s tags" % (len(results),))
+
+    # select mwe
+    mwe_query = """SELECT c.sid, c.cid, count(*)
+FROM concept as c LEFT JOIN cwl ON c.sid = cwl.sid AND c.cid = cwl.cid
+WHERE c.sid >= ? and c.sid < ?
+GROUP BY c.sid, c.cid
+HAVING count(*) > 1;"""
+    mwe = [x for x in db.ds().execute(mwe_query, params=(10000, 11000))]
+    mwe_map = {}
+    for sid, cid, wc in mwe:
+        mwe_map[(sid, cid)] = wc
+    # write down tag
     with open(OUTPUT_FILE, 'w') as tag_file:
+        sids = []
+        sid_map = dd(list)
+        sid_cid_map = {}
         for (sid, wid, cid, tag, cfrom, cto, clemma, pos) in results:
             if tag[0] in '=!':
                 tag = tag[1:]
             tag = str(SynsetID.from_string(tag))
-            tag_file.write('\t'.join((str(sid), str(cfrom), str(cto), tag, clemma, pos)) + '\n')
+            if sid not in sids:
+                sids.append(sid)
+            concept = [sid, cfrom, cto, tag, clemma, pos]
+            # not seen
+            if (sid, cid) not in sid_cid_map:
+                # add concept
+                sid_map[sid].append(concept)
+                sid_cid_map[(sid, cid)] = concept
+            else:
+                # mwe
+                sid_cid_map[(sid, cid)][1] = min(sid_cid_map[(sid, cid)][1], cfrom)
+                sid_cid_map[(sid, cid)][2] = max(sid_cid_map[(sid, cid)][2], cto)
+        # write tags to file
+        for sid in sids:
+            for c in sid_map[sid]:
+                tag_file.write('\t'.join([str(x) for x in c]) + '\n')
     print("Annotation data has been saved to %s" % (OUTPUT_FILE,))
     print("All done!")
 
