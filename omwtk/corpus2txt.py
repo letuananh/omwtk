@@ -42,6 +42,7 @@ from puchikarui import Schema
 from collections import namedtuple
 from collections import defaultdict as dd
 from chirptext.leutile import Counter
+from chirptext.texttaglib import TaggedDoc
 
 
 ########################################################################
@@ -53,6 +54,13 @@ NTUMC_DB_PATH = os.path.join(DATA_DIR, 'eng.db')
 OUTPUT_FILE = os.path.join(DATA_DIR, 'speckled_raw.txt')
 OUTPUT_FILE_WITH_SID = os.path.join(DATA_DIR, 'speckled.txt')
 OUTPUT_TOKEN_FILE = os.path.join(DATA_DIR, 'speckled_tokens.txt')
+OUTPUT_WORDS = os.path.join(DATA_DIR, 'speckled_words.txt')
+OUTPUT_CONCEPTS = os.path.join(DATA_DIR, 'speckled_concepts.txt')
+OUTPUT_LINKS = os.path.join(DATA_DIR, 'speckled_cwlinks.txt')
+
+
+test_sids = [10315, 10591, 10598]
+testdoc = TaggedDoc(DATA_DIR, 'test')
 
 
 class NTUMCSchema(Schema):
@@ -60,6 +68,8 @@ class NTUMCSchema(Schema):
         Schema.__init__(self, data_source)
         self.add_table('sent', 'sid docID pid sent comment usrname'.split())
         self.add_table('word', 'sid wid word pos lemma cfrom cto comment usrname'.split())
+        self.add_table('concept', 'sid cid clemma tag tags comment ntag usrname'.split())
+        self.add_table('cwl', 'sid wid cid'.split())
 
 
 ########################################################################
@@ -71,24 +81,60 @@ def main():
     except Exception as err:
         print("Error: I need access to NTU-MC DB at: %s" % NTUMC_DB_PATH)
         return
+
     sents = db.sent.select(where='sid >= ? and sid <= ?', values=[10000, 10999])
     words = db.word.select(where='sid >= ? and sid <= ?', orderby='sid, wid', values=[10000, 10999])
-    with open(OUTPUT_FILE, 'w') as outfile: 
+    # ignored_tags = "('e', 'x', 'w', 'org', 'loc', 'per', 'dat', 'oth', 'num', 'dat:year')"
+    # concepts
+    cquery = 'sid >= ? and sid <= ?'
+    concepts = db.concept.select(where=cquery, orderby='sid, cid', values=[10000, 10999])
+    # concept-words links
+    lquery = 'sid >= ? and sid <= ?'
+    links = db.cwl.select(where=lquery, orderby='sid, cid, wid', values=[10000, 10999])
+    with open(OUTPUT_FILE, 'w') as outfile:
         for sent in sents:
             outfile.write(sent.sent)
             outfile.write('\n')
-    with open(OUTPUT_FILE_WITH_SID, 'w') as outfile:
+    with open(OUTPUT_FILE_WITH_SID, 'w') as outfile, open(testdoc.sent_path, 'w') as test_sent:
         for sent in sents:
             outfile.write('%s\t%s\n' % (sent.sid, sent.sent))
-    with open(OUTPUT_TOKEN_FILE, 'w') as outfile:
+            if sent.sid in test_sids:
+                test_sent.write('%s\t%s\n' % (sent.sid, sent.sent))
+    with open(OUTPUT_TOKEN_FILE, 'w') as outfile, open(OUTPUT_WORDS, 'w') as wordfile, open(testdoc.word_path, 'w') as test_words:
         for word in words:
             outfile.write("%s\t%s\n" % (word.sid, word.lemma))
+            word_tup = (word.sid, word.wid, word.word, word.lemma, word.pos)
+            wordfile.write(('\t'.join(("%s",) * len(word_tup)) + '\n') % word_tup)
+            if word.sid in test_sids:
+                test_words.write(('\t'.join(("%s",) * len(word_tup)) + '\n') % word_tup)
+    ignored_concepts = list()
+    with open(OUTPUT_CONCEPTS, 'w') as confile, open(testdoc.concept_path, 'w') as test_concepts:
+        for c in concepts:
+            con_tup = (c.sid, c.cid, c.clemma, c.tag)
+            if c.tag in ('e', 'x', 'w', 'org', 'loc', 'per', 'dat', 'oth', 'num', 'dat:year'):
+                ignored_concepts.append((c.sid, c.cid))
+                continue
+            else:
+                confile.write(('\t'.join(("%s",) * len(con_tup)) + '\n') % con_tup)
+                if c.sid in test_sids:
+                    test_concepts.write(('\t'.join(("%s",) * len(con_tup)) + '\n') % con_tup)
+    with open(OUTPUT_LINKS, 'w') as lnkfile, open(testdoc.link_path, 'w') as test_links:
+        for lnk in links:
+            if (lnk.sid, lnk.cid) in ignored_concepts:
+                continue
+            else:
+                if lnk.sid in test_sids:
+                    test_links.write('{}\t{}\t{}\n'.format(lnk.sid, lnk.cid, lnk.wid))
+            lnkfile.write('{}\t{}\t{}\n'.format(lnk.sid, lnk.cid, lnk.wid))
     print("Extracted data has been written to:")
     print("\tRaw sentence         : %s" % (OUTPUT_FILE,))
     print("\tRaw sentence with SID: %s" % (OUTPUT_FILE_WITH_SID,))
     print("\tTokenization info    : %s" % (OUTPUT_TOKEN_FILE,))
+    print("\tWords                : %s" % (OUTPUT_WORDS,))
+    print("\tConcepts             : %s" % (OUTPUT_CONCEPTS,))
     print("Done!")
     pass
+
 
 if __name__ == "__main__":
     main()

@@ -134,6 +134,7 @@ def main():
     print("    sqlite3 eng.db < eng-update.sql")
     pass
 
+
 def smart_search(word_text, sent_text, sid, cfrom):
     loc = sent_text.find(word_text, cfrom)
     if loc < 0 and word_text == "not":
