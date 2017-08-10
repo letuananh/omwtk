@@ -52,39 +52,60 @@ import os
 import argparse
 from jinja2 import Template
 
+from chirptext import FileHelper
 from chirptext.deko import analyse
 
-with open('data/ruby.htm', 'r') as tfile:
+MY_DIR = os.path.dirname(os.path.realpath(__file__))
+RUBY_TEMPLATE_FILE = os.path.join(MY_DIR, 'templates', 'ruby.htm')
+with open(RUBY_TEMPLATE_FILE, 'r') as tfile:
     RUBY_TEMPLATE = Template(tfile.read())
 
 
-def process(args):
-    # Load content
-    if args.input:
-        infilepath = args.input
-        if not os.path.isfile(infilepath):
-            print("File does not exist (%s)" % (infilepath,))
-            return False
-        # Read input file
-        with open(infilepath, 'r') as infile:
-            content = infile.read()
-            title = infilepath
-    else:
-        content = args.parse
-        title = args.parse
-
-    # process content using chirptext/deko
+def analyse_text(content, title, args, outpath=None):
     output = analyse(content, splitlines=not args.notsplit, format=args.format)
     if args.format == 'html':
         output = RUBY_TEMPLATE.render(title=title.replace('\n', ' '), doc=output)
-    # write to file if needed
-    if not args.output:
+    # write output
+    outpath = outpath if outpath else args.output
+    if not outpath:
         print(output)
     else:
-        with open(args.output, 'w') as outfile:
+        with open(outpath, 'w') as outfile:
             outfile.write(output)
             print("Converted data was written to {}".format(args.output))
-    # done!
+    pass
+
+
+def process_dir(args):
+    if not os.path.isdir(args.indir):
+        print("Not a directory (provided: {})".format(args.indir))
+    # get children
+    children = [x for x in FileHelper.get_child_files(args.indir) if x.endswith(".ja.txt")]
+    for child in children:
+        outfile = os.path.join(args.outdir, child[:-7] + ".furigana." + args.format)
+        print("Process: {} => {}".format(child, outfile))
+        if os.path.isfile(outfile):
+            print("File {} exists. SKIPPED".format(outfile))
+        else:
+            content = FileHelper.read(child)
+            analyse_text(content, child, args, outpath=outfile)
+
+
+def process_text(args):
+    content = args.text
+    title = args.text
+    analyse_text(content, title, args)
+    pass
+
+
+def process_file(args):
+    # Load content
+    if not os.path.isfile(args.infile):
+        print("File does not exist (%s)" % (args.infile,))
+        return False
+    content = FileHelper.read(args.infile)
+    title = args.infile
+    analyse_text(content, title, args)
 
 
 ########################################################################
@@ -97,8 +118,21 @@ def main():
     # See reference at the top of this script
     parser = argparse.ArgumentParser(description="Japanese text preprocessor.")
 
-    # Positional argument(s)
-    parser.add_argument('input', help='Input file', nargs='?', default='')
+    tasks = parser.add_subparsers(help='Task to be done')
+
+    file_task = tasks.add_parser('file', help='Text file to be processed')
+    file_task.add_argument('infile', help='Path to your text file', nargs='?', default='')
+    file_task.set_defaults(func=process_file)
+
+    parse_task = tasks.add_parser('text', help='Text string to be processed')
+    parse_task.add_argument("text", help="Text string to be processed")
+    parse_task.set_defaults(func=process_text)
+
+    batch_task = tasks.add_parser('dir', help='Directory to be processed')
+    batch_task.add_argument("indir", help="Path to directory")
+    batch_task.add_argument("outdir", help="Output directory")
+    batch_task.set_defaults(func=process_dir)
+
     parser.add_argument('-o', '--output', help='Output file (defaulted to input_name.out.txt)')
     parser.add_argument('-d', '--debug', help='Enable debug mode', action='store_true')
     parser.add_argument('-p', '--parse', help='Parse a single sentence')
@@ -117,10 +151,10 @@ def main():
     else:
         # Parse input arguments
         args = parser.parse_args()
-        if args.input or args.parse:
-            process(args)
-        else:
-            print("Invalid input filename")
+        if args.format not in ("txt", "html", "csv"):
+            print("Invalid format chosen")
+            return
+        args.func(args)
     pass
 
 
