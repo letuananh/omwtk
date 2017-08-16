@@ -38,10 +38,11 @@ __status__ = "Prototype"
 ########################################################################
 
 import os
+import logging
 from puchikarui import Schema
 from collections import namedtuple
 from collections import defaultdict as dd
-from chirptext.leutile import Counter
+from chirptext.leutile import Counter, FileHelper
 from chirptext.texttaglib import TaggedDoc
 
 
@@ -49,7 +50,9 @@ from chirptext.texttaglib import TaggedDoc
 # Configuration
 ########################################################################
 
-DATA_DIR = os.path.expanduser('./data')
+logger = logging.getLogger(__name__)
+logger.setLevel(logging.INFO)
+DATA_DIR = FileHelper.abspath('./data')
 NTUMC_DB_PATH = os.path.join(DATA_DIR, 'eng.db')
 OUTPUT_FILE = os.path.join(DATA_DIR, 'speckled_raw.txt')
 OUTPUT_FILE_WITH_SID = os.path.join(DATA_DIR, 'speckled.txt')
@@ -77,9 +80,9 @@ class NTUMCSchema(Schema):
 def main():
     print("Script to convert NTU-MC to text file")
     try:
-        db = NTUMCSchema.connect(NTUMC_DB_PATH)
+        db = NTUMCSchema(NTUMC_DB_PATH)
     except Exception as err:
-        print("Error: I need access to NTU-MC DB at: %s" % NTUMC_DB_PATH)
+        logger.exception("Error: I need access to NTU-MC DB at: %s" % NTUMC_DB_PATH)
         return
 
     sents = db.sent.select(where='sid >= ? and sid <= ?', values=[10000, 10999])
