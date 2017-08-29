@@ -82,12 +82,13 @@ def process_dir(args):
     # get children
     children = [x for x in FileHelper.get_child_files(args.indir) if x.endswith(".ja.txt")]
     for child in children:
+        infile = os.path.join(args.indir, child)
         outfile = os.path.join(args.outdir, child[:-7] + ".furigana." + args.format)
         print("Process: {} => {}".format(child, outfile))
         if os.path.isfile(outfile):
             print("File {} exists. SKIPPED".format(outfile))
         else:
-            content = FileHelper.read(child)
+            content = FileHelper.read(infile)
             analyse_text(content, child, args, outpath=outfile)
 
 
