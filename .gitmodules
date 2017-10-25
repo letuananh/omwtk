@@ -11,3 +11,6 @@
 [submodule "modules/yawlib"]
 	path = modules/yawlib
 	url = https://github.com/letuananh/yawlib
+[submodule "modules/pysemcor"]
+	path = modules/pysemcor
+	url = https://github.com/letuananh/pysemcor
