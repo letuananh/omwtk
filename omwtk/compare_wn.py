@@ -39,11 +39,12 @@ __status__ = "Prototype"
 
 import os
 import re
+from itertools import combinations
 from operator import itemgetter
 from collections import namedtuple
 
-from chirptext.leutile import Counter, TextReport, StringTool
-from chirptext.leutile import header
+from chirptext.leutile import TextReport, StringTool, header
+from chirptext.leutile import Counter, Timer
 
 from yawlib import YLConfig, SynsetID
 from yawlib import GWordnetSQLite
@@ -57,6 +58,7 @@ from yawlib.omwsql import OMWSQL
 omw = OMWSQL(YLConfig.OMW_DB)
 gwn = GWordnetSQLite(YLConfig.GWN30_DB)
 wn30 = WordnetSQL(YLConfig.WNSQL30_PATH)
+ssid_filepath = 'data/ssids.txt'
 
 
 # ---------------------------------------------------------------------
@@ -123,53 +125,173 @@ def omw_vs_gwn():
 SCIENTIFIC_NAME = re.compile('❲.+❳')
 
 
+def has_sciname(a_def):
+    s = SCIENTIFIC_NAME.search(a_def)
+    return s is not None
+
+
 def remove_sciname(a_def):
     return SCIENTIFIC_NAME.sub('', a_def).strip()
 
 
-def omw_vs_gwn_def():
-    rp = TextReport("data/omw_gwn_defs.txt")
-    rpdiff = TextReport("data/omw_gwn_defs_diff.txt")
-    rpsn = TextReport("data/omw_gwn_defs_sciname.txt")
-    omw_ssids = set(get_omw_synsets())
-    gwn_ssids = set(get_gwn_synsets())
-    omw_old = omw_ssids.intersection(gwn_ssids)
-    c = Counter()
-    for ss in list(omw_old):
-        c.count("total")
-        omwss = omw.get_synset(ss)
-        gwnss = gwn.get_synset(ss)
-        odef = "; ".join(omwss.definitions)
-        try:
-            gwnss.match_surface()
-        except:
-            pass
-        gdef = gwnss.get_def().surface.replace('  ', ' ')
-        if gdef.endswith(";"):
-            gdef = gdef[:-1].strip()
-        if odef != gdef:
-            # try to remove scientific name ...
-            odef_nosn = remove_sciname(odef)
-            if odef_nosn == gdef:
-                c.count("sciname")
-                rp.header("[SCINAME] {}".format(ss))
-                rp.print("OMW: {}".format(odef))
-                rp.print("GWN: {}".format(gdef))
-                rpsn.header("[SCINAME] {}".format(ss))
-                rpsn.print("OMW: {}".format(odef))
-                rpsn.print("GWN: {}".format(gdef))
-            else:
-                c.count("different")
-                rp.header("[DIFF] {}".format(ss))
-                rp.print("OMW: {}".format(odef))
-                rp.print("GWN: {}".format(gdef))
-                rpdiff.header("[DIFF] {}".format(ss))
-                rpdiff.print("OMW: {}".format(odef))
-                rpdiff.print("GWN: {}".format(gdef))
+def read_diff_ssids(filepath=ssid_filepath):
+    if not os.path.isfile(filepath):
+        return None
+    with open(filepath) as ssid_file:
+        return [x.strip() for x in ssid_file.readlines()]
+
+
+def fix_typo(a_def):
+    return a_def.replace(' ,', ',').replace(' )', ')')
+
+
+def join_definitions(ss):
+    ''' Join definitions and detect any duplication '''
+    is_duplicated = False
+    longest = ss.definitions[0]
+    for d in ss.definitions[1:]:
+        if len(d) > len(longest):
+            longest = d
+    to_check = [x for x in ss.definitions if len(x) < len(longest)]
+    final = longest
+    for d in to_check:
+        if final.startswith(d + '; '):
+            is_duplicated = True
+            final = final[len(d) + 2:]
+    if is_duplicated:
+        to_check.append(final)
+        definition = "; ".join(to_check)
+    else:
+        definition = "; ".join(ss.definitions)
+    return definition, is_duplicated
+
+
+def compare_synset(omw, gwn, ss, omw_ctx=None, gwn_ctx=None):
+    omwss = omw.get_synset(ss, ctx=omw_ctx)
+    gwnss = gwn.get_synset(ss, ctx=gwn_ctx)
+    tags = set()
+    # normalize GWN definition
+    try:
+        gwnss.match_surface()
+    except:
+        pass
+    gdef = gwnss.get_def().surface.replace('  ', ' ')
+    if gdef.endswith(";"):
+        gdef = gdef[:-1].strip()
+    # join OMW definitions into one
+    odef, is_duplicated = join_definitions(omwss)
+    if is_duplicated:
+        tags.add(TAGS.REP)
+    if odef != gdef:
+        if has_sciname(odef):
+            tags.add(TAGS.SCINAME)
+            # remove scientific name before continue
+            odef = remove_sciname(odef)
+        # FIX typo
+        fixed = fix_typo(odef)
+        if odef != fixed:
+            tags.add(TAGS.TYPO)
+            odef = fixed
+        # final check
+        if gdef != odef:
+            tags.add(TAGS.DIFF)
         else:
-            c.count("same")
+            tags.add(TAGS.SAME)
+    return tags, odef, gdef
+
+
+class TAGS:
+    '''** Tags
+    - DUP :: Synsets with non-unique definitions
+    - REP :: Duplicated definitions that were inserted by a Python script
+    - SCINAME :: Synsets with scientific names in definitions
+    - TYPO :: Extra spaces or something like that, apparently this must be zero.
+    - OMW :: Changed by OMW team for some unknown reason
+    - DIFF :: Synsets that are changed by NTU
+    - SAME :: Synsets that are not changed (but typo/sciname may still be inserted)
+    - IDENT :: Identical to PWN
+    '''
+    DUP = "dup"
+    REP = "rep"
+    SCINAME = "sciname"
+    TYPO = "typo"
+    OMW = "omw"
+    DIFF = "diff"
+    SAME = "same"
+    IDENT = "ident"
+
+    ORDER = [OMW, DUP, REP, SCINAME, TYPO, DIFF, SAME, IDENT]
+
+
+def omw_vs_gwn_def():
+    rp = TextReport("data/omw_gwn_report.txt")
+    rpdiff = TextReport("data/omw_gwn_diff.txt")
+    rptypo = TextReport("data/omw_gwn_typo.txt")
+    rpsn = TextReport("data/omw_gwn_sciname.txt")
+    c = Counter(TAGS.ORDER)
+
+    # ssids to compare
+    diff_ssids = []
+    ssids = read_diff_ssids()
+    if not ssids:
+        print("Generating synset ID list")
+        omw_ssids = set(get_omw_synsets())
+        gwn_ssids = set(get_gwn_synsets())
+        # only care about old GWN synsets
+        ssids = omw_ssids.intersection(gwn_ssids)
+    else:
+        print("Comparing {} synsets loaded from {}".format(len(ssids), ssid_filepath))
+    lang = 'eng'
+    with omw.ctx() as omw_ctx, gwn.ctx() as gwn_ctx:
+        print("Comparing {} synsets".format(len(ssids)))
+        for ss in list(ssids):
+            ss = str(ss)
+            c.count("total")
+            tags, odef, gdef = compare_synset(omw, gwn, ss, omw_ctx, gwn_ctx)
+            omwss = omw.get_synset(ss, ctx=omw_ctx)
+            tags_str = ' '.join('[{}]'.format(t.upper()) for t in tags)
+            if TAGS.DIFF in tags:
+                diff_ssids.append(ss)
+                # [FCB] why did we change?
+                gwnss = gwn.get_synset(ss, ctx=gwn_ctx)
+                glosses = gwn_ctx.gloss.select('surface = ?', (gwnss.definition,))
+                if glosses and len(glosses) > 1:
+                    tags.add(TAGS.DUP)
+                    ssids = [str(SynsetID.from_string(g.sid)) for g in glosses]
+                    reason = "Not unique (Shared among {}) so OMW team changed it".format(' '.join(ssids))
+                else:
+                    tags.add(TAGS.OMW)
+                    defs = omw.sdef.select('synset=? and lang=?', (ss, lang))
+                    usrs = {d.usr for d in defs if d.usr}
+                    usrs_str = ', '.join(usrs) if usrs else "someone in NTU"
+                    reason = "{} made this change.".format(usrs_str)
+                tags_str = ' '.join('[{}]'.format(t.upper()) for t in tags)
+                rpdiff.header("{} {}".format(tags_str, ss))
+                rpdiff.print("OMW: {}".format(omwss.definition))
+                rpdiff.print("GWN: {}".format(gdef))
+                rpdiff.print("Reason: {}".format(reason))
+            if TAGS.SCINAME in tags:
+                rpsn.header("{} {}".format(tags_str, ss))
+                rpsn.print("OMW: {}".format(omwss.definition))
+                rpsn.print("GWN: {}".format(gdef))
+            if TAGS.REP in tags or TAGS.TYPO in tags:
+                rptypo.header("{} {}".format(tags_str, ss))
+                rptypo.print("OMW: {}".format(omwss.definition))
+                rptypo.print("GWN: {}".format(gdef))
+            # master report
+            for tag in tags:
+                c.count(tag)
+            if not tags:
+                c.count(TAGS.IDENT)
+            rp.header("{} {}".format(tags_str, ss))
+            rp.print("OMW: {}".format(omwss.definition))
+            rp.print("GWN: {}".format(gdef))
+
     # done
     c.summarise(report=rp)
+    with open('data/omw_gwn_diff_ssids.txt', 'wt') as diff_ssid_file:
+        for ss in diff_ssids:
+            diff_ssid_file.write('{}\n'.format(ss))
 
 
 def join(token, *items):
@@ -182,7 +304,10 @@ def join(token, *items):
 
 def main():
     print("Script to compare WNSQL30 to OMW")
+    t = Timer()
+    t.start("Compare OMW to GWN")
     omw_vs_gwn_def()
+    t.end()
 
 
 if __name__ == "__main__":
