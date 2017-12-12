@@ -51,8 +51,8 @@ __credits__ = []
 
 import os
 import unittest
-from chirptext import header
-from omwtk.compare_wn import omw, gwn
+from chirptext import header, TextReport
+from omwtk.compare_wn import omw, gwn, wn30
 from omwtk.compare_wn import SCIENTIFIC_NAME, remove_sciname, has_sciname, TAGS
 from omwtk.compare_wn import read_diff_ssids, compare_synset, join_definitions
 from omwtk.compare_wn import get_omw_synsets, get_gwn_synsets, get_wn30_synsets
@@ -175,6 +175,19 @@ class TestMainApp(unittest.TestCase):
         defs = omw.sdef.select('synset=? and lang=?', (sid, lang))
         usrs = {d.usr for d in defs if d.usr}
         self.assertTrue(usrs)
+
+    def test_get_mfs(self):
+        words = 'we this sing full cat tongue name dry die horn sun with mountain eye belly old big red woman live head animal because cloud louse sleep ear wet know salt walk eat seed green bite say person all child count thin stand father laugh night give stone heavy if bone sister other yellow small work snake smoke kill white swim short grease worm narrow flower neck path drink flesh good sharp ash snow hot fire mouth see dirty hand egg skin cold fly wood mother come I warm where one play foot sea year new earth smooth two water what burn fish vomit bird how long hunt sit rope feather nose dust round wind tooth correct bark root ice not blood tail dull brother man heart lie liver many pig rain claw who day grass knee when leaf wide hair meat black dog star dance breasts wife sand husband You bad hear moon river tree that'.split()
+        with omw.ctx() as ctx, TextReport('data/mfs1500.txt') as rp, TextReport("data/wndef.txt") as deffile:
+            query = 'wordid in (SELECT wordid FROM word WHERE lemma in {})'.format(repr(tuple(words)))
+            rows = ctx.sense.select(query)
+            ssids = [SynsetID.from_string(r.synset) for r in rows]
+            for ssid in ssids:
+                ss = omw.get_synset(ssid, ctx=ctx)
+                if ss.lemmas and ss.definition:
+                    rp.print("{id} ({lm}): {df}".format(id=ss.ID, lm=", ".join(ss.lemmas), df=ss.definition.strip()))
+                    deffile.print(ss.definition.strip())
+        print("Done!")
 
 
 def normalize(txt):

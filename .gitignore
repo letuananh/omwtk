@@ -2,6 +2,11 @@ data/eng.db
 data/eng.txt
 data/eng-update.sql
 data/speckled*
+data/omw_*
+data/test_*
+data/*patch*
+*.py~
+*#
 omwtk/chirptext
 omwtk/puchikarui
 omwtk.sublime-project
