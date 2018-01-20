@@ -48,14 +48,20 @@ __credits__ = []
 ########################################################################
 
 import os
+import re
 import logging
 import yaml
+import json
 from collections import OrderedDict
 
 from chirptext import TextReport, FileHelper, Counter
 from chirptext.cli import CLIApp, setup_logging
 from chirptext.anhxa import to_obj
-from yawlib.helpers import get_gwn, get_wn, get_omw
+from yawlib import SynsetID
+from yawlib.helpers import get_gwn
+from yawlib.helpers import get_wn, get_omw
+
+from omwtk.compare_wn import join_definitions
 
 # -------------------------------------------------------------------------------
 # Configuration
@@ -161,6 +167,10 @@ def convert(cli, args):
         print(yaml_str)
 
 
+def fix_gwn_def(a_def):
+    return a_def[:-1] if a_def.endswith(';') else a_def
+
+
 def verify_patch(cli, args):
     rp = TextReport()
     c = Counter()
@@ -231,6 +241,86 @@ def find_omw_typo(cli, args):
                 patch_script.writeline("UPDATE synset_def SET def = '{}' WHERE synset='{}' AND def='{}';\n".format(to_sqlite_string(fixed_def), d.synset, to_sqlite_string(d._2)))
 
 
+def read_nttat(cli, args):
+    ''' Convert NTTAT patch to JSON '''
+    stdout = TextReport()
+    ext = 'json'
+    rp = TextReport("{}_1.{}".format(args.output, ext))
+    rp2 = TextReport("{}_2.{}".format(args.output, ext))
+    gwn = get_gwn()
+    data = []
+    with open(args.input, 'r') as infile, gwn.ctx() as ctx:
+        ssids = re.findall('\d{8}-[nvarx]', infile.read())
+        print(len(ssids))
+        print(ssids)
+        for sid in ssids:
+            ss = gwn.get_synset(sid, ctx=ctx)
+            sdef = fix_gwn_def(ss.definition)
+            stdout.header(sid, "Lemmas: {}".format(", ".join(ss.lemmas)))
+            stdout.print(sdef)
+            data.append({"synset": sid,
+                         "lemmas": ss.lemmas,
+                         "definition": sdef})
+    cut = int(len(data) / 2)
+    # first half
+    first_half = json.dumps(data[:cut], indent=2)
+    rp.write(first_half)
+    # second half
+    second_half = json.dumps(data[cut:], indent=2)
+    rp2.write(second_half)
+
+
+def remove_puncs(a_str):
+    return a_str.replace(';', '').replace(':', '').replace(',', '')
+
+
+def manual_patch(cli, args):
+    rp = TextReport()
+    omw = get_omw()
+    if not args.input or not os.path.isfile(args.input):
+        raise Exception("Input file could not be found")
+    with open(args.input, 'r') as infile, omw.ctx() as ctx:
+        synsets = json.loads(infile.read())
+        # for ss in synsets:
+        #     rp.print(ss['synset'], ss['definition'])
+        # rp.print("Found synsets:", len(synsets))
+        for sinfo in synsets:
+            sid, fixed_def = sinfo['synset'], sinfo['definition']
+            ss = omw.get_synset(sid, ctx=ctx)
+            orig_def = remove_puncs(ss.definition)
+            if remove_puncs(fixed_def) != orig_def:
+                rp.header("WARNING:", sid)
+                rp.print(ss.definition)
+                rp.print(fixed_def)
+
+
+def omw_fix_dup(cli, args):
+    rp = TextReport(args.output)
+    omw = get_omw()
+    c = Counter()
+    with omw.ctx() as ctx:
+        senses = ctx.sense.select(limit=args.topk, columns=('synset',))
+        synsetids = {s.synset for s in senses}
+        rp.print("-- OMW synsets: {}\n".format(len(synsetids)))
+        for sid in synsetids:
+            try:
+                sid = SynsetID.from_string(sid)
+            except:
+                cli.logger.warning("Ignored synset ID: {}".format(sid))
+                continue
+            ss = omw.get_synset(sid, ctx=ctx)
+            fixed_def, dup_defs = join_definitions(ss)
+            if dup_defs:
+                c.count("Duplicated")
+                rp.print("-- Original {}: {}".format(ss.ID, ss.definition))
+                rp.print("-- Fixed    {}: {}".format(ss.ID, fixed_def))
+                for dup in dup_defs:
+                    rp.print("DELETE FROM synset_def WHERE synset='{}' and def='{}';".format(ss.ID, to_sqlite_string(dup)))
+                rp.print()
+        c.summarise()
+        pass
+
+
 # -------------------------------------------------------------------------------
 # Main
 # -------------------------------------------------------------------------------
@@ -250,6 +340,17 @@ def main():
     task = app.add_task('typo', func=find_omw_typo)
     task.add_argument('action', help='Action to be done about typo', choices=['list', 'patch'])
     task.add_argument('-o', '--output', help='Output script')
+    # read NTTAT
+    task = app.add_task('nttat', func=read_nttat)
+    task.add_argument('-i', '--input', help='Input NTTAT file', default='data/NTTAT.txt')
+    task.add_argument('-o', '--output', help='Output YAML file')
+    # fix NTTAT
+    task = app.add_task('manual', func=manual_patch)
+    task.add_argument('-i', '--input', help='Input OMW patch (json)')
+    # List all duplicated entries
+    task = app.add_task('dup', func=omw_fix_dup)
+    task.add_argument('-o', '--output', help='Output patch script')
+    task.add_argument('-k', '--topk', help='Only process top k synsets')
     # run app
     app.run()
 

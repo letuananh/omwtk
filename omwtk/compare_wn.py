@@ -39,11 +39,7 @@ __status__ = "Prototype"
 
 import os
 import re
-from itertools import combinations
-from operator import itemgetter
-from collections import namedtuple
-
-from chirptext.leutile import TextReport, StringTool, header
+from chirptext.leutile import TextReport, StringTool
 from chirptext.leutile import Counter, Timer
 
 from yawlib import YLConfig, SynsetID
@@ -77,7 +73,7 @@ def get_omw_synsets():
 
 
 def get_gwn_synsets():
-    gwn_ss = gwn.all_synsets(deep_select=False)
+    gwn_ss = gwn.synset.select(columns=('ID',))
     return [SynsetID.from_string(x.ID) for x in gwn_ss]
 
 
@@ -147,23 +143,23 @@ def fix_typo(a_def):
 
 def join_definitions(ss):
     ''' Join definitions and detect any duplication '''
-    is_duplicated = False
+    if len(ss.definitions) == 0:
+        return '', []
+    duplicated_entries = []
     longest = ss.definitions[0]
     for d in ss.definitions[1:]:
         if len(d) > len(longest):
             longest = d
-    to_check = [x for x in ss.definitions if len(x) < len(longest)]
-    final = longest
-    for d in to_check:
-        if final.startswith(d + '; '):
-            is_duplicated = True
-            final = final[len(d) + 2:]
-    if is_duplicated:
-        to_check.append(final)
-        definition = "; ".join(to_check)
-    else:
-        definition = "; ".join(ss.definitions)
-    return definition, is_duplicated
+    # remove duplicated entries
+    final = []
+    for d in ss.definitions:
+        if d != longest and d + ';' in longest:
+            duplicated_entries.append(d)
+        else:
+            final.append(d)
+    # join definitions and return
+    definition = '; '.join(final)
+    return definition, duplicated_entries
 
 
 def compare_synset(omw, gwn, ss, omw_ctx=None, gwn_ctx=None):
@@ -179,8 +175,8 @@ def compare_synset(omw, gwn, ss, omw_ctx=None, gwn_ctx=None):
     if gdef.endswith(";"):
         gdef = gdef[:-1].strip()
     # join OMW definitions into one
-    odef, is_duplicated = join_definitions(omwss)
-    if is_duplicated:
+    odef, dup_defs = join_definitions(omwss)
+    if dup_defs:
         tags.add(TAGS.REP)
     if odef != gdef:
         if has_sciname(odef):

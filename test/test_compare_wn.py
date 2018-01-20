@@ -102,9 +102,10 @@ class TestMainApp(unittest.TestCase):
     def test_detect_dup(self):
         header("Detect duplication in OMW definition")
         ss = omw.get_synset('01850676-n')
-        odef, is_dup = join_definitions(ss)
-        self.assertEqual(odef, 'canvasback; redhead; pochard; etc. ❲Aythya❳')
-        self.assertTrue(is_dup)
+        fixed_def, dup_defs = join_definitions(ss)
+        self.assertEqual(ss.definition, 'canvasback; redhead; pochard; canvasback; redhead; pochard; etc. ❲Aythya❳')
+        self.assertEqual(fixed_def, 'canvasback; redhead; pochard; etc. ❲Aythya❳')
+        self.assertEqual(set(dup_defs), {'canvasback', 'redhead', 'pochard'})
 
     def compare_gwn_wn30(self):
         header("GWN and WN30 are equal")
