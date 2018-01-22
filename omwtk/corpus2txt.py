@@ -44,6 +44,7 @@ from collections import namedtuple
 from collections import defaultdict as dd
 from chirptext.leutile import Counter, FileHelper
 from chirptext.texttaglib import TaggedDoc
+from chirptext.io import CSV
 
 
 ########################################################################
@@ -55,11 +56,14 @@ logger.setLevel(logging.INFO)
 DATA_DIR = FileHelper.abspath('./data')
 NTUMC_DB_PATH = os.path.join(DATA_DIR, 'eng.db')
 OUTPUT_FILE = os.path.join(DATA_DIR, 'speckled_raw.txt')
-OUTPUT_FILE_WITH_SID = os.path.join(DATA_DIR, 'speckled.txt')
-OUTPUT_TOKEN_FILE = os.path.join(DATA_DIR, 'speckled_tokens.txt')
-OUTPUT_WORDS = os.path.join(DATA_DIR, 'speckled_words.txt')
+# standard texttaglib output
 OUTPUT_CONCEPTS = os.path.join(DATA_DIR, 'speckled_concepts.txt')
-OUTPUT_LINKS = os.path.join(DATA_DIR, 'speckled_cwlinks.txt')
+OUTPUT_LINKS = os.path.join(DATA_DIR, 'speckled_links.txt')
+OUTPUT_FILE_WITH_SID = os.path.join(DATA_DIR, 'speckled_sents.txt')
+OUTPUT_TAGS_FILE = os.path.join(DATA_DIR, 'speckled_tags.txt')
+OUTPUT_WORDS = os.path.join(DATA_DIR, 'speckled_words.txt')
+# extra info
+OUTPUT_TOKEN_FILE = os.path.join(DATA_DIR, 'speckled_tokens.txt')
 
 
 test_sids = [10315, 10591, 10598]
@@ -94,15 +98,18 @@ def main():
     # concept-words links
     lquery = 'sid >= ? and sid <= ?'
     links = db.cwl.select(where=lquery, orderby='sid, cid, wid', values=[10000, 10999])
+    # raw text file
     with open(OUTPUT_FILE, 'w') as outfile:
         for sent in sents:
             outfile.write(sent.sent)
             outfile.write('\n')
+    # sentences with SID
     with open(OUTPUT_FILE_WITH_SID, 'w') as outfile, open(testdoc.sent_path, 'w') as test_sent:
         for sent in sents:
             outfile.write('%s\t%s\n' % (sent.sid, sent.sent))
             if sent.sid in test_sids:
                 test_sent.write('%s\t%s\n' % (sent.sid, sent.sent))
+    # token file
     with open(OUTPUT_TOKEN_FILE, 'w') as outfile, open(OUTPUT_WORDS, 'w') as wordfile, open(testdoc.word_path, 'w') as test_words:
         for word in words:
             outfile.write("%s\t%s\n" % (word.sid, word.lemma))
