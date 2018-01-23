@@ -40,34 +40,23 @@ __status__ = "Prototype"
 import os
 import logging
 from puchikarui import Schema
-from collections import namedtuple
-from collections import defaultdict as dd
-from chirptext.leutile import Counter, FileHelper
-from chirptext.texttaglib import TaggedDoc
-from chirptext.io import CSV
-
+from chirptext.leutile import FileHelper, Counter, TextReport
+from chirptext.texttaglib import TaggedDoc, Token
+from yawlib.helpers import get_wn
 
 ########################################################################
 # Configuration
 ########################################################################
 
-logger = logging.getLogger(__name__)
-logger.setLevel(logging.INFO)
 DATA_DIR = FileHelper.abspath('./data')
 NTUMC_DB_PATH = os.path.join(DATA_DIR, 'eng.db')
 OUTPUT_FILE = os.path.join(DATA_DIR, 'speckled_raw.txt')
-# standard texttaglib output
-OUTPUT_CONCEPTS = os.path.join(DATA_DIR, 'speckled_concepts.txt')
-OUTPUT_LINKS = os.path.join(DATA_DIR, 'speckled_links.txt')
-OUTPUT_FILE_WITH_SID = os.path.join(DATA_DIR, 'speckled_sents.txt')
-OUTPUT_TAGS_FILE = os.path.join(DATA_DIR, 'speckled_tags.txt')
-OUTPUT_WORDS = os.path.join(DATA_DIR, 'speckled_words.txt')
-# extra info
-OUTPUT_TOKEN_FILE = os.path.join(DATA_DIR, 'speckled_tokens.txt')
-
-
 test_sids = [10315, 10591, 10598]
 testdoc = TaggedDoc(DATA_DIR, 'test')
+
+
+def getLogger():
+    return logging.getLogger(__name__)
 
 
 class NTUMCSchema(Schema):
@@ -86,63 +75,103 @@ def main():
     try:
         db = NTUMCSchema(NTUMC_DB_PATH)
     except Exception as err:
-        logger.exception("Error: I need access to NTU-MC DB at: %s" % NTUMC_DB_PATH)
+        getLogger().exception("Error: I need access to NTU-MC DB at: %s" % NTUMC_DB_PATH)
         return
 
-    sents = db.sent.select(where='sid >= ? and sid <= ?', values=[10000, 10999])
-    words = db.word.select(where='sid >= ? and sid <= ?', orderby='sid, wid', values=[10000, 10999])
-    # ignored_tags = "('e', 'x', 'w', 'org', 'loc', 'per', 'dat', 'oth', 'num', 'dat:year')"
-    # concepts
-    cquery = 'sid >= ? and sid <= ?'
-    concepts = db.concept.select(where=cquery, orderby='sid, cid', values=[10000, 10999])
-    # concept-words links
-    lquery = 'sid >= ? and sid <= ?'
-    links = db.cwl.select(where=lquery, orderby='sid, cid, wid', values=[10000, 10999])
+    wn = get_wn()
+    with db.ctx() as ctx, wn.ctx() as wnctx:
+        sents = ctx.sent.select(where='sid >= ? and sid <= ?', values=[10000, 10999])
+        # convert to texttaglib
+        doc = TaggedDoc(DATA_DIR, "speckled")
+        ignored_concepts = set()
+        omwextra = set()
+        synsets = set()
+        stats = Counter()
+        # import sents to tagged doc
+        for sent in sents:
+            tsent = doc.add_sent(sent.sent, sent.sid)  # tagged-sentence
+            # import tokens
+            # sid, wid, word, lemma, pos
+            words = ctx.word.select(where='sid = ?', values=(sent.sid,), orderby='sid, wid')
+            tsent.import_tokens(w.word for w in words)
+            word_token_map = {}
+            for token, word in zip(tsent.tokens, words):
+                token.tag(tagtype=Token.POS, label=word.pos)
+                token.tag(tagtype=Token.LEMMA, label=word.lemma)
+                token.tag(tagtype='orig_wid', label=word.wid)
+                word_token_map[word.wid] = token
+                stats.count("Word")
+            concepts = ctx.concept.select(where='sid = ?', values=(sent.sid,), orderby='sid, cid')
+            # import concept
+            # c.sid, c.cid, c.clemma, c.tag
+            for c in concepts:
+                if c.tag in ('e', 'x', 'w', 'org', 'loc', 'per', 'dat', 'oth', 'num', 'dat:year'):
+                    ignored_concepts.add((c.sid, c.cid))
+                    stats.count("Tag-ignored")
+                    continue
+                elif c.tag.startswith('!'):
+                    getLogger().warning("Invalid synset format {}".format(c.tag))
+                    ignored_concepts.add((c.sid, c.cid))
+                    stats.count("Tag-error")
+                    continue
+                else:
+                    ctag = c.tag.replace('=', '').strip()
+                    tconcept = tsent.add_concept(c.cid, c.clemma, ctag)
+                    # ensure that the concept is in PW30
+                    if ctag in omwextra:
+                        tconcept.comment = 'EXTRA'
+                        stats.count("Tag-OMW")
+                    elif ctag not in synsets:
+                        ssinfo = wnctx.ss.by_id(wn.ensure_sid(ctag))
+                        if not ssinfo:
+                            getLogger().info("Synset not found: {} {}".format(c.tag, c.clemma))
+                            omwextra.add(ctag)
+                            tconcept.comment = 'EXTRA'
+                            stats.count("Tag-OMW")
+                        else:
+                            synsets.add(ctag)
+                            stats.count("Tag-PWN30")
+                    else:
+                        stats.count("Tag-PWN30")
+            links = ctx.cwl.select(where='sid = ?', values=(sent.sid,), orderby='sid, cid, wid')
+            # link concepts to words
+            for link in links:
+                if (link.sid, link.cid) in ignored_concepts:
+                    continue
+                token = word_token_map[link.wid]
+                tsent.concept_map[link.cid].words.append(token)
+            # write tags
+            for c in tsent.concepts:
+                cfrom = min(t.cfrom for t in c.words)
+                cto = max(t.cto for t in c.words)
+                tagtype = 'OMW' if c.comment == "EXTRA" else 'WN'
+                tsent.add_tag(c.tag, cfrom, cto, tagtype=tagtype)
+    doc.write_ttl()
     # raw text file
     with open(OUTPUT_FILE, 'w') as outfile:
         for sent in sents:
             outfile.write(sent.sent)
             outfile.write('\n')
-    # sentences with SID
-    with open(OUTPUT_FILE_WITH_SID, 'w') as outfile, open(testdoc.sent_path, 'w') as test_sent:
-        for sent in sents:
-            outfile.write('%s\t%s\n' % (sent.sid, sent.sent))
-            if sent.sid in test_sids:
-                test_sent.write('%s\t%s\n' % (sent.sid, sent.sent))
-    # token file
-    with open(OUTPUT_TOKEN_FILE, 'w') as outfile, open(OUTPUT_WORDS, 'w') as wordfile, open(testdoc.word_path, 'w') as test_words:
-        for word in words:
-            outfile.write("%s\t%s\n" % (word.sid, word.lemma))
-            word_tup = (word.sid, word.wid, word.word, word.lemma, word.pos)
-            wordfile.write(('\t'.join(("%s",) * len(word_tup)) + '\n') % word_tup)
-            if word.sid in test_sids:
-                test_words.write(('\t'.join(("%s",) * len(word_tup)) + '\n') % word_tup)
-    ignored_concepts = list()
-    with open(OUTPUT_CONCEPTS, 'w') as confile, open(testdoc.concept_path, 'w') as test_concepts:
-        for c in concepts:
-            con_tup = (c.sid, c.cid, c.clemma, c.tag)
-            if c.tag in ('e', 'x', 'w', 'org', 'loc', 'per', 'dat', 'oth', 'num', 'dat:year'):
-                ignored_concepts.append((c.sid, c.cid))
-                continue
-            else:
-                confile.write(('\t'.join(("%s",) * len(con_tup)) + '\n') % con_tup)
-                if c.sid in test_sids:
-                    test_concepts.write(('\t'.join(("%s",) * len(con_tup)) + '\n') % con_tup)
-    with open(OUTPUT_LINKS, 'w') as lnkfile, open(testdoc.link_path, 'w') as test_links:
-        for lnk in links:
-            if (lnk.sid, lnk.cid) in ignored_concepts:
-                continue
-            else:
-                if lnk.sid in test_sids:
-                    test_links.write('{}\t{}\t{}\n'.format(lnk.sid, lnk.cid, lnk.wid))
-            lnkfile.write('{}\t{}\t{}\n'.format(lnk.sid, lnk.cid, lnk.wid))
-    print("Extracted data has been written to:")
-    print("\tRaw sentence         : %s" % (OUTPUT_FILE,))
-    print("\tRaw sentence with SID: %s" % (OUTPUT_FILE_WITH_SID,))
-    print("\tTokenization info    : %s" % (OUTPUT_TOKEN_FILE,))
-    print("\tWords                : %s" % (OUTPUT_WORDS,))
-    print("\tConcepts             : %s" % (OUTPUT_CONCEPTS,))
-    print("Done!")
+    # generate test doc
+    for sid in test_sids:
+        sent = doc.sent_map[sid]
+        testdoc.sents.append(sent)
+        testdoc.sent_map[sid] = sent
+    testdoc.write_ttl()
+    report = TextReport()
+    report.header("Extracted data has been written to:")
+    report.print("Raw sentence         : %s" % (OUTPUT_FILE,))
+    report.print("Raw sentence with SID: %s" % (doc.sent_path,))
+    report.print("Words                : %s" % (doc.word_path,))
+    report.print("Concepts             : %s" % (doc.concept_path,))
+    report.print("Links                : %s" % (doc.link_path,))
+    report.print("Tags                 : %s" % (doc.tag_path,))
+    report.print("PWN30 concepts       : %s" % (len(synsets),))
+    report.print("OMW-x concepts       : %s" % (len(omwextra),))
+    report.print("MWE                  : %s" % (sum(len(s.mwe) for s in doc),))
+    stats.summarise(report)
+    report.print("OMW-x synsets        : {}".format(omwextra))
+    report.print("Done!")
     pass
 
 
