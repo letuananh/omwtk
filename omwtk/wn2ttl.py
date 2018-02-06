@@ -53,7 +53,6 @@ import argparse
 import json
 
 from chirptext import header, FileHelper, TextReport
-# from chirptext.texttaglib import TaggedDoc, TaggedSentence
 from coolisf.model import Document
 from yawlib.glosswordnet import GWordnetXML
 
@@ -135,7 +134,7 @@ def main():
     tasks = parser.add_subparsers(help="Task to be done")
 
     wn2ttl_task = tasks.add_parser('convert', help='Convert GWN to TTL format')
-    wn2ttl_task.add_argument('inpath')
+    wn2ttl_task.add_argument('inpath', help='Path to glosstag XML file')
     wn2ttl_task.add_argument('outpath', nargs="?", default=None)
     wn2ttl_task.add_argument('-f', '--format', choices=['xml', 'json'], default='json')
     wn2ttl_task.set_defaults(func=wn2ttl)

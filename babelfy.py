@@ -2,7 +2,7 @@ import json
 from chirptext import JiCache, WebHelper, TextReport, FileHelper
 from chirptext.leutile import AppConfig
 from chirptext.chirpnet import SmartURL
-from chirptext.texttaglib import TaggedDoc
+from chirptext import texttaglib as ttl
 
 # ------------------------------------------------------------------------------
 # Configuration
@@ -51,7 +51,7 @@ def babelfy(text, lang=DEFAULT_LANG, key=DEFAULT_KEY, **kwargs):
 def babelfy_doc(docpath=DEFAULT_DOCPATH, docname=DEFAULT_DOCNAME, outfile=None, **kwargs):
     ''' Babelfy a tagged document
     '''
-    speckled = TaggedDoc(docpath, docname).read()
+    speckled = ttl.Document(docname, docpath).read()
     sents = []
     for s in speckled:
         output = json.loads(babelfy(s.text, **kwargs))

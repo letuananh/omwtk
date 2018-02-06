@@ -41,7 +41,7 @@ import os
 import logging
 from puchikarui import Schema
 from chirptext.leutile import FileHelper, Counter, TextReport
-from chirptext.texttaglib import TaggedDoc, Token
+from chirptext import texttaglib as ttl
 from yawlib.helpers import get_wn
 
 ########################################################################
@@ -52,7 +52,7 @@ DATA_DIR = FileHelper.abspath('./data')
 NTUMC_DB_PATH = os.path.join(DATA_DIR, 'eng.db')
 OUTPUT_FILE = os.path.join(DATA_DIR, 'speckled_raw.txt')
 test_sids = [10315, 10591, 10598]
-testdoc = TaggedDoc(DATA_DIR, 'test')
+testdoc = ttl.Document('test', DATA_DIR)
 
 
 def getLogger():
@@ -82,23 +82,23 @@ def main():
     with db.ctx() as ctx, wn.ctx() as wnctx:
         sents = ctx.sent.select(where='sid >= ? and sid <= ?', values=[10000, 10999])
         # convert to texttaglib
-        doc = TaggedDoc(DATA_DIR, "speckled")
+        doc = ttl.Document("speckled", DATA_DIR)
         ignored_concepts = set()
         omwextra = set()
         synsets = set()
         stats = Counter()
         # import sents to tagged doc
         for sent in sents:
-            tsent = doc.add_sent(sent.sent, sent.sid)  # tagged-sentence
+            tsent = doc.new_sent(sent.sent, sent.sid)  # tagged-sentence
             # import tokens
             # sid, wid, word, lemma, pos
             words = ctx.word.select(where='sid = ?', values=(sent.sid,), orderby='sid, wid')
             tsent.import_tokens(w.word for w in words)
             word_token_map = {}
             for token, word in zip(tsent.tokens, words):
-                token.tag(tagtype=Token.POS, label=word.pos)
-                token.tag(tagtype=Token.LEMMA, label=word.lemma)
-                token.tag(tagtype='orig_wid', label=word.wid)
+                token.pos = word.pos
+                token.lemma = word.lemma
+                token.new_tag(label=word.wid, tagtype='orig_wid')
                 word_token_map[word.wid] = token
                 stats.count("Word")
             concepts = ctx.concept.select(where='sid = ?', values=(sent.sid,), orderby='sid, cid')
@@ -116,7 +116,7 @@ def main():
                     continue
                 else:
                     ctag = c.tag.replace('=', '').strip()
-                    tconcept = tsent.add_concept(c.cid, c.clemma, ctag)
+                    tconcept = tsent.new_concept(tag=ctag, clemma=c.clemma, ID=c.cid)
                     # ensure that the concept is in PW30
                     if ctag in omwextra:
                         tconcept.comment = 'EXTRA'
@@ -139,13 +139,19 @@ def main():
                 if (link.sid, link.cid) in ignored_concepts:
                     continue
                 token = word_token_map[link.wid]
-                tsent.concept_map[link.cid].words.append(token)
+                tsent.concept(link.cid).add_token(token)
             # write tags
             for c in tsent.concepts:
-                cfrom = min(t.cfrom for t in c.words)
-                cto = max(t.cto for t in c.words)
+                cfrom = min(t.cfrom for t in c.tokens)
+                cto = max(t.cto for t in c.tokens)
                 tagtype = 'OMW' if c.comment == "EXTRA" else 'WN'
-                tsent.add_tag(c.tag, cfrom, cto, tagtype=tagtype)
+                tsent.new_tag(c.tag, cfrom, cto, tagtype=tagtype)
+    # remove duplicated concepts
+    for sent in doc:
+        for w, concepts in sent.tcmap().items():
+            non_dup = {"{}-{}".format(c.clemma, c.tag) for c in concepts}
+            if len(non_dup) != len(concepts):
+                getLogger().warning("WARNING: sent #{}: duplicate concept (w={} | c={})".format(sent.ID, w, concepts))
     doc.write_ttl()
     # raw text file
     with open(OUTPUT_FILE, 'w') as outfile:
@@ -154,21 +160,20 @@ def main():
             outfile.write('\n')
     # generate test doc
     for sid in test_sids:
-        sent = doc.sent_map[sid]
-        testdoc.sents.append(sent)
-        testdoc.sent_map[sid] = sent
+        sent = doc.get(sid)
+        testdoc.add_sent(sent)
     testdoc.write_ttl()
     report = TextReport()
     report.header("Extracted data has been written to:")
     report.print("Raw sentence         : %s" % (OUTPUT_FILE,))
     report.print("Raw sentence with SID: %s" % (doc.sent_path,))
-    report.print("Words                : %s" % (doc.word_path,))
+    report.print("Words                : %s" % (doc.token_path,))
     report.print("Concepts             : %s" % (doc.concept_path,))
     report.print("Links                : %s" % (doc.link_path,))
     report.print("Tags                 : %s" % (doc.tag_path,))
     report.print("PWN30 concepts       : %s" % (len(synsets),))
     report.print("OMW-x concepts       : %s" % (len(omwextra),))
-    report.print("MWE                  : %s" % (sum(len(s.mwe) for s in doc),))
+    report.print("MWE                  : %s" % (sum(len(list(s.mwe())) for s in doc),))
     stats.summarise(report)
     report.print("OMW-x synsets        : {}".format(omwextra))
     report.print("Done!")

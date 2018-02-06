@@ -61,7 +61,7 @@ def main():
     
     # Read sent & word data
     
-    db = NTUMCSchema.connect(NTUMC_DB_PATH)
+    db = NTUMCSchema(NTUMC_DB_PATH)
     sents = db.sent.select(where='sid >= ? and sid <= ?', values=[10000, 10999])
     words = db.word.select(where='sid >= ? and sid <= ?', values=[10000, 10999])
     words_by_sid = dd(list)

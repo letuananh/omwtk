@@ -50,13 +50,12 @@ __status__ = "Prototype"
 
 ########################################################################
 
-import sys
 import os
-import argparse
 from jinja2 import Template
 
 from chirptext import FileHelper
-from chirptext.deko import analyse
+from chirptext.cli import CLIApp
+from chirptext.deko import analyse, DekoText, jaconv
 
 MY_DIR = os.path.dirname(os.path.realpath(__file__))
 RUBY_TEMPLATE_FILE = os.path.join(MY_DIR, 'templates', 'ruby.htm')
@@ -64,10 +63,38 @@ with open(RUBY_TEMPLATE_FILE, 'r') as tfile:
     RUBY_TEMPLATE = Template(tfile.read())
 
 
+def gen_interlinear(content, title='', splitlines=False, add_surface=True):
+    sents = DekoText.parse(content, splitlines=splitlines)
+    doc = []
+    final = sents
+    for sent in sents:
+        if add_surface:
+            doc.append(sent.surface if sent.surface else str(sent))
+        doc.append(' '.join(tk.reading_hira() for tk in sent))
+        doc.append(jaconv.kana2alphabet(' '.join(tk.reading_hira() for tk in sent)))
+        doc.append(' ')
+    final = '\n'.join(doc)
+    return final
+
+
+def romanize(content, title='', splitlines=False):
+    sents = DekoText.parse(content, splitlines=splitlines)
+    doc = []
+    final = sents
+    for sent in sents:
+        doc.append(jaconv.kana2alphabet(' '.join(tk.reading_hira() for tk in sent)))
+    final = '\n'.join(doc)
+    return final
+
+
 def analyse_text(content, title, args, outpath=None):
     output = analyse(content, splitlines=not args.notsplit, format=args.format)
     if args.format == 'html':
         output = RUBY_TEMPLATE.render(title=title.replace('\n', ' '), doc=output)
+    elif args.format == 'roumaji':
+        output = romanize(content, splitlines=not args.notsplit)
+    elif args.format == 'interlinear':
+        output = gen_interlinear(content, splitlines=not args.notsplit)
     # write output
     outpath = outpath if outpath else args.output
     if not outpath:
@@ -75,18 +102,22 @@ def analyse_text(content, title, args, outpath=None):
     else:
         with open(outpath, 'w') as outfile:
             outfile.write(output)
-            print("Converted data was written to {}".format(args.output))
+            print("Converted data was written to {}".format(outpath))
     pass
 
 
-def process_dir(args):
+def process_dir(cli, args):
+    '''Directory to be processed'''
     if not os.path.isdir(args.indir):
         print("Not a directory (provided: {})".format(args.indir))
     # get children
     children = [x for x in FileHelper.get_child_files(args.indir) if x.endswith(".ja.txt")]
     for child in children:
         infile = os.path.join(args.indir, child)
-        outfile = os.path.join(args.outdir, child[:-7] + ".furigana." + args.format)
+        name, ext = os.path.splitext(child)
+        suffix = '.furigana' if args.format in ('html',) else ''
+        suffix += "." + args.format
+        outfile = os.path.join(args.outdir, child[:-7] + suffix + ext)
         print("Process: {} => {}".format(child, outfile))
         if os.path.isfile(outfile):
             print("File {} exists. SKIPPED".format(outfile))
@@ -95,14 +126,16 @@ def process_dir(args):
             analyse_text(content, child, args, outpath=outfile)
 
 
-def process_text(args):
+def process_text(cli, args):
+    '''Text string to be processed'''
     content = args.text
     title = args.text
     analyse_text(content, title, args)
     pass
 
 
-def process_file(args):
+def process_file(cli, args):
+    '''Text file to be processed'''
     # Load content
     if not os.path.isfile(args.infile):
         print("File does not exist (%s)" % (args.infile,))
@@ -117,49 +150,27 @@ def process_file(args):
 def main():
     ''' Japanese text preprocessor
     '''
+    app = CLIApp(desc='Japanese text preprocessor', logger=__name__)
 
-    # It's easier to create a user-friendly console application by using argparse
-    # See reference at the top of this script
-    parser = argparse.ArgumentParser(description="Japanese text preprocessor.")
+    task = app.add_task('file', func=process_file)
+    task.add_argument('infile', help='Path to your text file', nargs='?', default='')
+    task.add_argument('-o', '--output', help='Output file (defaulted to input_name.out.txt)')
+    task.add_argument('-x', '--notsplit', help="Don't Split lines before content is analysed", action='store_true')
+    task.add_argument('-F', '--format', help='Output format (txt/html/csv)', default='html')
 
-    tasks = parser.add_subparsers(help='Task to be done')
+    task = app.add_task('text', func=process_text)
+    task.add_argument("text", help="Text string to be processed")
+    task.add_argument('-o', '--output', help='Output file (defaulted to input_name.out.txt)')
+    task.add_argument('-x', '--notsplit', help="Don't Split lines before content is analysed", action='store_true')
+    task.add_argument('-F', '--format', help='Output format (txt/html/csv)', default='html')
 
-    file_task = tasks.add_parser('file', help='Text file to be processed')
-    file_task.add_argument('infile', help='Path to your text file', nargs='?', default='')
-    file_task.set_defaults(func=process_file)
-
-    parse_task = tasks.add_parser('text', help='Text string to be processed')
-    parse_task.add_argument("text", help="Text string to be processed")
-    parse_task.set_defaults(func=process_text)
-
-    batch_task = tasks.add_parser('dir', help='Directory to be processed')
-    batch_task.add_argument("indir", help="Path to directory")
-    batch_task.add_argument("outdir", help="Output directory")
-    batch_task.set_defaults(func=process_dir)
-
-    parser.add_argument('-o', '--output', help='Output file (defaulted to input_name.out.txt)')
-    parser.add_argument('-d', '--debug', help='Enable debug mode', action='store_true')
-    parser.add_argument('-p', '--parse', help='Parse a single sentence')
-    parser.add_argument('-x', '--notsplit', help="Don't Split lines before content is analysed", action='store_true')
-    parser.add_argument('-F', '--format', help='Output format (txt/html/csv)', default='html')
-
-    # Optional argument(s)
-    group = parser.add_mutually_exclusive_group()
-    group.add_argument("-v", "--verbose", action="store_true")
-    group.add_argument("-q", "--quiet", action="store_true")
-
-    # Main script
-    if len(sys.argv) == 1:
-        # User didn't pass any value in, show help
-        parser.print_help()
-    else:
-        # Parse input arguments
-        args = parser.parse_args()
-        if args.format not in ("txt", "html", "csv"):
-            print("Invalid format chosen")
-            return
-        args.func(args)
-    pass
+    task = app.add_task('dir', func=process_dir)
+    task.add_argument("indir", help="Path to directory")
+    task.add_argument("outdir", help="Output directory")
+    task.add_argument('-p', '--parse', help='Parse a single sentence')
+    task.add_argument('-x', '--notsplit', help="Don't Split lines before content is analysed", action='store_true')
+    task.add_argument('-F', '--format', help='Output format (txt/html/csv/roumaji/interlinear)', default='html')
+    app.run()
 
 
 if __name__ == "__main__":

@@ -250,6 +250,46 @@ def wn31_to_wn30(cli, args):
     pass
 
 
+def extract_omw(cli, args):
+    ''' OMW Extractor '''
+    rp = TextReport()
+    omw = get_omw()
+    WN_POS = 'nvar'
+    with omw.ctx() as ctx:
+        for pos in WN_POS:
+            rp.header("POS: {}".format(pos))
+            query = '''SELECT lemma, sense.synset, def as sdef FROM sense LEFT JOIN word ON sense.wordid = word.wordid and sense.lang=word.lang LEFT JOIN synset_def ON sense.synset = synset_def.synset AND sense.lang = synset_def.lang WHERE sense.lang='eng' AND word.lang='eng' AND synset_def.lang='eng' AND pos=? ORDER By freq DESC '''
+            params = [pos]
+            if args.topk:
+                query += ' LIMIT ?'
+                params.append(args.topk)
+            results = ctx.select(query, params)
+            senses = OrderedDict()
+            potential_names = 0
+            for lemma, sid, sdef in results:
+                if lemma.lower() != lemma:
+                    # if pos not in 'nar':
+                    #     rp.print("{} - {}".format(lemma, pos))
+                    potential_names += 1
+                if (lemma, sid) in senses:
+                    senses[(lemma, sid)] += "; " + sdef
+                else:
+                    senses[(lemma, sid)] = sdef
+            print("Found {} sense in OMW".format(len(senses.keys())))
+            print("Potential name: {}".format(potential_names))
+            if args.output:
+                out_path = "{}_{}.txt".format(args.output, pos)
+                wordsenses = (k + (v,) for k, v in senses.items())
+                CSV.write_tsv(out_path, wordsenses, quoting=CSV.QUOTE_MINIMAL)
+                print("Written to {}".format(out_path))
+                lemma_out_path = "{}_{}_lemma.txt".format(args.output, pos)
+                with open(lemma_out_path, 'w') as outfile:
+                    for l, sid in senses.keys():
+                        outfile.write(l)
+                        outfile.write('\n')
+                    print("Written to {}".format(lemma_out_path))
+
+
 # -------------------------------------------------------------------------------
 # Main method
 # -------------------------------------------------------------------------------
@@ -276,6 +316,10 @@ def main():
     task = app.add_task('check31', func=verify_wn31)
     # wn31 to wn30
     task = app.add_task('31230', func=wn31_to_wn30)
+    # omw2txt
+    task = app.add_task('omw', func=extract_omw)
+    task.add_argument('-n', '--topk', help='Limit top n')
+    task.add_argument('-o', '--output', help='Output files')
     # run app
     app.run()
 
